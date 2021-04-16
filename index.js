@@ -1753,9 +1753,33 @@ case 'gay':
   //if (args.length < 1) return reply('Escribe el nombre')  @${mentioned[0].split('@')[0]}
   Lxa.updatePresence(from, Presence.composing)
   random = gay[Math.floor(Math.random() * (gay.length))]
-  hasil = `🖤😏 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐌𝐀𝐋𝐃𝐈𝐓𝐎𝐒 𝐆𝐀𝐘𝐒!* 😏🖤\n\n😳 *@${mentioned[0].split('@')[0]}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒑𝒆𝒓𝒅𝒊𝒅𝒐 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${random}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏𝒂 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😳\n\n@${mentioned[0].split('@')[0]}\n🖤😳 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐎 𝐌𝐀𝐑𝐈𝐂𝐎𝐍 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 😳🖤` //${body.slice(8)}
-  mentions(hasil, mentioned)
+  hasil = `🖤😏 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐌𝐀𝐋𝐃𝐈𝐓𝐎𝐒 𝐆𝐀𝐘𝐒!* 😏🖤\n\n😳 *@${_.split('@')[0]}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒑𝒆𝒓𝒅𝒊𝒅𝒐 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${random}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏𝒂 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😳\n\n@${_.split('@')[0]}\n🖤😳 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐎 𝐌𝐀𝐑𝐈𝐂𝐎𝐍 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 😳🖤` //${body.slice(8)}
+  reply(hasil, mentioned)
   break
+
+
+      /*case 'promote':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+          if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+          if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+          if (mentioned.length > 1) {
+            teks = 'Con exito \n'
+            for (let _ of mentioned) {
+              teks += `@${_.split('@')[0]}\n`
+            }
+            mentions(from, mentioned, true)
+            Lxa.groupRemove(from, mentioned)
+          } else {
+            mentions(`Ahora @${mentioned[0].split('@')[0]} es admin del grupo!`, mentioned, true)
+            Lxa.groupMakeAdmin(from, mentioned)
+          }
+          break*/
+
+
+
+
 
 
 
