@@ -1335,7 +1335,7 @@ caption: teks, contextInfo: {
 //---Kecepatan respon
 case 'ping11111':
   case 'speed111111':
-
+if (!isRegister) return reply(mess.only.userB)
 const timestamp = speed();
 const latensi = speed() - timestamp
 Lxa.updatePresence(from, Presence.composing)
@@ -2134,7 +2134,7 @@ break
 
 case 'triggered1111111':
 					case 'ger':
- 
+ if (!isRegister) return reply(mess.only.userB)
             var imgbb = require('imgbb-uploader')
            if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
            ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
@@ -2160,7 +2160,7 @@ case 'triggered1111111':
 
 
 case 'tourl111111111111111':
- 
+ if (!isRegister) return reply(mess.only.userB)
             var imgbb = require('imgbb-uploader')
            if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
            ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
@@ -2175,7 +2175,7 @@ break
 //---stiker wasted
 case 'wasted111111111111111':
   case 'was111111111111111':
-
+if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
   ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
@@ -2202,7 +2202,7 @@ fs.unlinkSync(rano)
 break
 
 case 'drawing111111111111111':
-
+if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
   ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
@@ -2219,7 +2219,7 @@ break
 
 
 case 'wanted111111111111111':
-
+if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
   ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
@@ -2235,7 +2235,7 @@ if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0)
 break
 
 case 'gtav111111111111111':
-
+if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
   ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
@@ -2456,7 +2456,7 @@ caption: '*Google Imagen*\n\n*Resultado de busqueda : '+goo+'*', quoted: mek
   break
 
 case 'alay211111111':
-  
+  if (!isRegister) return reply(mess.only.userB)
   if (args.length < 1) return reply('Ingresa el texto')
   goo = body.slice(7)
   try { 
@@ -4182,9 +4182,9 @@ break
 
 
 				default:
-				if (body.startsWith(`${prefix}${command}`)) {
+				/*if (body.startsWith(`${prefix}${command}`)) {
   reply(`        ────────────────\nHols *${pushname}* !!!\nEse comando no esta en mi lista : *${prefix}${command}*\nUsa esto para verlos*${prefix}Menu*\n        ────────────────`)
-				}
+				}*/
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
 						muehe = await simih(budy)
