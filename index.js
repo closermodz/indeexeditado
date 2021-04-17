@@ -329,12 +329,12 @@ Usa ${prefix}verify para verificarte y poder usar el bot.`
   Iv: 'Error en el link'
   },
   only: {
-    group: 'Este comando solo puede ser usado en grupos',
-    ownerG: 'Este comando solo puede ser usado por el dueño del grupo',
-    ownerB: 'Este comando solo puede ser usado por el dueño del bot',
-    admin: 'Debes de ser admin para este comando',
-    Badmin: 'El bot debe ser admin para este comando',
-    daftarB: `Hola, usa *${prefix}verify* para poder usar el bot`
+    group: '❌ *¡𝑳𝒐 𝒔𝒆𝒏𝒕𝒊𝒎𝒐𝒔, ¡𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒔𝒆 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒅𝒆𝒏𝒕𝒓𝒐 𝒅𝒆 𝒈𝒓𝒖𝒑𝒐𝒔!* ❌',
+    ownerG: '⛔😡 *¡𝐈𝐍𝐓𝐄𝐍𝐓𝐎 𝐃𝐄 𝐒𝐔𝐏𝐋𝐀𝐍𝐓𝐀𝐂𝐈𝐎𝐍!* 😡⛔\n\n*¡𝑵𝒐 𝒊𝒏𝒕𝒆𝒏𝒕𝒆𝒔 𝒖𝒔𝒂𝒓 𝒍𝒐𝒔 𝒄𝒐𝒎𝒂𝒏𝒅𝒐𝒔 𝒅𝒆 𝒍𝒐𝒔 𝑫𝒊𝒐𝒔𝒆𝒔 𝒔𝒂𝒃𝒊𝒆𝒏𝒅𝒐 𝒒𝒖𝒆 𝒆𝒓𝒆𝒔 𝒖𝒏𝒂 𝒎𝒂𝒍𝒅𝒊𝒕𝒂 𝒓𝒂𝒕𝒂 𝒎𝒂́𝒔 𝒆𝒏 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑺𝒐𝒍𝒐 𝒍𝒐𝒔 𝒅𝒊𝒐𝒔𝒆𝒔 𝒑𝒖𝒆𝒅𝒆𝒏 𝒖𝒔𝒂𝒓𝒍𝒐!*\n\n⛔🐀 *¡𝐍𝐎 𝐋𝐎 𝐔𝐒𝐄𝐒 𝐌𝐀𝐒 𝐑𝐀𝐓𝐀!* 🐀⛔',
+    ownerB: '⛔😡 *¡𝐈𝐍𝐓𝐄𝐍𝐓𝐎 𝐃𝐄 𝐒𝐔𝐏𝐋𝐀𝐍𝐓𝐀𝐂𝐈𝐎𝐍!* 😡⛔\n\n*¡𝑵𝒐 𝒊𝒏𝒕𝒆𝒏𝒕𝒆𝒔 𝒖𝒔𝒂𝒓 𝒍𝒐𝒔 𝒄𝒐𝒎𝒂𝒏𝒅𝒐𝒔 𝒅𝒆 𝒍𝒐𝒔 𝑫𝒊𝒐𝒔𝒆𝒔 𝒔𝒂𝒃𝒊𝒆𝒏𝒅𝒐 𝒒𝒖𝒆 𝒆𝒓𝒆𝒔 𝒖𝒏𝒂 𝒎𝒂𝒍𝒅𝒊𝒕𝒂 𝒓𝒂𝒕𝒂 𝒎𝒂́𝒔 𝒆𝒏 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑺𝒐𝒍𝒐 𝒍𝒐𝒔 𝒅𝒊𝒐𝒔𝒆𝒔 𝒑𝒖𝒆𝒅𝒆𝒏 𝒖𝒔𝒂𝒓𝒍𝒐!*\n\n⛔🐀 *¡𝐍𝐎 𝐋𝐎 𝐔𝐒𝐄𝐒 𝐌𝐀𝐒 𝐑𝐀𝐓𝐀!* 🐀⛔',
+    admin: '❌ *¡𝐒𝐨𝐥𝐨 𝐩𝐮𝐞𝐝𝐞𝐧 𝐞𝐣𝐞𝐜𝐮𝐭𝐚𝐫 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐥𝐨𝐬 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫𝐞𝐬 𝐝𝐞 𝐞𝐬𝐭𝐞 𝐠𝐫𝐮𝐩𝐨!* ❌',
+    Badmin: '❌ *¡𝐏𝐚𝐫𝐚 𝐮𝐬𝐚𝐫 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐞𝐥 𝐁𝐨𝐭 𝐝𝐞𝐛𝐞 𝐝𝐞 𝐬𝐞𝐫 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐨!* ❌',
+    daftarB: `usa .verify`
   }
 }
       const totalchat = await Lxa.chats.all()
@@ -3202,7 +3202,7 @@ break
 					break
 
 //--menaikan jabatan
-      case 'promote':
+      case 'admin':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3214,9 +3214,9 @@ break
 							teks += `@${_.split('@')[0]}\n`
 						}
 						mentions(from, mentioned, true)
-						Lxa.groupRemove(from, mentioned)
+						Lxa.groupRemove(from, mentioned)  //@${mentioned[0].split('@')[0]}
 					} else {
-						mentions(`Ahora @${mentioned[0].split('@')[0]} es admin del grupo!`, mentioned, true)
+						mentions(`❤️😳 *¡𝗡𝗨𝗘𝗩𝗢 𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗗𝗢𝗥 𝗘𝗡 𝗘𝗟 𝗚𝗥𝗨𝗣𝗢!* 😳❤️\n\n@${mentioned[0].split('@')[0]}, *¡𝑳𝒐𝒔 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒅𝒆 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐, 𝒉𝒆𝒎𝒐𝒔 𝒅𝒆𝒄𝒊𝒅𝒊𝒅𝒐 𝒄𝒐𝒏𝒄𝒆𝒅𝒆𝒓𝒕𝒆 𝒆𝒍 𝒑𝒓𝒊𝒗𝒊𝒍𝒆𝒈𝒊𝒐 𝒅𝒆 𝒔𝒆𝒓 𝒖𝒏 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒎𝒂𝒔 𝒅𝒆 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑬𝒔𝒑𝒆𝒓𝒆𝒎𝒐𝒔 𝒒𝒖𝒆 𝒏𝒐 𝒉𝒂𝒚𝒂 𝒑𝒓𝒐𝒃𝒍𝒆𝒎𝒂𝒔 𝒏𝒊 𝒖𝒏 𝒎𝒂𝒍 𝒖𝒔𝒐 𝒅𝒆𝒍 𝒓𝒂𝒏𝒅𝒐 𝒅𝒆 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒑𝒐𝒓 𝒕𝒖 𝒑𝒂𝒓𝒕𝒆!*\n\n@${mentioned[0].split('@')[0]}\n❤️😍 *¡𝗘𝗡𝗛𝗢𝗥𝗔𝗕𝗨𝗘𝗡𝗔 𝗣𝗢𝗥 𝗘𝗟 𝗔𝗦𝗖𝗘𝗡𝗦𝗢!* 😍❤️`, mentioned, true)
 						Lxa.groupMakeAdmin(from, mentioned)
 					}
 					break
@@ -3245,21 +3245,21 @@ Lxa.sendMessage(from, 'Cambiar descripción del grupo', text, {
 break
 
 //--menurunkan jabatan
-				case 'demote':
+				case 'miembro':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Admin quitado con exito\n'
+						/*teks = 'Admin quitado con exito\n'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
-						}
+						}*/
 						mentions(teks, mentioned, true)
 						Lxa.groupRemove(from, mentioned)
 					} else {
-						mentions(`Un admi menos @${mentioned[0].split('@')[0]} por gei!`, mentioned, true)
+						mentions(`💔😔 *¡𝗨𝗡 𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗗𝗢𝗥 𝗠𝗘𝗡𝗢𝗦!* 😔💔\n\n@${mentioned[0].split('@')[0]}, *¡𝑯𝒆𝒎𝒐𝒔 𝒅𝒆𝒄𝒊𝒅𝒊𝒅𝒐 𝒒𝒖𝒆 𝒆𝒔 𝒎𝒖𝒄𝒉𝒐 𝒎𝒆𝒋𝒐𝒓 𝒕𝒂𝒏𝒕𝒐 𝒑𝒂𝒓𝒂 𝒏𝒐𝒔𝒐𝒕𝒓𝒐𝒔 𝒄𝒐𝒎𝒐 𝒑𝒂𝒓𝒂 𝒕𝒐𝒅𝒐𝒔 𝒍𝒐𝒔 𝒊𝒏𝒕𝒆𝒈𝒓𝒂𝒏𝒕𝒆𝒔 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐, 𝒒𝒖𝒊𝒕𝒂𝒓𝒕𝒆 𝒆𝒍 𝒓𝒂𝒏𝒈𝒐 𝒅𝒆 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒆𝒏 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑺𝒊 𝒒𝒖𝒊𝒆𝒓𝒆𝒔 𝒂𝒍𝒈𝒖𝒏𝒂 𝒆𝒙𝒑𝒍𝒊𝒄𝒂𝒄𝒊𝒐𝒏 𝒑𝒐𝒓 𝒆𝒍 𝒒𝒖𝒆 𝒔𝒆 𝒕𝒆 𝒉𝒂 𝒅𝒆𝒈𝒓𝒂𝒅𝒂𝒅𝒐 𝒑𝒖𝒆𝒅𝒆𝒔 𝒑𝒆𝒅𝒊𝒓𝒔𝒆𝒍𝒂 𝒂𝒍 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒒𝒖𝒆 𝒕𝒆 𝒉𝒂 𝒅𝒆𝒈𝒓𝒂𝒅𝒂𝒅𝒐!*\n\n@${mentioned[0].split('@')[0]}\n💔😢 *¡𝗟𝗢 𝗦𝗘𝗡𝗧𝗜𝗠𝗢𝗦 𝗠𝗨𝗖𝗛𝗜𝗦𝗜𝗠𝗢!* 😢💔`, mentioned, true)
 						Lxa.groupDemoteAdmin(from, mentioned)
 					}
 					break
