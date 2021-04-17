@@ -1494,11 +1494,12 @@ break
 
 
 case 'gay':
-  //if (args.length < 1) return reply('Escribe el nombre')
+  if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
   random = gay[Math.floor(Math.random() * (gay.length))]
   hasil = `🖤😏 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐌𝐀𝐋𝐃𝐈𝐓𝐎𝐒 𝐆𝐀𝐘𝐒!* 😏🖤\n\n😳 *@${mentioned[0].split('@')[0]}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒑𝒆𝒓𝒅𝒊𝒅𝒐 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${random}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏𝒂 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😳*\n\n@${mentioned[0].split('@')[0]}\n🖤😳 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐎 𝐌𝐀𝐑𝐈𝐂𝐎𝐍 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 😳🖤` //${body.slice(8)}
-  mentions(hasil, mentioned)
+  reply(hasil, mentioned)
   break
 
 /*case 'gay':
