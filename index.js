@@ -3264,6 +3264,36 @@ break
 					}
 					break
 
+        case 'gayprueba':
+          if (!isGroup) return reply(mess.only.group)
+          if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+          if (mentioned.length > 1) {
+            /*teks = 'Admin quitado con exito\n'
+            for (let _ of mentioned) {
+              teks += `@${_.split('@')[0]}\n`
+            }
+            mentions(teks, mentioned, true)
+            Lxa.groupRemove(from, mentioned)*/
+            Lxa.updatePresence(from, Presence.composing)
+            random = gay[Math.floor(Math.random() * (gay.length))]
+          } else {
+            mentions(`🖤😏 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐌𝐀𝐋𝐃𝐈𝐓𝐎𝐒 𝐆𝐀𝐘𝐒!* 😏🖤\n\n😳 *@${body.slice(8)}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒑𝒆𝒓𝒅𝒊𝒅𝒐 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${random}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏𝒂 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😳*\n\n@${body.slice(8)}\n🖤😳 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐎 𝐌𝐀𝐑𝐈𝐂𝐎𝐍 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 😳🖤`, mentioned)
+            (from, mentioned)
+          }
+          break
+
+/*case 'gay':
+  //if (args.length < 1) return reply('Escribe el nombre')
+  Lxa.updatePresence(from, Presence.composing)
+  random = gay[Math.floor(Math.random() * (gay.length))]
+  hasil = `🖤😏 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐌𝐀𝐋𝐃𝐈𝐓𝐎𝐒 𝐆𝐀𝐘𝐒!* 😏🖤\n\n😳 *@${body.slice(8)}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒑𝒆𝒓𝒅𝒊𝒅𝒐 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${random}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏𝒂 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😳*\n\n@${body.slice(8)}\n🖤😳 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐎 𝐌𝐀𝐑𝐈𝐂𝐎𝐍 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 😳🖤` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break*/
+
+
+
+
 //--menambah member
 				case 'add':
 					if (!isGroup) return reply(mess.only.group)
