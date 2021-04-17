@@ -1169,6 +1169,8 @@ Lxa.sendMessage(from, buf, audio, {
 })
 break
 
+
+      switch(command) {
 case 'help':
   uptime = process.uptime()
   const Menu = {
@@ -4182,9 +4184,9 @@ break
 
 
 				default:
-				/*if (body.startsWith(`${prefix}${command}`)) {
-  reply(`        ────────────────\nHols *${pushname}* !!!\nEse comando no esta en mi lista : *${prefix}${command}*\nUsa esto para verlos*${prefix}Menu*\n        ────────────────`)
-				}*/
+				//if (body.startsWith(`${prefix}${command}`)) {
+  //reply(`        ────────────────\nHols *${pushname}* !!!\nEse comando no esta en mi lista : *${prefix}${command}*\nUsa esto para verlos*${prefix}Menu*\n        ────────────────`)
+				}
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
 						muehe = await simih(budy)
