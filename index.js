@@ -1259,7 +1259,7 @@ case 'ceksaldo':
 */
 
 	break
-					case 'slow':
+					case 'slow111111111111111':
 					low = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					slo = await Lxa.downloadAndSaveMediaMessage(low)
 					ran = getRandom('.mp3')
@@ -1271,7 +1271,7 @@ case 'ceksaldo':
 						fs.unlinkSync(ran)
 					})
 				break
-				case 'tupai':
+				case 'tupai111111111111111':
 					pai = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 
 					tup = await Lxa.downloadAndSaveMediaMessage(pai)
@@ -1284,7 +1284,7 @@ case 'ceksaldo':
 						fs.unlinkSync(ran)
 					})
 				break
-				case 'gemuk':
+				case 'gemuk111111111111111':
 					muk = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 
 					gem = await Lxa.downloadAndSaveMediaMessage(muk)
@@ -1297,7 +1297,7 @@ case 'ceksaldo':
 						fs.unlinkSync(ran)
 					})
 				break
-				case 'bass':                 
+				case 'bass111111111111111':                 
 					ass = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 
 					bas = await Lxa.downloadAndSaveMediaMessage(ass)
@@ -1312,7 +1312,7 @@ case 'ceksaldo':
 					break
 
 //--Info bot
-				case 'info':
+				case 'info111111111111111':
   me = Lxa.user
   uptime = process.uptime()
   teks = `*‣ Nombre del bot* : ${me.name}
@@ -1330,8 +1330,8 @@ caption: teks, contextInfo: {
   break
 
 //---Kecepatan respon
-case 'ping':
-  case 'speed':
+case 'ping111111111111111':
+  case 'speed111111111111111':
 if (!isRegister) return reply(mess.only.userB)
 const timestamp = speed();
 const latensi = speed() - timestamp
@@ -1343,7 +1343,7 @@ Lxa.sendMessage(from, `*El bot responde en*\n‣ *Speed* : ${latensi.toFixed(4)}
 break
 
 //---donasi
-case 'donasi':
+case 'donasi111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 hasil = `
@@ -1359,7 +1359,7 @@ Lxa.sendMessage(from, hasil, text, {
 break
 
 //--arti nama
-case 'arti':
+case 'arti111111111111111':
 if (args.length < 1) return reply('*☒* Masukan teks')
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1375,7 +1375,7 @@ reply(hasil)
 break
 
 //---couple pasangan
-case 'couple':
+case 'couple111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 if (!q.includes(' & ')) return  reply('Formato de texto incorrecto')
@@ -1399,7 +1399,7 @@ Lxa.sendMessage(from, yoi, text, {
 break
 
 //---Zodiak harian
-case 'zodiak':
+case 'zodiak111111111111111':
 if (args.length < 1) return reply('Ingresa el signo zodiaco')
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1415,7 +1415,7 @@ reply(hasil)
 break
 
 //--pencarian pinterest
-  case 'img':
+  case 'img111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 if (args.length < 1) return reply('Ingresa lo que quieres buscar')
@@ -1424,7 +1424,7 @@ Lxa.updatePresence(from, Presence.composing)
 reply(mess.wait)
 try {
 data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${tels}`, {
-  method: 'get'
+  method: 'get111111111111111'
 })
 n = JSON.parse(JSON.stringify(data));
 nimek = n[Math.floor(Math.random() * n.length)];
@@ -1439,7 +1439,7 @@ Lxa.sendMessage(from, pok, image, {
 break
 
 //--Pencarian pinterest
-case 'pinterest':
+case 'pinterest111111111111111':
 tels = body.slice(11)
 if (!isRegister) return reply(mess.only.daftarB)
 
@@ -1462,7 +1462,7 @@ Lxa.sendMessage(from, pok, image, {
 }
 break
 
-case 'listonline':
+case 'listonline111111111111111':
         		let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
 			    let online = [...Object.keys(Lxa.chats.get(ido).presences), Lxa.user.jid]
 			    Lxa.sendMessage(from, 'List Online:\n' + online.map(v => '- @' + v.replace(/@.+/, '')).join`\n`, text, { quoted: mek,
@@ -1473,7 +1473,7 @@ case 'listonline':
 
 
 //--pinterest anime neko
-case 'neko':
+case 'neko111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 Lxa.updatePresence(from, Presence.composing)
@@ -1497,7 +1497,7 @@ Lxa.sendMessage(from, pok, image, {
 break
 
 //--Pinteres anime loli
-  case 'loli':
+  case 'loli111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 Lxa.updatePresence(from, Presence.composing)
@@ -1522,7 +1522,7 @@ break
 
 
 //--Pinterest Twitter
-  case 'twit':
+  case 'twit111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 Lxa.updatePresence(from, Presence.composing)
@@ -1549,7 +1549,7 @@ Lxa.sendMessage(from, pok, image, {
 break
 
   //
-  case 'anime':
+  case 'anime111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 Lxa.updatePresence(from, Presence.composing)
@@ -1572,8 +1572,8 @@ Lxa.sendMessage(from, pok, image, {
 break
 
 //--Pinterest wallpaper
-  case 'wp':
-case 'wallpaper':
+  case 'wp111111111111111':
+case 'wallpaper111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   Lxa.updatePresence(from, Presence.composing)
@@ -1600,7 +1600,7 @@ quoted: mek, caption: `Mr.Pato-Bot`
   break
 
 //--Pinterest cecan
-case 'cecan':
+case 'cecan111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   tels = body.slice(5)
@@ -1630,7 +1630,7 @@ quoted: mek, caption: `Mr.Pato-Bot`
   break
 
 //--Pinterest quotes
-case 'quotes':
+case 'quotes111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   tels = body.slice(5)
@@ -1658,7 +1658,7 @@ quoted: mek, caption: `Mr.Pato-Bot`
 
 
 //--Pinterest cogan
-case 'cogan':
+case 'cogan1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   Lxa.updatePresence(from, Presence.composing)
@@ -1682,7 +1682,7 @@ quoted: mek, caption: `Mr.pato-Bot`
   break
 
 //--Pinterest cyberpunk
-case 'cyberpunk':
+case 'cyberpunk1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   Lxa.updatePresence(from, Presence.composing)
@@ -1705,7 +1705,7 @@ quoted: mek
   }
   break
 
-case 'jadian':
+case 'jadian1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-año`, text, {
@@ -1732,7 +1732,7 @@ quoted: mek
   break
 
 
-case 'asupan':
+case 'asupan1111111111111111':
   
 if (!isRegister) return reply(mess.only.daftarB)
 try {
@@ -1748,7 +1748,7 @@ Lxa.sendMessage(from, hasil, video, {
 }
 break
 
-case 'weton':
+case 'weton1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-año`, text, {
@@ -1773,7 +1773,7 @@ break
   }
   break
 
-case 'seberapagay':
+case 'seberapagay1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el nombre', text, {
@@ -1787,7 +1787,7 @@ quoted: mek
   
   break
 
-case 'seberapabucin':
+case 'seberapabucin1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return Lxa.sendMessage(from, 'Ingresa el nombre', text, {
@@ -1806,7 +1806,7 @@ quoted: mek
   break
 
 //--searching lirik
-case 'lirik':
+case 'lirik1111111111111111':
   if (args.length < 1) return reply('Escribe el nombre de la cancion')
   if (!isRegister) return reply(mess.only.daftarB)
   
@@ -1823,7 +1823,7 @@ method: 'get'
   }
   break
 
-case 'namae':
+case 'namae1111111111111111':
   if (args.length < 1) return reply('Escribe el nombre')
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1839,7 +1839,7 @@ reply(hasil)
 }
 break
 
-case 'alay':
+case 'alay1111111111111111':
   if (args.length < 1) return reply('Escribe el texto')
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1855,7 +1855,7 @@ reply(data.text)
 break
 
 
-case 'gplaystore':
+case 'gplaystore1111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 
@@ -1877,7 +1877,7 @@ reply(teks.trim())
 }
 
 break
-case 'bijak':
+case 'bijak1111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 
@@ -1890,7 +1890,7 @@ reply(data.result)
 }
 break
 
-case 'pantun':
+case 'pantun1111111111111111':
 
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1904,8 +1904,8 @@ reply(data.result)
 }
 break
 
-case 'bucin':
-case 'gombal':
+case 'bucin1111111111111111':
+case 'gombal1111111111111111':
 
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -1919,7 +1919,7 @@ case 'gombal':
   }
   break
 
-case 'charnime':
+case 'charnime1111111111111111':
   teks = body.slice(10)
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -1938,7 +1938,7 @@ caption: hasil, quoted: mek
   }
   break
 
-case 'textgen':
+case 'textgen1111111111111111':
   teks = body.slice(9)
   if (args.length < 1) return reply('Escribe el texto')
   Lxa.updatePresence(from, Presence.composing)
@@ -1954,7 +1954,7 @@ case 'textgen':
   break
 
 
-case 'kusonime':
+case 'kusonime1111111111111111':
   teks = body.slice(6)
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -1973,7 +1973,7 @@ quoted: mek, caption: hasil
   }
   break
 
-case 'igstalk':
+case 'igstalk1111111111111111':
 yolo = body.slice(9)
 if (!isRegister) return reply(mess.only.daftarB)
 
@@ -2066,7 +2066,7 @@ case 'tonto':
   break*/
 
 //bisakah
-case 'bisakah':
+case 'bisakah111111111':
   if (args.length < 1) return reply('Escribe el nombre')
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -2075,7 +2075,7 @@ case 'bisakah':
   reply(hasil)
   break
 
-case 'rate':
+case 'rate111111111':
   if (args.length < 1) return reply('Escribe el nombre')
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -2084,7 +2084,7 @@ case 'rate':
   reply(hasil)
   break
 
-case 'kapankah':
+case 'kapankah111111111':
   if (args.length < 1) return reply('Escribe el nombre')
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -2094,7 +2094,7 @@ case 'kapankah':
   reply(hasil)
   break
 
-case 'kapan':
+case 'kapan111111111':
   if (args.length < 1) return reply('Escribe el nombre')
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -2104,7 +2104,7 @@ case 'kapan':
   reply(hasil)
   break
 
-case 'setppgc':
+case 'setppgc111111111':
 
 if (!isGroup) return reply(mess.only.group)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -2117,8 +2117,8 @@ await Lxa.updateProfilePicture (from, media)
 reply('Cambio la foto del grupo')
 break
 
-case 'triggered':
-					case 'ger':
+case 'triggered1111111111':
+					case 'ger1111111111':
  if (!isRegister) return reply(mess.only.userB)
             var imgbb = require('imgbb-uploader')
            if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -2144,7 +2144,7 @@ case 'triggered':
                                              break
 
 
-case 'tourl':
+case 'tourl11111111111':
  if (!isRegister) return reply(mess.only.userB)
             var imgbb = require('imgbb-uploader')
            if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -2158,8 +2158,8 @@ reply(teks)
 break
 
 //---stiker wasted
-case 'wasted':
-  case 'was':
+case 'wasted11111111111':
+  case 'was11111111111':
 if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -2186,7 +2186,7 @@ fs.unlinkSync(rano)
 }
 break
 
-case 'drawing':
+case 'drawing11111111111':
 if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -2203,7 +2203,7 @@ if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0)
 break
 
 
-case 'wanted':
+case 'wanted11111111111':
 if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -2219,7 +2219,7 @@ if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0)
 }
 break
 
-case 'gtav':
+case 'gtav11111111111':
 if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -2236,22 +2236,22 @@ if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0)
 break
 
 //--list kodebahasa
-case 'kodebahasa':
+case 'kodebahasa111111111111':
 Lxa.sendMessage(from, bahasa(prefix, sender), text, {
   quoted: mek
 })
 break
 
 //--list kode negara
-case 'kodenegara':
+case 'kodenegara11111111111':
 Lxa.sendMessage(from, negara(prefix, sender), text, {
   quoted: mek
 })
 break
 
 //--link wame
-case 'wa.me':
-case 'wame':
+case 'wa.me11111111111':
+case 'wame11111111111':
   Lxa.updatePresence(from, Presence.composing)
   options = {
 text: `Link WhatsApp: *wa.me/${sender.split("@s.whatsapp.net")[0]}*\n*Or ( / )*\n*api.whatsapp.com/send?phone=${sender.split("@")[0]}*`,
@@ -2265,7 +2265,7 @@ quoted: mek
   break
 
 //---quoted fuck my life
-case 'fml':
+case 'fml1111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   try {
@@ -2280,7 +2280,7 @@ reply(hasil)
 break
 
 //--translate semua bahasa
-  case 'tl':
+  case 'tl1111111111111':
     if (!isRegister) return reply(mess.only.daftarB)
   
 if (args.length < 1) return Lxa.sendMessage(from, 'Introduce el código y el texto', text, {
@@ -2301,7 +2301,7 @@ reply(hasil)
 break
 
 //---membalikan kalimat
-  case 'reverse':
+  case 'reverse1111111111111':
     if (!isRegister) return reply(mess.only.daftarB)
   
 if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el texto', text, {
@@ -2322,7 +2322,7 @@ break
 
 
 //--fake reply
-case 'fitnah':
+case 'fitnah11111111111111':
 if (args.length < 1) return reply(`Uso :\n${prefix}fitnah [@tag|pesan|balasanbot]]\n\nEx : \n${prefix}fitnah @tagmember|hai|hai juga`)
 var gh = body.slice(7)
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -2341,7 +2341,7 @@ remoteJid: from
 break
 
 //--Kejujuran
-case 'truth':
+case 'truth11111111111111':
 const ttrth = trut[Math.floor(Math.random() * trut.length)]
 Lxa.sendMessage(from, `‣ *Verdad*\n${ttrth}`, text, {
   quoted: mek
@@ -2349,7 +2349,7 @@ Lxa.sendMessage(from, `‣ *Verdad*\n${ttrth}`, text, {
 break
 
 //---Tantangan
-  case 'dare':
+  case 'dare11111111111111':
 const der = dare[Math.floor(Math.random() * dare.length)]
 Lxa.sendMessage(from, `‣ *Mentira*\n${der}`, text, {
   quoted: mek
@@ -2382,7 +2382,7 @@ await Lxa.sendMessage(from, options, text)
 break
 
 //--jawaban BRANLy
-  case 'brainly':
+  case 'brainly11111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
   
 if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el nombre', text, {
@@ -2401,7 +2401,7 @@ await limitAdd(mess.ferr)
 break
 
   //pencarian wiki
-  case 'wiki':
+  case 'wiki11111111111111':
     if (!isRegister) return reply(mess.only.daftarB)
 
 if (args.length < 1) return reply('Ingresa lo que quieres buscar')
@@ -2420,7 +2420,7 @@ break
 
 //--Goolge Image
 
-case 'google':
+case 'google11111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
 
   if (args.length < 1) return reply('Ingresa el texto')
@@ -2440,7 +2440,7 @@ caption: '*Google Imagen*\n\n*Resultado de busqueda : '+goo+'*', quoted: mek
   }
   break
 
-case 'alay2':
+case 'alay211111111111111':
   if (!isRegister) return reply(mess.only.userB)
   if (args.length < 1) return reply('Ingresa el texto')
   goo = body.slice(7)
@@ -2460,7 +2460,7 @@ quoted: mek
   break
 
 //---Neonime search
-case 'neonime':
+case 'neonime11111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 Lxa.updatePresence(from, Presence.composing)
@@ -2484,7 +2484,7 @@ if (data.message) return reply(`La información de  *${teks} no se encontro`)
 break
 
 //---Ganti nama grup
-  case 'setname':
+  case 'setname11111111111111':
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -2496,7 +2496,7 @@ Lxa.sendMessage(from, 'Cambio nombre del grupo', text, {
 break
 
 //--ganti desk
-  case 'setdesk':
+  case 'setdesk111111111111':
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -2509,7 +2509,7 @@ break
 
 
 //--random meme
-case 'meme':
+case 'meme111111111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
 
@@ -2527,7 +2527,7 @@ quoted: mek
   break
 
 //--tagme
-case 'tagme':
+case 'tagme111111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 const tagme = {
   text: `@${sender.split("@")[0]} Hola`,
@@ -2538,7 +2538,7 @@ mentionedJid: [sender]
 Lxa.sendMessage(from, tagme, text)
 break
 
-case 'kbbi':
+case 'kbbi111111111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (args.length < 1) return reply(`Escribe el texto\nEjemplo : ${prefix}kbbi manusia`)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -2556,7 +2556,7 @@ case 'kbbi':
   break
 
 
-  case 'chatprank':
+  case 'chatprank111111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 
@@ -2571,7 +2571,7 @@ Lxa.sendMessage(from, hasil, text, {
 break
 
 //--searching chord
-case 'chord':
+case 'chord111111111111111111':
   if (args.length < 1) return reply('Ingresa lo que quieres buscar')
   if (!isRegister) return reply(mess.only.daftarB)
   
@@ -2589,7 +2589,7 @@ method: 'get'
   break
 
 //--jadwaltv now
-case 'jadwaltvnow':
+case 'jadwaltvnow111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
     
   Lxa.updatePresence(from, Presence.composing)
@@ -2606,7 +2606,7 @@ method: 'get'
   break
 
 //--jadwaltv ch
-case 'jadwaltv':
+case 'jadwaltv111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   ch = body.slice(10)
@@ -2627,7 +2627,7 @@ method: 'get'
   break
 
 //--mini map
-case 'map':
+case 'map111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Ingresa el nombre del área')
@@ -2646,7 +2646,7 @@ quoted: mek, caption: `Resultado *${daerah}*`
   break
 
 //--pencarian surah Al-Qur'an
-case 'alquran':
+case 'alquran111111111111111111111111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
   
@@ -2674,7 +2674,7 @@ teks += `*(${i.number})* ${i.text}\n*(${i.number})* ${i.translation_id}\n••�
   break
 
 //--Cerpen
-case 'cerpen':
+case 'cerpen111111111111111111111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 Lxa.updatePresence(from, Presence.composing)
 
@@ -2689,8 +2689,8 @@ reply(hasil)
 break
 
 //---kontak pemilik bot
-case 'owner':
-  case 'creator':
+case 'owner111111111111111111111111111111111':
+  case 'creator111111111111111111111111111111111':
 Lxa.sendMessage(from, {
   displayname: "Jeff", vcard: vcard
 }, MessageType.contact, {
@@ -2700,7 +2700,7 @@ break
 
 
 //---Random ayat Alquran
-case 'ngaji':
+case 'ngaji111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   try {
@@ -2718,7 +2718,7 @@ quoted: mek
   break
 
 //--tafsir Alquran
-case 'tafsir':
+case 'tafsir111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Ingresa lo que quieres buscar')
@@ -2735,7 +2735,7 @@ case 'tafsir':
   break
 
 //---Jadwal solat
-case 'sholat':
+case 'sholat111111111111111111111111111111111':
   loc = body.slice(7)
   if (!isRegister) return reply(mess.only.daftarB)
   
@@ -2755,7 +2755,7 @@ quoted: mek
   break
 
 //--info cuaca
-case 'cuaca':
+case 'cuaca111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Ingrese el nombre del área')
@@ -2776,7 +2776,7 @@ quoted: mek
 
 //--info gempa
 //informasi gempa terkini
-case 'infogempa':
+case 'infogempa111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   Lxa.updatePresence(from, Presence.composing)
@@ -2840,7 +2840,7 @@ await reply(`〘  *TRANSFER*  〙
   
   break
 */
-case 'itsme':
+case 'itsme111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   try {
 ppimg = await Lxa.getProfilePicture(`${sender.split('@')[0]}@c.us`)
@@ -2857,7 +2857,7 @@ quoted: mek, caption: teks
   
   break
 
-case 'play':
+case 'play111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Escribe el nombre')
@@ -2883,7 +2883,7 @@ mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek
   break
 
 
-case 'ytmp3':
+case 'ytmp3111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   reply(mess.wait)
@@ -2906,7 +2906,7 @@ mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek
   }
   break
 
-case 'ytmp4':
+case 'ytmp4111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   reply(mess.wait)
@@ -2932,7 +2932,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 
 
 //---Youtube search
-				case 'ytsearch':
+				case 'ytsearch111111111111111111111111111111111':
 					if (args.length < 1) return reply('Ingresa lo que quieres buscar')
 					try {
 					anu = await fetchJson(`https://mhankbarbar.tech/api/ytsearch?q=${body.slice(10)}&apiKey=${BarBarKey}`, {method: 'get'})
@@ -2949,7 +2949,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 					break
 
 //--download pinterest
-case 'pin':
+case 'pin111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
     if(!isUrl(args[0]) && !args[0].includes('pin')) return reply('Formato de link incorrecto')
@@ -2969,7 +2969,7 @@ mimetype: 'video/mp4', filename: `${anu.result}.mp4`, quoted: mek
   }
   break
 
-case 'fb':
+case 'fb111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   reply(mess.wait)
@@ -2989,7 +2989,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
   }
   break
 
-case 'ig':
+case 'ig111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   reply(mess.wait)
@@ -3009,7 +3009,7 @@ mimetype: 'video/mp4', filename: `Imlexa.mp4`, quoted: mek
 
 
 //joox download
-case 'joox':
+case 'joox111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Ingresa el nombre de la canción')
@@ -3033,7 +3033,7 @@ mimetype: 'audio/mp4', filename: `${data.result.title}.mp3`, quoted: mek
   }
   break
 
-case 'scdl':
+case 'scdl1111111111111111':
     if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Manda el enlace de soundcloud')
@@ -3052,7 +3052,7 @@ mimetype: 'audio/mp4', filename: `${data.title}.mp3`, quoted: mek
   }
   break
 
-case 'tik':
+case 'tik1111111111111111':
   if (args.length < 1) return reply('Ingresa el enlace')
   if (!isRegister) return reply(mess.only.daftarB)
   
@@ -3092,7 +3092,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 */
 
 //--block user
-				case 'blocklist':
+				case 'blocklist1111111111111111':
 					teks = 'Lista de bloqueados por el bot :\n'
 					for (let block of blocked) {
 						teks += `~> @${block.split('@')[0]}\n`
@@ -3102,7 +3102,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 					break
 
 //--read text on image
-				case 'ocr':
+				case 'ocr1111111111111111':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await Lxa.downloadAndSaveMediaMessage(encmedia)
@@ -3122,7 +3122,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 					break
 
 //---textpro
-				case 'textpro':
+				case 'textpro1111111111111111':
 					if (args.length < 1) {
 						return reply('Elije un número del, 1 - 162')
 					} else if (args[0].toLowerCase() === 'list') {
@@ -3145,7 +3145,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 					break
 
 //ephoto
-				case 'ephoto':
+				case 'ephoto1111111111111111':
 					if (args.length < 1) {
 						return reply('Elije un número del, 1 - 216')
 					} else if (args[0].toLowerCase() === 'list') {
@@ -3169,7 +3169,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 					break
 
 //--harta tahta
-				case 'tahta':
+				case 'tahta1111111111111111':
 					if (args.length < 1) return reply('Escribe un texto')
 					anu = `https://mhankbarbar.tech/api/htahta?text=${args.join(' ')}&apiKey=${BarBarKey}`
 					voss = await fetc(anu)
@@ -3298,7 +3298,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 					break
 
 //-- temp
-			case 'gets':
+			case 'gets1111111111111111':
 			  
 				var itsme = `0@s.whatsapp.net`
 				var split = `${cr}`
@@ -3322,7 +3322,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				break
 			
 			
-			  case 'getstik':
+			  case 'getstik1111111111111111':
 				var itsme = `0@s.whatsapp.net`
 				var split = `${cr}`
 				var selepbot = {
@@ -3346,7 +3346,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 			
 			
 			
-			case 'liststik':
+			case 'liststik111111111111111':
 				teks = '*Lista de stickers :*\n\n'
 				for (let awokwkwk of setiker) {
 					teks += `- ${awokwkwk}\n`
@@ -3355,7 +3355,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": setiker } })
 				break
 			
-			case 'totaluser':
+			case 'totaluser111111111111111':
 				teks = '*Total usuarios :*\n\n'
 				for (let i of _registered) {
 					teks += `[${id.toString()}]\`\`\` @${i.split('@')[0]}`
@@ -3364,7 +3364,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": _registered} })
 				break
 
-			case 'addstik':
+			case 'addstik111111111111111':
 				if (!isQuotedSticker) return reply('Respon un sticker')
 				if (!isOwner) return reply(mess.only.ownerB)
 				svst = body.slice(9)
@@ -3377,7 +3377,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, `Sticker añadido con exito\ncompruebalo con ${prefix}liststik`, MessageType.text, { quoted: mek })
 				break
 
-			case 'addvn':
+			case 'addvn111111111111111':
 				if (!isQuotedAudio) return reply('Responde un audio')
 				if (!isOwner) return reply(mess.only.ownerB)
 				svst = body.slice(7)
@@ -3390,7 +3390,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, `Audio añadido con exito\ncompruebalo con ${prefix}listvn`, MessageType.text, { quoted: mek })
 				break
 
-			case 'getvn':
+			case 'getvn111111111111111':
 				namastc = body.slice(7)
 				try {
 				buffer = fs.readFileSync(`./temp/audio/${namastc}.mp3`)
@@ -3400,8 +3400,8 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				}
 				break
 
-			case 'listvn':
-			case 'vnlist':
+			case 'listvn111111111111111':
+			case 'vnlist111111111111111':
 				teks = '*Lista Vn:*\n\n'
 				for (let awokwkwk of audionye) {
 					teks += `- ${awokwkwk}\n`
@@ -3410,7 +3410,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": audionye } })
 				break
 
-			case 'addimg':
+			case 'addimg111111111111111':
 				if (!isQuotedImage) return reply('Responde una imagen')
 				if (!isOwner) return reply(mess.only.ownerB)
 				svst = body.slice(8)
@@ -3423,7 +3423,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, `Video añadido\ncompruebalo con${prefix}listimage`, MessageType.text, { quoted: mek })
 				break
 
-			case 'getimg':
+			case 'getimg111111111111111':
 				namastc = body.slice(8)
 				try {
 				buffer = fs.readFileSync(`./temp/foto/${namastc}.jpeg`)
@@ -3433,7 +3433,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				}
 				break
 				
-			case 'listimg':
+			case 'listimg111111111111111':
 				teks = '*List Image :*\n\n'
 				for (let awokwkwk of imagenye) {
 					teks += `- ${awokwkwk}\n`
@@ -3442,7 +3442,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": imagenye } })
 				break
 
-			case 'addvid':
+			case 'addvid111111111111111':
 			  if (!isOwner) return reply(mess.only.ownerB)
 				if (!isQuotedVideo) return reply('Responde un video')
 				svst = body.slice(8)
@@ -3455,7 +3455,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, `Video añadido con exito\ncompruebalo con ${prefix}listvid`, MessageType.text, { quoted: mek })
 				break
 
-			case 'getvid':
+			case 'getvid111111111111111':
 				namastc = body.slice(8)
 				try {
 				buffer = fs.readFileSync(`./temp/video/${namastc}.mp4`)
@@ -3465,7 +3465,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				}
 				break
 
-			case 'listvid':
+			case 'listvid111111111111111':
 				teks = '*Lista de videos :*\n\n'
 				for (let awokwkwk of videonye) {
 					teks += `- ${awokwkwk}\n`
@@ -3476,7 +3476,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 
 
 //----caklontong
-  case 'caklontong':
+  case 'caklontong111111111111111':
 
 anu = await fetchJson(`https://api.vhtear.com/funkuis&apikey=${vKey}`,
   {
@@ -3509,7 +3509,7 @@ quoted: mek
 break
 
 //--stiker to video
-  case 'tovid':
+  case 'tovid111111111111111':
 Lxa.updatePresence(from,
   Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -3530,7 +3530,7 @@ quoted: mek, caption: 'Mr.Pato'
 break
 
 //--mp4 to mp3
-  case 'tomp3':
+  case 'tomp3111111111111111':
 Lxa.updatePresence(from,
   Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -3551,7 +3551,7 @@ mimetype: 'audio/mp4', quoted: mek
 break
 
 //---random fakta
-case 'fakta':
+case 'fakta111111111111111':
 fakta = body.slice(1)
 if (!isRegister) return reply(mess.only.daftarB)
 if (isLimit(sender)) return reply(ind.limitend(pushname))
@@ -3562,7 +3562,7 @@ Lxa.sendMessage(from, 'Fakta : '+ keh, text, {
 break
 
 //--Tebak gambar
-  case 'tebakgambar':
+  case 'tebakgambar111111111111111':
 
 anu = await fetchJson(`https://api.vhtear.com/tebakgambar&apikey=${vKey}`, {
   method: 'get'
@@ -3619,7 +3619,7 @@ break
 					break
 
 
-case 'block':
+case 'block111111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (!isGroup) return reply(mess.only.group)
   if (!isOwner) return reply(mess.only.ownerB)
@@ -3630,7 +3630,7 @@ quoted: mek
   break
 
 //membuka blokir
-case 'unblock':
+case 'unblock111111111111111':
   if (!isGroup) return reply(mess.only.group)
   if (!isOwner) return reply(mess.only.ownerB)
   Lxa.blockUser (`${body.slice(9)}@c.us`, "remove")
@@ -3639,7 +3639,7 @@ case 'unblock':
 
 
 //--Hilih maker
-				case 'hilih':
+				case 'hilih111111111111111':
 					if (args.length < 1) return reply('Introduce el texto')
 					try {
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
@@ -3649,7 +3649,7 @@ case 'unblock':
 					}
 					break
 
-				case 'tiktokstalk':
+				case 'tiktokstalk111111111111111':
 					try {
 						if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el nombre de usuario', text, {quoted: mek})
 						let { user, stats } = await tiktod.getUserProfileInfo(args[0])
@@ -3663,7 +3663,7 @@ case 'unblock':
 					}
 					break
 				case 'nulis':
-				case 'tulis':
+				case 'tulis111111111111111':
 					if (args.length < 1) return reply('Escribe el texto')
 					teks = body.slice(7)
 					reply(mess.wait)
@@ -3672,7 +3672,7 @@ case 'unblock':
 					buff = await getBuffer(anu.result)
 					Lxa.sendMessage(from, buff, image, {quoted: mek, caption: mess.success})
 					break
-				case 'url2img':
+				case 'url2img1111111111111111':
 					tipelist = ['desktop','tablet','mobile']
 					if (args.length < 1) return reply('Escribe bien el comando')
 					if (!tipelist.includes(args[0])) return reply('Escribe desktop|tablet|mobile')
@@ -3687,7 +3687,7 @@ case 'unblock':
 
 
 
-				case 'ttp':
+				case 'ttp1111111111111111':
 				if (!isRegister) return reply(mess.only.daftarB)
 					if (args.length < 1) return reply('Escribe el texto')
 					ranp = getRandom('.png')
@@ -3708,7 +3708,7 @@ case 'unblock':
 					break
 
 //---Tagall member
-				case 'tagall':
+				case 'tagall1111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isGroup) return reply(mess.only.group)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -3725,7 +3725,7 @@ break
 
 
 //clear all chat
-				case 'clearall':
+				case 'clearall1111111111111111':
 					if (!isOwner) return reply('Estas seguro?')
 					anu = await Lxa.chats.all()
 					Lxa.setMaxListeners(25)
@@ -3734,7 +3734,7 @@ break
 					}
 					reply('Se borraron todos los mensajes :)')
 					break
-				case 'bc':
+				case 'bc11111111111111':
 					if (!isOwner) return reply('Okay')
 					if (args.length < 1) return reply('.......')
 					anu = await Lxa.chats.all()
@@ -3754,24 +3754,24 @@ break
 					break
 
 //--menaikan jabatan
-      case 'promote':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
-					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-					if (mentioned.length > 1) {
-						teks = 'Con exito \n'
-						for (let _ of mentioned) {
-							teks += `@${_.split('@')[0]}\n`
-						}
-						mentions(from, mentioned, true)
-						Lxa.groupRemove(from, mentioned)
-					} else {
-						mentions(`Ahora @${mentioned[0].split('@')[0]} es admin del grupo!`, mentioned, true)
-						Lxa.groupMakeAdmin(from, mentioned)
-					}
-					break
+      case 'admin':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+          if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+          if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+          if (mentioned.length > 1) {
+            /*teks = 'Con exito \n'
+            for (let _ of mentioned) {
+              teks += `@${_.split('@')[0]}\n`
+            }*/
+            mentions(from, mentioned, true)
+            Lxa.groupRemove(from, mentioned)  //@${mentioned[0].split('@')[0]}
+          } else {
+            mentions(`❤️😳 *¡𝗡𝗨𝗘𝗩𝗢 𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗗𝗢𝗥 𝗘𝗡 𝗘𝗟 𝗚𝗥𝗨𝗣𝗢!* 😳❤️\n\n@${mentioned[0].split('@')[0]}, *¡𝑳𝒐𝒔 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒅𝒆 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐, 𝒉𝒆𝒎𝒐𝒔 𝒅𝒆𝒄𝒊𝒅𝒊𝒅𝒐 𝒄𝒐𝒏𝒄𝒆𝒅𝒆𝒓𝒕𝒆 𝒆𝒍 𝒑𝒓𝒊𝒗𝒊𝒍𝒆𝒈𝒊𝒐 𝒅𝒆 𝒔𝒆𝒓 𝒖𝒏 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒎𝒂𝒔 𝒅𝒆 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑬𝒔𝒑𝒆𝒓𝒆𝒎𝒐𝒔 𝒒𝒖𝒆 𝒏𝒐 𝒉𝒂𝒚𝒂 𝒑𝒓𝒐𝒃𝒍𝒆𝒎𝒂𝒔 𝒏𝒊 𝒖𝒏 𝒎𝒂𝒍 𝒖𝒔𝒐 𝒅𝒆𝒍 𝒓𝒂𝒏𝒅𝒐 𝒅𝒆 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒑𝒐𝒓 𝒕𝒖 𝒑𝒂𝒓𝒕𝒆!*\n\n@${mentioned[0].split('@')[0]}\n❤️😍 *¡𝗘𝗡𝗛𝗢𝗥𝗔𝗕𝗨𝗘𝗡𝗔 𝗣𝗢𝗥 𝗘𝗟 𝗔𝗦𝗖𝗘𝗡𝗦𝗢!* 😍❤️`, mentioned, true)
+            Lxa.groupMakeAdmin(from, mentioned)
+          }
+          break
 
   //ganti nama grup
   case 'setname':
@@ -3797,27 +3797,27 @@ Lxa.sendMessage(from, 'Cambiar descripción del grupo', text, {
 break
 
 //--menurunkan jabatan
-				case 'demote':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
-					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-					if (mentioned.length > 1) {
-						teks = 'Admin quitado con exito\n'
-						for (let _ of mentioned) {
-							teks += `@${_.split('@')[0]}\n`
-						}
-						mentions(teks, mentioned, true)
-						Lxa.groupRemove(from, mentioned)
-					} else {
-						mentions(`Un admi menos @${mentioned[0].split('@')[0]} por gei!`, mentioned, true)
-						Lxa.groupDemoteAdmin(from, mentioned)
-					}
-					break
+        case 'miembro':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+          if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+          if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+          if (mentioned.length > 1) {
+            /*teks = 'Admin quitado con exito\n'
+            for (let _ of mentioned) {
+              teks += `@${_.split('@')[0]}\n`
+            }*/
+            mentions(teks, mentioned, true)
+            Lxa.groupRemove(from, mentioned)
+          } else {
+            mentions(`💔😔 *¡𝗨𝗡 𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗗𝗢𝗥 𝗠𝗘𝗡𝗢𝗦!* 😔💔\n\n@${mentioned[0].split('@')[0]}, *¡𝑯𝒆𝒎𝒐𝒔 𝒅𝒆𝒄𝒊𝒅𝒊𝒅𝒐 𝒒𝒖𝒆 𝒆𝒔 𝒎𝒖𝒄𝒉𝒐 𝒎𝒆𝒋𝒐𝒓 𝒕𝒂𝒏𝒕𝒐 𝒑𝒂𝒓𝒂 𝒏𝒐𝒔𝒐𝒕𝒓𝒐𝒔 𝒄𝒐𝒎𝒐 𝒑𝒂𝒓𝒂 𝒕𝒐𝒅𝒐𝒔 𝒍𝒐𝒔 𝒊𝒏𝒕𝒆𝒈𝒓𝒂𝒏𝒕𝒆𝒔 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐, 𝒒𝒖𝒊𝒕𝒂𝒓𝒕𝒆 𝒆𝒍 𝒓𝒂𝒏𝒈𝒐 𝒅𝒆 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒆𝒏 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑺𝒊 𝒒𝒖𝒊𝒆𝒓𝒆𝒔 𝒂𝒍𝒈𝒖𝒏𝒂 𝒆𝒙𝒑𝒍𝒊𝒄𝒂𝒄𝒊𝒐𝒏 𝒑𝒐𝒓 𝒆𝒍 𝒒𝒖𝒆 𝒔𝒆 𝒕𝒆 𝒉𝒂 𝒅𝒆𝒈𝒓𝒂𝒅𝒂𝒅𝒐 𝒑𝒖𝒆𝒅𝒆𝒔 𝒑𝒆𝒅𝒊𝒓𝒔𝒆𝒍𝒂 𝒂𝒍 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒒𝒖𝒆 𝒕𝒆 𝒉𝒂 𝒅𝒆𝒈𝒓𝒂𝒅𝒂𝒅𝒐!*\n\n@${mentioned[0].split('@')[0]}\n💔😢 *¡𝗟𝗢 𝗦𝗘𝗡𝗧𝗜𝗠𝗢𝗦 𝗠𝗨𝗖𝗛𝗜𝗦𝗜𝗠𝗢!* 😢💔`, mentioned, true)
+            Lxa.groupDemoteAdmin(from, mentioned)
+          }
+          break
 
 //--menambah member
-				case 'add':
+				case 'add11111111111111111':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3833,7 +3833,7 @@ break
 					break
 
 //--mengeluarkan member
-				case 'kick':
+				case 'kick11111111111111111':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3853,9 +3853,9 @@ break
 					break
 
 //--list admin grup
-				case 'listadmins':
-				  case 'listadmin':
-				    case 'adminlist':
+				case 'listadmins11111111111111111':
+				  case 'listadmin11111111111111111':
+				    case 'adminlist11111111111111111':
 					if (!isGroup) return reply(mess.only.group)
 					teks = `Lista admin de admins facheros *${groupMetadata.subject}*\nTotal : ${groupAdmins.length}\n\n`
 					no = 0
@@ -3867,7 +3867,7 @@ break
 					break
 
 //--ganti pp bot
-case 'setppbot':
+case 'setppbot11111111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (!isOwner) return reply(mess.only.ownerB)
   const botpp = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contxtInfo: mek
@@ -3896,8 +3896,8 @@ reply(ind.satukos())
   break
 */
 //--Mengambil link grup
-    case 'linkgroup':
-    case 'linkgc':
+    case 'linkgroup11111111111111111':
+    case 'linkgc11111111111111111':
         if (!isGroup) return reply(mess.only.group)
         if (!isGroupAdmins) return reply(mess.only.admin)
         if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3906,7 +3906,7 @@ reply(ind.satukos())
                     break
 
 //--Mengeluarkan bot
-      case 'leave':
+      case 'leave11111111111111111':
       if (!isGroup) return reply(mess.only.group)
       if (isGroupAdmins || isOwner) {
       Lxa.groupLeave(from)
@@ -3916,7 +3916,7 @@ reply(ind.satukos())
                     break
 
 //--Convert stiker to image
-				case 'toimg':
+				case 'toimg11111111111111111':
 					if (!isQuotedSticker) return reply('Responde sticker')
 					if (!isRegister) return reply(mess.only.daftarB)
 					reply(mess.wait)
@@ -3934,7 +3934,7 @@ reply(ind.satukos())
 
 
 //--arti mimpi
-  case 'artimimpi':
+  case 'artimimpi11111111111111111':
 aruga = body.slice(11)
 if (!isRegister) return reply(mess.only.daftarB)
 if (args.length < 1) return reply(`Que sueño es ?\nEjemplo: ${prefix}artimimpi`)
@@ -3950,7 +3950,7 @@ reply(anu.result.artimimpi)
 break
 
 //--Simsimi talk
-				case 'simi':
+				case 'simi11111111111111111':
 					if (args.length < 1) return reply(`Hola ${pushname}`)
 					teks = body.slice(6)
 					try { 
@@ -3962,7 +3962,7 @@ break
 					}
 					break
 
-case 'bot':
+case 'bot11111111111111111':
 					if (args.length < 1) return reply(`Bot ${pushname}`)
 					teks = body.slice(5)
 					try { 
@@ -3975,9 +3975,9 @@ case 'bot':
 					break
 
 //--Verifkasi
-case 'verify':
-case 'daftar':
-  case 'register':
+case 'verify1111111111111':
+case 'daftar1111111111111':
+  case 'register1111111111111':
 if (isRegister) return reply('Tu cuenta ya estaba verificada')
 const namaUser = `${pushname}`
 const umurUser = `${sender}`
@@ -4009,7 +4009,7 @@ reply(tm)
 break
 
 //--grup semua peserta
-case 'closegc':
+case 'closegc111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (!isGroup) return reply(mess.only.group)
   if (!isGroupAdmins) return reply(mess.only.admin)
@@ -4026,8 +4026,8 @@ contextInfo: {
   break
 
 //--grup hanya admin
-case 'opengc':
-  case 'bukagc':
+case 'opengc111111111111':
+  case 'bukagc111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
@@ -4045,8 +4045,8 @@ Lxa.sendMessage(from, open, text, {
 break
 
 //---mengahapus pesan bot
-case 'delete':
-  case 'del':
+case 'delete111111111111111':
+  case 'del111111111111111':
 if (!isGroup)return reply(mess.only.group)
 if (!isRegister) return reply(mess.only.daftarB)
 if (!isGroupAdmins)return reply(mess.only.admin)
@@ -4060,7 +4060,7 @@ Lxa.deleteMessage(from, {
 break
 
 //--ganteng cekkkk
-  case 'gantengcek':
+  case 'gantengcek111111111111111':
 if (args.length < 1) return reply('Ingresa el nombre')
 ganteng = body.slice(12)
 const gan = ['10',
@@ -4088,7 +4088,7 @@ Lxa.sendMessage(from, 'Gantengcek : *'+ganteng+'*\n\nPorcentaje : '+ teng+'%', t
 break
 
 //--Cantik cekk
-  case 'cantikcek':
+  case 'cantikcek111111111111111':
 if (args.length < 1) return reply('Escribe el nombre')
 cantik = body.slice(12)
 const can = ['10',
@@ -4117,7 +4117,7 @@ break
 
 
 
-				case 'welcome':
+				case 'welcome111111111111111':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
@@ -4134,7 +4134,7 @@ break
 						reply('1 para activar, 0 desactivar')
 					}
                                       break
-				case 'clone':
+				case 'clone111111111111111':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 					if (args.length < 1) return reply('Tag target')
@@ -4150,7 +4150,7 @@ break
 						reply('Error')
 					}
 					break
-				case 'wait':
+				case 'wait111111111111111':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(mess.wait)
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
