@@ -341,7 +341,6 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
 			const isSimi = isGroup ? samih.includes(from): false
       const isRegister = checkRegisteredUser(sender)
-      const isPutas = checkPutasUser(sender)
       const q = args.join(' ')
       const tescuk = ["0@s.whatsapp.net"]
 			let pushname = Lxa.contacts[sender] != undefined ? Lxa.contacts[sender].vname || Lxa.contacts[sender].notify: undefined
