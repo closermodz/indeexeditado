@@ -512,9 +512,111 @@ console.error(err)
 
 
 //--Other Function
+        const callate = ['¡𝑪𝒐𝒎𝒐 𝒏𝒐 𝒕𝒆 𝒄𝒂𝒍𝒍𝒆𝒔 𝒅𝒆 𝒖𝒏𝒂 𝒎𝒂𝒍𝒅𝒊𝒕𝒂 𝒗𝒆𝒛, 𝒕𝒆 𝒗𝒂𝒎𝒐𝒔 𝒂 𝒎𝒆𝒕𝒆𝒓 𝒅𝒆 𝒑𝒐𝒍𝒍𝒂𝒛𝒐𝒔 𝒆𝒏 𝒆𝒔𝒂 𝒂𝒔𝒒𝒖𝒆𝒓𝒐𝒔𝒂 𝒃𝒐𝒄𝒂 𝒅𝒆 𝒑𝒖𝒕𝒂 𝒒𝒖𝒆 𝒕𝒊𝒆𝒏𝒆𝒔 𝒉𝒂𝒔𝒕𝒂 𝒒𝒖𝒆 𝒏𝒐 𝒑𝒖𝒆𝒅𝒂𝒔 𝒔𝒆𝒏𝒕𝒊𝒓 𝒏𝒊 𝒍𝒐𝒔 𝒅𝒊𝒆𝒏𝒕𝒆𝒔. 𝑴𝒆𝒋𝒐𝒓 𝒒𝒖𝒆 𝒕𝒆 𝒄𝒂𝒍𝒍𝒆𝒔 𝒚𝒂 𝒅𝒆 𝒖𝒏𝒂 𝒑𝒖𝒕𝒂 𝒗𝒆𝒛 𝒐 𝒚𝒂 𝒔𝒂𝒃𝒆𝒔 𝒍𝒐 𝒒𝒖𝒆 𝒑𝒂𝒔𝒂𝒓𝒂́ 𝒑𝒆𝒓𝒅𝒂𝒛𝒐 𝒅𝒆 𝒑𝒖𝒕𝒂!',
+            '¡𝑪𝒐𝒎𝒐 𝒏𝒐 𝒕𝒆 𝒄𝒂𝒍𝒍𝒆𝒔 𝒅𝒆 𝒖𝒏𝒂 𝒑𝒖𝒕𝒂 𝒗𝒆𝒛, 𝒕𝒆 𝒗𝒂𝒎𝒐𝒔 𝒂 𝒎𝒆𝒕𝒆𝒓 𝒕𝒂𝒏𝒕𝒂𝒔 𝒐𝒔𝒕𝒊𝒂𝒔 𝒆𝒏 𝒍𝒂 𝒃𝒐𝒄𝒂 𝒒𝒖𝒆 𝒔𝒆 𝒑𝒐𝒅𝒓𝒂́ 𝒋𝒖𝒈𝒂𝒓 𝒂𝒍 𝒗𝒐𝒍𝒆𝒊𝒃𝒐𝒍 𝒅𝒆𝒏𝒕𝒓𝒐 𝒅𝒆 𝒕𝒖 𝒃𝒐𝒄𝒂 𝒄𝒐𝒏 𝒕𝒐𝒅𝒐𝒔 𝒕𝒖𝒔 𝒂𝒔𝒒𝒖𝒆𝒓𝒐𝒔𝒐𝒔 𝒅𝒊𝒆𝒏𝒕𝒆𝒔 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒒𝒖𝒆 𝒕𝒊𝒆𝒏𝒆𝒔. 𝑺𝒊 𝒒𝒖𝒊𝒆𝒓𝒆𝒔 𝒄𝒐𝒏𝒔𝒆𝒓𝒗𝒂𝒓 𝒕𝒐𝒅𝒐𝒔 𝒕𝒖𝒔 𝒅𝒊𝒆𝒏𝒕𝒆𝒄𝒊𝒕𝒐𝒔, 𝒎𝒆𝒋𝒐𝒓 𝒄𝒂𝒍𝒍𝒂𝒕𝒆 𝒚𝒂 𝒑𝒆𝒅𝒂𝒛𝒐 𝒅𝒆 𝒑𝒖𝒕@.!']
         const sexo = ['𝙖 𝟰 𝙥𝙖𝙩𝙖𝙨 𝙢𝙞𝙚𝙣𝙩𝙧𝙖𝙨 𝙩𝙚 𝙜𝙚𝙢𝙞𝙖 𝙘𝙤𝙢𝙤 𝙪𝙣𝙖 𝙢𝙖𝙡𝙙𝙞𝙩𝙖 𝙥𝙚𝙧𝙧𝙖 "𝐀𝐚𝐚𝐡.., 𝐀𝐚𝐚𝐡𝐡, 𝐬𝐢𝐠𝐮𝐞, 𝐧𝐨 𝐩𝐚𝐫𝐞𝐬, 𝐧𝐨 𝐩𝐚𝐫𝐞𝐬.." 𝙮 𝙡𝙖 𝙝𝙖𝙨 𝙙𝙚𝙟𝙖𝙙𝙤 𝙩𝙖𝙣 𝙧𝙚𝙫𝙚𝙣𝙩𝙖𝙙𝙖 𝙦𝙪𝙚 𝙣𝙤 𝙥𝙪𝙚𝙙𝙚 𝙨𝙤𝙨𝙩𝙚𝙣𝙚𝙧 𝙣𝙞 𝙨𝙪 𝙥𝙧𝙤𝙥𝙞𝙤 𝙘𝙪𝙚𝙧𝙥𝙤 𝙡𝙖 𝙢𝙖𝙡𝙙𝙞𝙩𝙖 𝙯𝙤𝙧𝙧𝙖!',
             '𝙖 𝟰 𝙢𝙞𝙚𝙣𝙩𝙧𝙖𝙨 𝙩𝙚 𝙖𝙜𝙖𝙧𝙧𝙖𝙗𝙖 𝙙𝙚𝙡 𝙥𝙚𝙡𝙤 𝙮 𝙡𝙚 𝙜𝙧𝙞𝙩𝙖𝙗𝙖𝙨 𝙘𝙤𝙢𝙤 𝙪𝙣𝙖 𝙜𝙪𝙖𝙧𝙧𝙖 "𝐒𝐨𝐲 𝐭𝐮 𝐩𝐞𝐫𝐫𝐚 𝐀𝐚𝐚𝐡.., 𝐀𝐚𝐚𝐡𝐡, ¡𝐇𝐚𝐳𝐦𝐞 𝐓𝐮𝐲𝐚!" 𝙮 𝙙𝙚 𝙡𝙖 𝙛𝙤𝙡𝙡𝙖𝙙𝙖 𝙦𝙪𝙚 𝙩𝙚 𝙝𝙖 𝙙𝙖𝙙𝙤, 𝙩𝙚 𝙙𝙚𝙟𝙤 𝙩𝙚𝙢𝙗𝙡𝙖𝙣𝙙𝙤 𝙙𝙚 𝙡𝙖 𝙩𝙧𝙚𝙢𝙚𝙣𝙙𝙖 𝙛𝙤𝙡𝙡𝙖𝙙𝙖 + 𝙘𝙤𝙧𝙧𝙞𝙙𝙖 𝙙𝙚𝙣𝙩𝙧𝙤 𝙦𝙪𝙚 𝙩𝙚 𝙝𝙖 𝙙𝙖𝙙𝙤 𝙥𝙤𝙧 𝙨𝙚𝙧 𝙪𝙣𝙖 𝙯𝙤𝙧𝙧𝙖 𝙢𝙪𝙡𝙩𝙞𝙤𝙧𝙜𝙖𝙨𝙢𝙞𝙘𝙖!',
             '𝙖 𝟰 𝙢𝙞𝙚𝙣𝙩𝙧𝙖𝙨 𝙩𝙚 𝙚𝙢𝙥𝙤𝙩𝙧𝙖𝙗𝙖 𝙙𝙪𝙧𝙤 𝙚𝙨𝙩𝙖𝙣𝙙𝙤 𝙖𝙩𝙖𝙙𝙖 𝙖 𝙡𝙖 𝙘𝙖𝙢𝙖 𝙮 𝙩𝙚 𝙛𝙤𝙡𝙡𝙖𝙗𝙖 𝙨𝙖𝙡𝙫𝙖𝙟𝙚𝙢𝙚𝙣𝙩𝙚 𝙢𝙞𝙚𝙣𝙩𝙧𝙖𝙨 𝙨𝙤𝙡𝙤 𝙨𝙖𝙗𝙞𝙖𝙨 𝙜𝙧𝙞𝙩𝙖𝙧𝙡𝙚 "𝐃𝐚𝐥𝐞 𝐏𝐚𝐩𝐢, 𝐍𝐨 𝐩𝐚𝐫𝐞𝐬..., ¡𝐐𝐔𝐄 𝐑𝐈𝐂𝐎! 𝐔𝐦𝐦𝐡.." 𝙮 𝙙𝙚 𝙡𝙖 𝙛𝙤𝙡𝙡𝙖𝙙𝙖 𝙨𝙖𝙡𝙫𝙖𝙟𝙚, 𝙩𝙚𝙧𝙢𝙞𝙣𝙤 𝙘𝙤𝙧𝙧𝙞𝙚𝙣𝙙𝙤𝙨𝙚 𝙚𝙣 𝙩𝙪 𝙗𝙤𝙦𝙪𝙞𝙩𝙖 𝙙𝙚 𝙥𝙪𝙩𝙖!']
+        const amor = ['𝟏𝟎𝟎%',
+            '99%',
+            '98%',
+            '97%',
+            '96%',
+            '95%',
+            '94%',
+            '93%',
+            '92%',
+            '91%',
+            '90%',
+            '89%',
+            '88%',
+            '87%',
+            '86%',
+            '85%',
+            '84%',
+            '83%',
+            '82%',
+            '81%',
+            '80%',
+            '79%',
+            '78%',
+            '77%',
+            '76%',
+            '75%',
+            '74%',
+            '73%',
+            '72%',
+            '71%',
+            '70%',
+            '69%',
+            '68%',
+            '67%',
+            '66%',
+            '64%',
+            '63%',
+            '62%',
+            '61%',
+            '60%',
+            '59%',
+            '58%',
+            '57%',
+            '56%',
+            '55%',
+            '54%',
+            '53%',
+            '52%',
+            '51%',
+            '50%',
+            '49%',
+            '48%',
+            '47%',
+            '46%',
+            '45%',
+            '44%',
+            '43%',
+            '42%',
+            '41%',
+            '40%',
+            '39%',
+            '38%',
+            '37%',
+            '36%',
+            '35%',
+            '34%',
+            '33%',
+            '32%',
+            '31%',
+            '30%',
+            '29%',
+            '28%',
+            '27%',
+            '26%',
+            '25%',
+            '24%',
+            '23%',
+            '22%',
+            '21%',
+            '20%',
+            '19%',
+            '18%',
+            '17%',
+            '16%',
+            '15%',
+            '14%',
+            '13%',
+            '12%',
+            '11%',
+            '10%',
+            '9%',
+            '8%',
+            '7%',
+            '6%',
+            '5%',
+            '4%',
+            '3%',
+            '2%',
+            '1%',
+            '0%',]
 
         const zorras = ['😏 ¡𝐄𝐑𝐄𝐒 𝐔𝐍𝐀 𝐌𝐀𝐋𝐃𝐈𝐓𝐀 𝐙𝐎𝐑𝐑𝐀! 💋💄',
             '𝟏𝟎𝟎% 💋💄',
@@ -2063,6 +2165,30 @@ case 'tonto':
   mentions(hasil, mentioned)
   break
 
+    case 'emparejar':
+          if (!isGroup) return reply(mess.only.group)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  medidorplanas = amor[Math.floor(Math.random() * (planas.length))]
+  medidorplanas2 = amor[Math.floor(Math.random() * (planas.length))]
+  medidorplanas3 = amor[Math.floor(Math.random() * (planas.length))]
+  medidorplanas4 = amor[Math.floor(Math.random() * (planas.length))]  //*𝙮* *@${mentioned[0].split('@')[0]}*
+  medidorplanas5 = amor[Math.floor(Math.random() * (planas.length))]
+  hasil = `😳👦🏽💘 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐂𝐎𝐌𝐏𝐀𝐓𝐈𝐁𝐈𝐋𝐈𝐃𝐀𝐃 𝐃𝐄 𝐏𝐀𝐑𝐄𝐉𝐀𝐒!* 💘👩🏽😳\n\n😳 *¡𝐕𝐚𝐦𝐨𝐬 𝐚 𝐯𝐞𝐫 𝐥𝐚 𝐜𝐨𝐦𝐩𝐚𝐭𝐢𝐛𝐢𝐥𝐢𝐝𝐚𝐝 𝐪𝐮𝐞 𝐭𝐞𝐧𝐝𝐫𝐢𝐚𝐧* *@${mentioned[0].split('@')[0]}* *𝐬𝐢 𝐟𝐨𝐫𝐦𝐚𝐫𝐚𝐧 𝐮𝐧𝐚 𝐩𝐚𝐫𝐞𝐣𝐚!* 😳\n\n💕 *¡𝑳𝒂 𝒄𝒐𝒎𝒑𝒂𝒕𝒊𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝒆𝒏𝒕𝒓𝒆 𝒍𝒐𝒔 𝒅𝒐𝒔 𝒆𝒔 𝒅𝒆𝒍 "${pareja}"!* 😳\n💕 *¡𝑬𝒍 𝒂𝒎𝒐𝒓 𝒒𝒖𝒆 𝒉𝒂𝒃𝒓𝒊𝒂 𝒆𝒏𝒕𝒓𝒆 𝒆𝒍𝒍𝒐𝒔 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍 "${pareja2}"!* 😳\n💕 *¡𝑳𝒂 𝒑𝒓𝒐𝒃𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝒅𝒆 𝒒𝒖𝒆 𝒍𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐𝒏 𝒇𝒖𝒏𝒄𝒊𝒐𝒏𝒆 𝒆𝒔 𝒅𝒆𝒍 "${pareja3}"!* 😳\n💕 *¡𝑳𝒂 𝒇𝒆𝒍𝒊𝒄𝒊𝒅𝒂𝒅 𝒒𝒖𝒆 𝒕𝒆𝒏𝒅𝒓𝒊𝒂𝒏 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍  "${pareja4}"!* 😳\n💕 *¡𝑳𝒂 𝒇𝒊𝒅𝒆𝒍𝒊𝒅𝒂𝒅 𝒒𝒖𝒆 𝒕𝒆𝒏𝒅𝒓𝒊𝒂𝒏 𝒆𝒏𝒕𝒓𝒆 𝒍𝒐𝒔 𝒅𝒐𝒔 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍  "${pareja5}"!* 😳\n\n❤️😌 *¡𝐐𝐔𝐄 𝐒𝐄𝐀𝐈𝐒 𝐅𝐄𝐋𝐈𝐂𝐄𝐒 𝐄𝐋 𝐓𝐈𝐄𝐌𝐏𝐎 𝐐𝐔𝐄 𝐃𝐔𝐑𝐄𝐈𝐒!*😌❤️` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+        case '🤫':
+        case 'callate':
+          if (!isGroup) return reply(mess.only.group)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  mandarcallar = callate[Math.floor(Math.random() * (callate.length))]
+  hasil = `😡🤫 *¡𝐓𝐄 𝐇𝐀𝐍 𝐌𝐀𝐍𝐃𝐀𝐃𝐎 𝐀 𝐂𝐀𝐋𝐋𝐀𝐑!* 🤫😡\n\n*@${mentioned[0].split('@')[0]}*, *${mandarcallar}*\n\n*@${mentioned[0].split('@')[0]}*\n😡🥱 *¡𝐂𝐀𝐋𝐋𝐀𝐓𝐄 𝐃𝐄 𝐔𝐍𝐀 𝐏𝐔𝐓𝐀 𝐕𝐄𝐙!* 🥱😡` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
 
 
 // AVISOS DE ROLL
@@ -4070,7 +4196,7 @@ reply(ind.satukos())
 						fs.unlinkSync(medimg)
 						if (err) return reply('No se pudo hacer :(')
 						buffer = fs.readFileSync(ran)
-						Lxa.sendMessage(from, buffer, image, {quoted: mek, caption: 'Mr.Pato-Bot'})
+						Lxa.sendMessage(from, buffer, image, {quoted: mek, caption: ''})
 						fs.unlinkSync(ran)
 					})
 					break
