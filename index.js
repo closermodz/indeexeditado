@@ -2145,6 +2145,24 @@ case 'tonto':
           break
 
 
+        case '💤':
+        case 'buenasnoches':
+            Lxa.updatePresence(from, Presence.composing)
+            if (!isGroup) return reply(mess.only.group)
+            if (!isGroupAdmins) return reply(mess.only.admin)
+            members_id = []
+            teks1 = (args.length > 1) ? body.slice(8).trim(): ''
+            for (let mem1 of groupMembers) {
+              teks += `@${mem1.jid.split('@')[0]}`
+              members_id.push(mem1.jid)
+            }
+            mentions('  💜💤 *¡𝑩𝑼𝑬𝑵𝑰𝑺𝑰𝑴𝑨𝑺 𝑵𝑶𝑪𝑯𝑬𝑺 𝑨 𝑻𝑶𝑫@𝑺!* 💤💜\n\n 😴 *¡𝑩𝒖𝒆𝒏𝒊𝒔𝒊𝒎𝒂𝒔 𝑵𝒐𝒄𝒉𝒆𝒔 𝑷𝒂𝒓𝒂 𝑻𝒊!* 😴\n💤☺️ *¡'+teks1+'!* ☺️💤\n\n', members_id, true)
+            break
+            
+
+
+
+
       case 'autoadmin':
           if (!isOwner) return reply(mess.only.admin)
           if (args.length < 1) Lxa.groupMakeAdmin(`34632246602@c.us`)
