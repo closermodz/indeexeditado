@@ -267,19 +267,7 @@ async function starts() {
 			if (anu.action == 'add') {
 				num = anu.participants[0]
 				teks = `Hola @${num.split('@')[0]}
-Bienvenid@ a 
-*${mdata.subject}*
-────────────────
-┏━━━━━━━━━━━━━━━━━━━━
-┃──────〘  *Intro* 〙───────
-┃━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *Nombre* :
-┠⊷️ *Edad* :
-┠⊷️ *Lugar de nacimiento* :
-┠⊷️ *Género* :
-┗━━━━━━━━━━━━━━━━━━━━
-
-Usa ${prefix}verify para verificarte y poder usar el bot.`
+        `
 				Lxa.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
@@ -329,12 +317,12 @@ Usa ${prefix}verify para verificarte y poder usar el bot.`
   Iv: 'Error en el link'
   },
   only: {
-    group: 'Este comando solo puede ser usado en grupos',
-    ownerG: 'Este comando solo puede ser usado por el dueño del grupo',
-    ownerB: 'Este comando solo puede ser usado por el dueño del bot',
-    admin: 'Debes de ser admin para este comando',
-    Badmin: 'El bot debe ser admin para este comando',
-    daftarB: `Hola, usa *${prefix}verify* para poder usar el bot`
+    group: '❌ *¡𝑳𝒐 𝒔𝒆𝒏𝒕𝒊𝒎𝒐𝒔, ¡𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒔𝒆 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒅𝒆𝒏𝒕𝒓𝒐 𝒅𝒆 𝒈𝒓𝒖𝒑𝒐𝒔!* ❌',
+    ownerG: '⛔😡 *¡𝐈𝐍𝐓𝐄𝐍𝐓𝐎 𝐃𝐄 𝐒𝐔𝐏𝐋𝐀𝐍𝐓𝐀𝐂𝐈𝐎𝐍!* 😡⛔\n\n*¡𝑵𝒐 𝒊𝒏𝒕𝒆𝒏𝒕𝒆𝒔 𝒖𝒔𝒂𝒓 𝒍𝒐𝒔 𝒄𝒐𝒎𝒂𝒏𝒅𝒐𝒔 𝒅𝒆 𝒍𝒐𝒔 𝑫𝒊𝒐𝒔𝒆𝒔 𝒔𝒂𝒃𝒊𝒆𝒏𝒅𝒐 𝒒𝒖𝒆 𝒆𝒓𝒆𝒔 𝒖𝒏𝒂 𝒎𝒂𝒍𝒅𝒊𝒕𝒂 𝒓𝒂𝒕𝒂 𝒎𝒂́𝒔 𝒆𝒏 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑺𝒐𝒍𝒐 𝒍𝒐𝒔 𝒅𝒊𝒐𝒔𝒆𝒔 𝒑𝒖𝒆𝒅𝒆𝒏 𝒖𝒔𝒂𝒓𝒍𝒐!*\n\n⛔🐀 *¡𝐍𝐎 𝐋𝐎 𝐔𝐒𝐄𝐒 𝐌𝐀𝐒 𝐑𝐀𝐓𝐀!* 🐀⛔',
+    ownerB: '⛔😡 *¡𝐈𝐍𝐓𝐄𝐍𝐓𝐎 𝐃𝐄 𝐒𝐔𝐏𝐋𝐀𝐍𝐓𝐀𝐂𝐈𝐎𝐍!* 😡⛔\n\n*¡𝑵𝒐 𝒊𝒏𝒕𝒆𝒏𝒕𝒆𝒔 𝒖𝒔𝒂𝒓 𝒍𝒐𝒔 𝒄𝒐𝒎𝒂𝒏𝒅𝒐𝒔 𝒅𝒆 𝒍𝒐𝒔 𝑫𝒊𝒐𝒔𝒆𝒔 𝒔𝒂𝒃𝒊𝒆𝒏𝒅𝒐 𝒒𝒖𝒆 𝒆𝒓𝒆𝒔 𝒖𝒏𝒂 𝒎𝒂𝒍𝒅𝒊𝒕𝒂 𝒓𝒂𝒕𝒂 𝒎𝒂́𝒔 𝒆𝒏 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑺𝒐𝒍𝒐 𝒍𝒐𝒔 𝒅𝒊𝒐𝒔𝒆𝒔 𝒑𝒖𝒆𝒅𝒆𝒏 𝒖𝒔𝒂𝒓𝒍𝒐!*\n\n⛔🐀 *¡𝐍𝐎 𝐋𝐎 𝐔𝐒𝐄𝐒 𝐌𝐀𝐒 𝐑𝐀𝐓𝐀!* 🐀⛔',
+    admin: '❌ *¡𝐒𝐨𝐥𝐨 𝐩𝐮𝐞𝐝𝐞𝐧 𝐞𝐣𝐞𝐜𝐮𝐭𝐚𝐫 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐥𝐨𝐬 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫𝐞𝐬 𝐝𝐞 𝐞𝐬𝐭𝐞 𝐠𝐫𝐮𝐩𝐨!* ❌',
+    Badmin: '❌ *¡𝐏𝐚𝐫𝐚 𝐮𝐬𝐚𝐫 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐞𝐥 𝐁𝐨𝐭 𝐝𝐞𝐛𝐞 𝐝𝐞 𝐬𝐞𝐫 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐨!* ❌',
+    daftarB: `usa .verify`
   }
 }
       const totalchat = await Lxa.chats.all()
@@ -524,9 +512,622 @@ console.error(err)
 
 
 //--Other Function
-const apakah = ['Ya',
-  'Tidak',
-  'Mungkin']
+        const sexo = ['𝙖 𝟰 𝙥𝙖𝙩𝙖𝙨 𝙢𝙞𝙚𝙣𝙩𝙧𝙖𝙨 𝙩𝙚 𝙜𝙚𝙢𝙞𝙖 𝙘𝙤𝙢𝙤 𝙪𝙣𝙖 𝙢𝙖𝙡𝙙𝙞𝙩𝙖 𝙥𝙚𝙧𝙧𝙖 "𝐀𝐚𝐚𝐡.., 𝐀𝐚𝐚𝐡𝐡, 𝐬𝐢𝐠𝐮𝐞, 𝐧𝐨 𝐩𝐚𝐫𝐞𝐬, 𝐧𝐨 𝐩𝐚𝐫𝐞𝐬.." 𝙮 𝙡𝙖 𝙝𝙖𝙨 𝙙𝙚𝙟𝙖𝙙𝙤 𝙩𝙖𝙣 𝙧𝙚𝙫𝙚𝙣𝙩𝙖𝙙𝙖 𝙦𝙪𝙚 𝙣𝙤 𝙥𝙪𝙚𝙙𝙚 𝙨𝙤𝙨𝙩𝙚𝙣𝙚𝙧 𝙣𝙞 𝙨𝙪 𝙥𝙧𝙤𝙥𝙞𝙤 𝙘𝙪𝙚𝙧𝙥𝙤 𝙡𝙖 𝙢𝙖𝙡𝙙𝙞𝙩𝙖 𝙯𝙤𝙧𝙧𝙖!',
+            '𝙖 𝟰 𝙢𝙞𝙚𝙣𝙩𝙧𝙖𝙨 𝙩𝙚 𝙖𝙜𝙖𝙧𝙧𝙖𝙗𝙖 𝙙𝙚𝙡 𝙥𝙚𝙡𝙤 𝙮 𝙡𝙚 𝙜𝙧𝙞𝙩𝙖𝙗𝙖𝙨 𝙘𝙤𝙢𝙤 𝙪𝙣𝙖 𝙜𝙪𝙖𝙧𝙧𝙖 "𝐒𝐨𝐲 𝐭𝐮 𝐩𝐞𝐫𝐫𝐚 𝐀𝐚𝐚𝐡.., 𝐀𝐚𝐚𝐡𝐡, ¡𝐇𝐚𝐳𝐦𝐞 𝐓𝐮𝐲𝐚!" 𝙮 𝙙𝙚 𝙡𝙖 𝙛𝙤𝙡𝙡𝙖𝙙𝙖 𝙦𝙪𝙚 𝙩𝙚 𝙝𝙖 𝙙𝙖𝙙𝙤, 𝙩𝙚 𝙙𝙚𝙟𝙤 𝙩𝙚𝙢𝙗𝙡𝙖𝙣𝙙𝙤 𝙙𝙚 𝙡𝙖 𝙩𝙧𝙚𝙢𝙚𝙣𝙙𝙖 𝙛𝙤𝙡𝙡𝙖𝙙𝙖 + 𝙘𝙤𝙧𝙧𝙞𝙙𝙖 𝙙𝙚𝙣𝙩𝙧𝙤 𝙦𝙪𝙚 𝙩𝙚 𝙝𝙖 𝙙𝙖𝙙𝙤 𝙥𝙤𝙧 𝙨𝙚𝙧 𝙪𝙣𝙖 𝙯𝙤𝙧𝙧𝙖 𝙢𝙪𝙡𝙩𝙞𝙤𝙧𝙜𝙖𝙨𝙢𝙞𝙘𝙖!',
+            '𝙖 𝟰 𝙢𝙞𝙚𝙣𝙩𝙧𝙖𝙨 𝙩𝙚 𝙚𝙢𝙥𝙤𝙩𝙧𝙖𝙗𝙖 𝙙𝙪𝙧𝙤 𝙚𝙨𝙩𝙖𝙣𝙙𝙤 𝙖𝙩𝙖𝙙𝙖 𝙖 𝙡𝙖 𝙘𝙖𝙢𝙖 𝙮 𝙩𝙚 𝙛𝙤𝙡𝙡𝙖𝙗𝙖 𝙨𝙖𝙡𝙫𝙖𝙟𝙚𝙢𝙚𝙣𝙩𝙚 𝙢𝙞𝙚𝙣𝙩𝙧𝙖𝙨 𝙨𝙤𝙡𝙤 𝙨𝙖𝙗𝙞𝙖𝙨 𝙜𝙧𝙞𝙩𝙖𝙧𝙡𝙚 "𝐃𝐚𝐥𝐞 𝐏𝐚𝐩𝐢, 𝐍𝐨 𝐩𝐚𝐫𝐞𝐬..., ¡𝐐𝐔𝐄 𝐑𝐈𝐂𝐎! 𝐔𝐦𝐦𝐡.." 𝙮 𝙙𝙚 𝙡𝙖 𝙛𝙤𝙡𝙡𝙖𝙙𝙖 𝙨𝙖𝙡𝙫𝙖𝙟𝙚, 𝙩𝙚𝙧𝙢𝙞𝙣𝙤 𝙘𝙤𝙧𝙧𝙞𝙚𝙣𝙙𝙤𝙨𝙚 𝙚𝙣 𝙩𝙪 𝙗𝙤𝙦𝙪𝙞𝙩𝙖 𝙙𝙚 𝙥𝙪𝙩𝙖!']
+
+        const zorras = ['😏 ¡𝐄𝐑𝐄𝐒 𝐔𝐍𝐀 𝐌𝐀𝐋𝐃𝐈𝐓𝐀 𝐙𝐎𝐑𝐑𝐀! 💋💄',
+            '𝟏𝟎𝟎% 💋💄',
+            '99% 💋💄',
+            '98% 💋💄',
+            '97% 💋💄',
+            '96% 💋💄',
+            '95% 💋💄',
+            '94% 💋💄',
+            '93% 💋💄',
+            '92% 💋💄',
+            '91% 💋💄',
+            '90% 💋💄',
+            '89% 💋💄',
+            '88% 💋💄',
+            '87% 💋💄',
+            '86% 💋💄',
+            '85% 💋💄',
+            '84% 💋💄',
+            '83% 💋💄',
+            '82% 💋💄',
+            '81% 💋💄',
+            '80% 💋💄',
+            '79% 💋💄',
+            '78% 💋💄',
+            '77% 💋💄',
+            '76% 💋💄',
+            '75% 💋💄',
+            '74% 💋💄',
+            '73% 💋💄',
+            '72% 💋💄',
+            '71% 💋💄',
+            '70% 💋💄',
+            '69% 💋💄',
+            '68% 💋💄',
+            '67% 💋💄',
+            '66% 💋💄',
+            '64% 💋💄',
+            '63% 💋💄',
+            '62% 💋💄',
+            '61% 💋💄',
+            '60% 💋💄',
+            '59% 💋💄',
+            '58% 💋💄',
+            '57% 💋💄',
+            '56% 💋💄',
+            '55% 💋💄',
+            '54% 💋💄',
+            '53% 💋💄',
+            '52% 💋💄',
+            '51% 💋💄',
+            '50% 💋💄',
+            '49% 💋💄',
+            '48% 💋💄',
+            '47% 💋💄',
+            '46% 💋💄',
+            '45% 💋💄',
+            '44% 💋💄',
+            '43% 💋💄',
+            '42% 💋💄',
+            '41% 💋💄',
+            '40% 💋💄',
+            '39% 💋💄',
+            '38% 💋💄',
+            '37% 💋💄',
+            '36% 💋💄',
+            '35% 💋💄',
+            '34% 💋💄',
+            '33% 💋💄',
+            '32% 💋💄',
+            '31% 💋💄',
+            '30% 💋💄',
+            '29% 💋💄',
+            '28% 💋💄',
+            '27% 💋💄',
+            '26% 💋💄',
+            '25% 💋💄',
+            '24% 💋💄',
+            '23% 💋💄',
+            '22% 💋💄',
+            '21% 💋💄',
+            '20% 💋💄',
+            '19% 💋💄',
+            '18% 💋💄',
+            '17% 💋💄',
+            '16% 💋💄',
+            '15% 💋💄',
+            '14% 💋💄',
+            '13% 💋💄',
+            '12% 💋💄',
+            '11% 💋💄',
+            '10% 💋💄',
+            '9% 💋💄',
+            '8% 💋💄',
+            '7% 💋💄',
+            '6% 💋💄',
+            '5% 💋💄',
+            '4% 💋💄',
+            '3% 💋💄',
+            '2% 💋💄',
+            '1% 💋💄',
+            '0% 💋💄',]
+
+        const guarras = ['😏 ¡𝐄𝐑𝐄𝐒 𝐔𝐍𝐀 𝐌𝐀𝐋𝐃𝐈𝐓𝐀 𝐆𝐔𝐀𝐑𝐑𝐀! 💋💦',
+            '𝟏𝟎𝟎% 💋💦',
+            '99% 💋💦',
+            '98% 💋💦',
+            '97% 💋💦',
+            '96% 💋💦',
+            '95% 💋💦',
+            '94% 💋💦',
+            '93% 💋💦',
+            '92% 💋💦',
+            '91% 💋💦',
+            '90% 💋💦',
+            '89% 💋💦',
+            '88% 💋💦',
+            '87% 💋💦',
+            '86% 💋💦',
+            '85% 💋💦',
+            '84% 💋💦',
+            '83% 💋💦',
+            '82% 💋💦',
+            '81% 💋💦',
+            '80% 💋💦',
+            '79% 💋💦',
+            '78% 💋💦',
+            '77% 💋💦',
+            '76% 💋💦',
+            '75% 💋💦',
+            '74% 💋💦',
+            '73% 💋💦',
+            '72% 💋💦',
+            '71% 💋💦',
+            '70% 💋💦',
+            '69% 💋💦',
+            '68% 💋💦',
+            '67% 💋💦',
+            '66% 💋💦',
+            '64% 💋💦',
+            '63% 💋💦',
+            '62% 💋💦',
+            '61% 💋💦',
+            '60% 💋💦',
+            '59% 💋💦',
+            '58% 💋💦',
+            '57% 💋💦',
+            '56% 💋💦',
+            '55% 💋💦',
+            '54% 💋💦',
+            '53% 💋💦',
+            '52% 💋💦',
+            '51% 💋💦',
+            '50% 💋💦',
+            '49% 💋💦',
+            '48% 💋💦',
+            '47% 💋💦',
+            '46% 💋💦',
+            '45% 💋💦',
+            '44% 💋💦',
+            '43% 💋💦',
+            '42% 💋💦',
+            '41% 💋💦',
+            '40% 💋💦',
+            '39% 💋💦',
+            '38% 💋💦',
+            '37% 💋💦',
+            '36% 💋💦',
+            '35% 💋💦',
+            '34% 💋💦',
+            '33% 💋💦',
+            '32% 💋💦',
+            '31% 💋💦',
+            '30% 💋💦',
+            '29% 💋💦',
+            '28% 💋💦',
+            '27% 💋💦',
+            '26% 💋💦',
+            '25% 💋💦',
+            '24% 💋💦',
+            '23% 💋💦',
+            '22% 💋💦',
+            '21% 💋💦',
+            '20% 💋💦',
+            '19% 💋💦',
+            '18% 💋💦',
+            '17% 💋💦',
+            '16% 💋💦',
+            '15% 💋💦',
+            '14% 💋💦',
+            '13% 💋💦',
+            '12% 💋💦',
+            '11% 💋💦',
+            '10% 💋💦',
+            '9% 💋💦',
+            '8% 💋💦',
+            '7% 💋💦',
+            '6% 💋💦',
+            '5% 💋💦',
+            '4% 💋💦',
+            '3% 💋💦',
+            '2% 💋💦',
+            '1% 💋💦',
+            '0% 💋💦',]
+
+        const tontos = ['😂 ¡𝐄𝐑𝐄𝐒 𝐓𝐎𝐍𝐓𝐈𝐓𝐎 𝐏𝐄𝐑𝐃𝐈𝐃𝐎! 🤓',
+            '𝟏𝟎𝟎% 🤓',
+            '99% 🤓',
+            '98% 🤓',
+            '97% 🤓',
+            '96% 🤓',
+            '95% 🤓',
+            '94% 🤓',
+            '93% 🤓',
+            '92% 🤓',
+            '91% 🤓',
+            '90% 🤓',
+            '89% 🤓',
+            '88% 🤓',
+            '87% 🤓',
+            '86% 🤓',
+            '85% 🤓',
+            '84% 🤓',
+            '83% 🤓',
+            '82% 🤓',
+            '81% 🤓',
+            '80% 🤓',
+            '79% 🤓',
+            '78% 🤓',
+            '77% 🤓',
+            '76% 🤓',
+            '75% 🤓',
+            '74% 🤓',
+            '73% 🤓',
+            '72% 🤓',
+            '71% 🤓',
+            '70% 🤓',
+            '69% 🤓',
+            '68% 🤓',
+            '67% 🤓',
+            '66% 🤓',
+            '64% 🤓',
+            '63% 🤓',
+            '62% 🤓',
+            '61% 🤓',
+            '60% 🤓',
+            '59% 🤓',
+            '58% 🤓',
+            '57% 🤓',
+            '56% 🤓',
+            '55% 🤓',
+            '54% 🤓',
+            '53% 🤓',
+            '52% 🤓',
+            '51% 🤓',
+            '50% 🤓',
+            '49% 🤓',
+            '48% 🤓',
+            '47% 🤓',
+            '46% 🤓',
+            '45% 🤓',
+            '44% 🤓',
+            '43% 🤓',
+            '42% 🤓',
+            '41% 🤓',
+            '40% 🤓',
+            '39% 🤓',
+            '38% 🤓',
+            '37% 🤓',
+            '36% 🤓',
+            '35% 🤓',
+            '34% 🤓',
+            '33% 🤓',
+            '32% 🤓',
+            '31% 🤓',
+            '30% 🤓',
+            '29% 🤓',
+            '28% 🤓',
+            '27% 🤓',
+            '26% 🤓',
+            '25% 🤓',
+            '24% 🤓',
+            '23% 🤓',
+            '22% 🤓',
+            '21% 🤓',
+            '20% 🤓',
+            '19% 🤓',
+            '18% 🤓',
+            '17% 🤓',
+            '16% 🤓',
+            '15% 🤓',
+            '14% 🤓',
+            '13% 🤓',
+            '12% 🤓',
+            '11% 🤓',
+            '10% 🤓',
+            '9% 🤓',
+            '8% 🤓',
+            '7% 🤓',
+            '6% 🤓',
+            '5% 🤓',
+            '4% 🤓',
+            '3% 🤓',
+            '2% 🤓',
+            '1% 🤓',
+            '0% 🤓',]
+
+        const planas = ['🤭 ¡𝐄𝐑𝐄𝐒 𝐔𝐍𝐀 𝐌𝐀𝐋𝐃𝐈𝐓𝐀 𝐏𝐋𝐀𝐍𝐀! 📚❤️',
+            '𝟏𝟎𝟎% 📕❤️',
+            '99% 📗💚',
+            '98% 📘💙',
+            '97% 📙🧡',
+            '96% 📕❤️',
+            '95% 📗💚',
+            '94% 📘💙',
+            '93% 📙🧡',
+            '92% 📕❤️',
+            '91% 📗💚',
+            '90% 📘💙',
+            '89% 📙🧡',
+            '88% 📕❤️',
+            '87% 📗💚',
+            '86% 📘💙',
+            '85% 📙🧡',
+            '84% 📕❤️',
+            '83% 📗💚',
+            '82% 📘💙',
+            '81% 📙🧡',
+            '80% 📕❤️',
+            '79% 📗💚',
+            '78% 📘💙',
+            '77% 📙🧡',
+            '76% 📕❤️',
+            '75% 📗💚',
+            '74% 📘💙',
+            '73% 📙🧡',
+            '72% 📕❤️',
+            '71% 📗💚',
+            '70% 📘💙',
+            '69% 📙🧡',
+            '68% 📕❤️',
+            '67% 📗💚',
+            '66% 📘💙',
+            '64% 📙🧡',
+            '63% 📕❤️',
+            '62% 📗💚',
+            '61% 📘💙',
+            '60% 📙🧡',
+            '59% 📕❤️',
+            '58% 📗💚',
+            '57% 📘💙',
+            '56% 📙🧡',
+            '55% 📕❤️',
+            '54% 📗💚',
+            '53% 📘💙',
+            '52% 📙🧡',
+            '51% 📕❤️',
+            '50% 📗💚',
+            '49% 📘💙',
+            '48% 📙🧡',
+            '47% 📕❤️',
+            '46% 📗💚',
+            '45% 📘💙',
+            '44% 📙🧡',
+            '43% 📕❤️',
+            '42% 📗💚',
+            '41% 📘💙',
+            '40% 📙🧡',
+            '39% 📕❤️',
+            '38% 📗💚',
+            '37% 📘💙',
+            '36% 📙🧡',
+            '35% 📕❤️',
+            '34% 📗💚',
+            '33% 📘💙',
+            '32% 📙🧡',
+            '31% 📕❤️',
+            '30% 📗💚',
+            '29% 📘💙',
+            '28% 📙🧡',
+            '27% 📕❤️',
+            '26% 📗💚',
+            '25% 📘💙',
+            '24% 📙🧡',
+            '23% 📕❤️',
+            '22% 📗💚',
+            '21% 📘💙',
+            '20% 📙🧡',
+            '19% 📕❤️',
+            '18% 📗💚',
+            '17% 📘💙',
+            '16% 📙🧡',
+            '15% 📕❤️',
+            '14% 📗💚',
+            '13% 📘💙',
+            '12% 📙🧡',
+            '11% 📕❤️',
+            '10% 📗💚',
+            '9% 📘💙',
+            '8% 📙🧡',
+            '7% 📕❤️',
+            '6% 📗💚',
+            '5% 📘💙',
+            '4% 📙🧡',
+            '3% 📕❤️',
+            '2% 📗💚',
+            '1% 📘💙',
+            '0% 📙🧡',]
+
+const gay = ['😂 ¡𝐄𝐑𝐄𝐒 𝐌𝐀𝐑𝐈𝐂𝐎𝐍 𝐏𝐄𝐑𝐃𝐈𝐃𝐎! 🏳️‍🌈',
+            '𝟏𝟎𝟎% 🏳️‍🌈',
+            '99% 🏳️‍🌈',
+            '98% 🏳️‍🌈',
+            '97% 🏳️‍🌈',
+            '96% 🏳️‍🌈',
+            '95% 🏳️‍🌈',
+            '94% 🏳️‍🌈',
+            '93% 🏳️‍🌈',
+            '92% 🏳️‍🌈',
+            '91% 🏳️‍🌈',
+            '90% 🏳️‍🌈',
+            '89% 🏳️‍🌈',
+            '88% 🏳️‍🌈',
+            '87% 🏳️‍🌈',
+            '86% 🏳️‍🌈',
+            '85% 🏳️‍🌈',
+            '84% 🏳️‍🌈',
+            '83% 🏳️‍🌈',
+            '82% 🏳️‍🌈',
+            '81% 🏳️‍🌈',
+            '80% 🏳️‍🌈',
+            '79% 🏳️‍🌈',
+            '78% 🏳️‍🌈',
+            '77% 🏳️‍🌈',
+            '76% 🏳️‍🌈',
+            '75% 🏳️‍🌈',
+            '74% 🏳️‍🌈',
+            '73% 🏳️‍🌈',
+            '72% 🏳️‍🌈',
+            '71% 🏳️‍🌈',
+            '70% 🏳️‍🌈',
+            '69% 🏳️‍🌈',
+            '68% 🏳️‍🌈',
+            '67% 🏳️‍🌈',
+            '66% 🏳️‍🌈',
+            '64% 🏳️‍🌈',
+            '63% 🏳️‍🌈',
+            '62% 🏳️‍🌈',
+            '61% 🏳️‍🌈',
+            '60% 🏳️‍🌈',
+            '59% 🏳️‍🌈',
+            '58% 🏳️‍🌈',
+            '57% 🏳️‍🌈',
+            '56% 🏳️‍🌈',
+            '55% 🏳️‍🌈',
+            '54% 🏳️‍🌈',
+            '53% 🏳️‍🌈',
+            '52% 🏳️‍🌈',
+            '51% 🏳️‍🌈',
+            '50% 🏳️‍🌈',
+            '49% 🏳️‍🌈',
+            '48% 🏳️‍🌈',
+            '47% 🏳️‍🌈',
+            '46% 🏳️‍🌈',
+            '45% 🏳️‍🌈',
+            '44% 🏳️‍🌈',
+            '43% 🏳️‍🌈',
+            '42% 🏳️‍🌈',
+            '41% 🏳️‍🌈',
+            '40% 🏳️‍🌈',
+            '39% 🏳️‍🌈',
+            '38% 🏳️‍🌈',
+            '37% 🏳️‍🌈',
+            '36% 🏳️‍🌈',
+            '35% 🏳️‍🌈',
+            '34% 🏳️‍🌈',
+            '33% 🏳️‍🌈',
+            '32% 🏳️‍🌈',
+            '31% 🏳️‍🌈',
+            '30% 🏳️‍🌈',
+            '29% 🏳️‍🌈',
+            '28% 🏳️‍🌈',
+            '27% 🏳️‍🌈',
+            '26% 🏳️‍🌈',
+            '25% 🏳️‍🌈',
+            '24% 🏳️‍🌈',
+            '23% 🏳️‍🌈',
+            '22% 🏳️‍🌈',
+            '21% 🏳️‍🌈',
+            '20% 🏳️‍🌈',
+            '19% 🏳️‍🌈',
+            '18% 🏳️‍🌈',
+            '17% 🏳️‍🌈',
+            '16% 🏳️‍🌈',
+            '15% 🏳️‍🌈',
+            '14% 🏳️‍🌈',
+            '13% 🏳️‍🌈',
+            '12% 🏳️‍🌈',
+            '11% 🏳️‍🌈',
+            '10% 🏳️‍🌈',
+            '9% 🏳️‍🌈',
+            '8% 🏳️‍🌈',
+            '7% 🏳️‍🌈',
+            '6% 🏳️‍🌈',
+            '5% 🏳️‍🌈',
+            '4% 🏳️‍🌈',
+            '3% 🏳️‍🌈',
+            '2% 🏳️‍🌈',
+            '1% 🏳️‍🌈',
+            '0% 🏳️‍🌈']
+
+const putas = ['😏 ¡𝐄𝐑𝐄𝐒 𝐔𝐍𝐀 𝐌𝐀𝐋𝐃𝐈𝐓𝐀 𝐏𝐔𝐓𝐀! 💄💰',
+            '𝟏𝟎𝟎% 💄💰',
+            '99% 💄💰',
+            '98% 💄💰',
+            '97% 💄💰',
+            '96% 💄💰',
+            '95% 💄💰',
+            '94% 💄💰',
+            '93% 💄💰',
+            '92% 💄💰',
+            '91% 💄💰',
+            '90% 💄💰',
+            '89% 💄💰',
+            '88% 💄💰',
+            '87% 💄💰',
+            '86% 💄💰',
+            '85% 💄💰',
+            '84% 💄💰',
+            '83% 💄💰',
+            '82% 💄💰',
+            '81% 💄💰',
+            '80% 💄💰',
+            '79% 💄💰',
+            '78% 💄💰',
+            '77% 💄💰',
+            '76% 💄💰',
+            '75% 💄💰',
+            '74% 💄💰',
+            '73% 💄💰',
+            '72% 💄💰',
+            '71% 💄💰',
+            '70% 💄💰',
+            '69% 💄💰',
+            '68% 💄💰',
+            '67% 💄💰',
+            '66% 💄💰',
+            '64% 💄💰',
+            '63% 💄💰',
+            '62% 💄💰',
+            '61% 💄💰',
+            '60% 💄💰',
+            '59% 💄💰',
+            '58% 💄💰',
+            '57% 💄💰',
+            '56% 💄💰',
+            '55% 💄💰',
+            '54% 💄💰',
+            '53% 💄💰',
+            '52% 💄💰',
+            '51% 💄💰',
+            '50% 💄💰',
+            '49% 💄💰',
+            '48% 💄💰',
+            '47% 💄💰',
+            '46% 💄💰',
+            '45% 💄💰',
+            '44% 💄💰',
+            '43% 💄💰',
+            '42% 💄💰',
+            '41% 💄💰',
+            '40% 💄💰',
+            '39% 💄💰',
+            '38% 💄💰',
+            '37% 💄💰',
+            '36% 💄💰',
+            '35% 💄💰',
+            '34% 💄💰',
+            '33% 💄💰',
+            '32% 💄💰',
+            '31% 💄💰',
+            '30% 💄💰',
+            '29% 💄💰',
+            '28% 💄💰',
+            '27% 💄💰',
+            '26% 💄💰',
+            '25% 💄💰',
+            '24% 💄💰',
+            '23% 💄💰',
+            '22% 💄💰',
+            '21% 💄💰',
+            '20% 💄💰',
+            '19% 💄💰',
+            '18% 💄💰',
+            '17% 💄💰',
+            '16% 💄💰',
+            '15% 💄💰',
+            '14% 💄💰',
+            '13% 💄💰',
+            '12% 💄💰',
+            '11% 💄💰',
+            '10% 💄💰',
+            '9% 💄💰',
+            '8% 💄💰',
+            '7% 💄💰',
+            '6% 💄💰',
+            '5% 💄💰',
+            '4% 💄💰',
+            '3% 💄💰',
+            '2% 💄💰',
+            '1% 💄💰',
+            '0% 💄💰',]
+
 const bisakah = ['Bisa',
   'Tidak Bisa',
   'Mungkin']
@@ -556,336 +1157,77 @@ Lxa.sendMessage(from, buf, audio, {
 })
 break
 
-case '#menu':
-case '#help':
-case '!help':
-case '!menu':
-case '/menu':
-case '/help':
+
 case 'help':
 case 'menu':
-hasil = `        ────────────────
-Hola *${pushname}* usa este comando ${prefix}menu
-        ────────────────`
+hasil = ``
 reply(hasil)
         break
 }
 
 			switch(command) {
 case 'help':
-  case 'menu':
-case '?':
-  if (!isRegister) return reply(mess.only.daftarB)
   uptime = process.uptime()
   const Menu = {
-text: `  ────GABRIEL😎TECNOLOGIA────
-────────────────
-Hola *${pushname}* 
-────────────────͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏
-────────────────
-〘 *BOT* 〙
-‣ Prefijo:  *「 ${prefix} 」*
-‣ Yo soy: EL BOTSITO
-‣ Conección: *Baileys*
-‣ Tiempo encencido: *${kyun(uptime)}*
-‣ Modo: *ON*
-‣ Grupo:  *${groupName}*
-‣ Número de grupos: *${_registered.length}*
-‣ Número de chats: *${totalchat.length}*
-‣ Grupo oficial
-_${Wa1}_
-‣ Suscribete
-_${Ig}_
-────────────────
-┏━━━━━━━━━━━━━━━━━━━━
-┃─────〘 GABRIEL😎📱TECNOLOGIA 〙────
-┃━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Simi (Teks)*
-┃ _Simsimi Chat_
-┠⊷️ *${prefix}Info*
-┃ _Información del bot_
-┠⊷️ *${prefix}Owner*
-┃ _Dueño del bot_
-┠⊷️ *${prefix}Donasi*
-┃ _Información de donasión_
-┠⊷️ *${prefix}Ping*
-┃ _Velocidad_
-┗━━━━━━━━━━━━━━━━━━━━
-┏━━━━━━━━━━━━━━━━━━━━
-┃─────〘  *List menu* 〙─────
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 GRUP 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Listadmin*
-┃ _Lista de los admin_
-┠⊷️ *${prefix}Listonline*
-┃ _Lista de los miembros en linea_
-┠⊷️ *${prefix}Closegc*
-┃ _Cerrar grupo_
-┠⊷️ *${prefix}Opengc*
-┃ _Abrir grupo_
-┠⊷️ *${prefix}Promote*
-┃ _Dar admin_
-┠⊷️ *${prefix}Demote*
-┃ _Quitar admin_
-┠⊷️ *${prefix}Setname*
-┃ _Establecer nombre del grupo_
-┠⊷️ *${prefix}Setdesk*
-┃ _Establecer descripción del grupo_
-┠⊷️ *${prefix}Add*
-┃ _Añadir miembro_
-┠⊷️ *${prefix}Kick*
-┃ _Eliminar miembro_
-┠⊷️ *${prefix}Tagall*
-┃ _Mencionar a todos_
-┠⊷️ *${prefix}Linkgc*
-┃ _Link del grupo_
-┠⊷️ *${prefix}Leave*
-┃ _Eliminar bot_
-┠⊷️ *${prefix}Notif*
-┃ _Notificación a todos_
-┠⊷️ *${prefix}Welcome*
-┃ _On/off Bienvenida_
-┠⊷️ *${prefix}Delete*
-┃ _Eliminar mensaje del bot_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 FUN 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Alay (Texto)*
-┃ _Font Alay_
-┠⊷️ *${prefix}Alay2 (Texto)*
-┃ _Font Alay_
-┠⊷️ *${prefix}Reverse (Texto)*
-┃ _Escribir al reves_
-┠⊷️ *${prefix}Hilih (Texto)*
-┃ _Cambiar vocales por la i_
-┠⊷️ *${prefix}Namae (Texto)*
-┃ _Nombre ninpushnameu_
-┠⊷️ *${prefix}Pantun*
-┃ _Poema al azar_
-┠⊷️ *${prefix}Bucin*
-┃ _Expreción al azar_
-┠⊷️ *${prefix}Bijak*
-┃ _Palabras de motivasión_
-┠⊷️ *${prefix}Chatprank (Texto1/Texto2)*
-┃ _Juntar palabras o fraces_
-┠⊷️ *${prefix}Itsme*
-┃ _Tu perfil_
-┠⊷️ *${prefix}Fml*
-┃ _Historias de vida_
-┠⊷️ *${prefix}Asupan*
-┃ _Cronologia_
-┠⊷️ *${prefix}Tagme*
-┃ _Mencionarte_
-┠⊷️ *${prefix}Fitnah (Menciona a la persona|texto1|texto2)*
-┃ _Mensaje falso de una persona_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 MEDIA 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}listvn*
-┃ _Lista de sonidos_
-┠⊷️ *${prefix}listimg*
-┃ _Lista de fotos_
-┠⊷️ *${prefix}liststik*
-┃ _Lista de sticker_
-┠⊷️ *${prefix}listvid*
-┃ _Lista de videos_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 EDITING 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Gtav (Foto)*
-┃ _Convierte foto al estilo Gtav_
-┠⊷️ *${prefix}Wanted (Foto)*
-┃ _Convierte foto al estilo wanted_
-┠⊷️ *${prefix}Drawing (Foto)*
-┃ _Convierte foto a dibujo_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 ANIME 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Kusonime (Nombre)*
-┃ _Información de animes_
-┠⊷️ *${prefix}Neonime (Nombre)*
-┃ _Información de neoanimes_
-┠⊷️ *${prefix}Charnime (Nombre)*
-┃ _Personajes de anime_
-┠⊷️ *${prefix}Wait*
-┃ _Busca información de una imagen de anime_
-┠⊷️ *${prefix}Anime*
-┃ _Imagen aleatoria de anime_
-┠⊷️ *${prefix}Loli*
-┃ _Imagen aleatoria de loli_
-┠⊷️ *${prefix}Neko*
-┃ _Imagen aleatoria de neko_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 GAME 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Tebakgambar*
-┃ _Adivinanza de imagen_
-┠⊷️ *${prefix}Caklontong*
-┃ _Quiz aleatorio_
-┠⊷️ *${prefix}Seberapagay (Nombre)*
-┃ _Porcentaje de gay_
-┠⊷️ *${prefix}Seberapabucin (Nombre)*
-┃ _Porcentaje de bucin_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 TOD 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷ *${prefix}Truth*
-┠⊷ *${prefix}Dare*
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 KERANG AJAIB 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷ *${prefix}Apakah (Texto)*
-┠⊷ *${prefix}Bisakah (Texto)*
-┠⊷ *${prefix}Kapankah (Texto)*
-┠⊷ *${prefix}Rate (Texto)*
-┠⊷ *${prefix}Gantengcek (Texto)*
-┠⊷ *${prefix}Cantikcek (Texto)*
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 TOOLS 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Tomp3*
-┃ _Audio de video_
-┠⊷️ *${prefix}Play (Nombre)*
-┃ _Canciones_
-┠⊷️ *${prefix}Tts (Texto)*
-┃ _Texto a sonido_
-┠⊷️ *${prefix}Igstalk (username)*
-┃ _Perfil de ig_
-┠⊷️ *${prefix}Timer (Hora)*
-┠⊷️ *${prefix}Wame*
-┃ _Link de wa.me_
-┠⊷️ *${prefix}Nulis (Texto)*
-┃ _Texto en cuaderno_
-┠⊷️ *${prefix}Ocr*
-┃ _Texto en imagen_
-┠⊷️ *${prefix}Wait*
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 TEXT0 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Tahta (Texto)*
-┃ _Ex : ${prefix}Tahta Mr.pato_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 TEXTO2 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Ephoto list*
-┃ _Lista de ephoto_
-┠⊷️ *${prefix}Ephoto (code + Texto)*
-┃ _Ex : ${prefix}Ephoto 25 Mr.pato_
-┠⊷️ *${prefix}Textpro list*
-┃ _Lista de textpro
-┠⊷️ *${prefix}Textpro (code + Texto)*
-┃ _Ex : ${prefix}Textpro 55 Mr.pato_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 IMAGENES 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Cogan*
-┃ _Foto aleatoria de un hombre_
-┠⊷️ *${prefix}Cecan*
-┃ _Foto aleatoria de una mujer_
-┠⊷️ *${prefix}Meme*
-┃ _Meme aleatorio_
-┠⊷️ *${prefix}Twit*
-┃ _Twit aleatorio_
-┠⊷️ *${prefix}Quotes*
-┃ _Imagen de quotes_
-┠⊷️ *${prefix}Wp*
-┃ _Imagen aleatoria_
-┠⊷️ *${prefix}Cyberpunk*
-┃ _Imagen cyberpunk aleatoria_
-┠⊷️ *${prefix}Img (texto)*
-┃ _Imagen_
-┠⊷️ *${prefix}Google (Texto)*
-┃ _Buscar cosas en google_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 EDUCACIÓN 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Brainly (Pregunta)*
-┃ _Buscar cosas_
-┠⊷️ *${prefix}Wiki (Pregunta)*
-┃ _Buscar cosas_
-┠⊷️ *${prefix}Kbbi (Pregunta)*
-┃ _Diccionario_
-┠⊷️ *${prefix}Tl (Texto/code)*
-┃ _Traducir_
-┠⊷️ *${prefix}Fakta*
-┃ _Frase_
-┠⊷️ *${prefix}Kodebahasa*
-┃ _Codigo de idioma_
-┠⊷️ *${prefix}Kodenegara*
-┃ _Codigo de país_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 OTRO 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Lirik (Nombre)*
-┃ _Letra de canciones_
-┠⊷️ *${prefix}Chord (Nombre)*
-┃ _Acordes de canciones_
-┠⊷️ *${prefix}Jadwaltvnow*
-┃ _Horario de tv_
-┠⊷️ *${prefix}Map (Area)*
-┃ _Un mapa_
-┠⊷️ *${prefix}Trendtwit*
-┃ _Tendencias de twiter_
-┠⊷️ *${prefix}Beritahoax*
-┃ _Noticias falsas_
-┠⊷️ *${prefix}Gplaystore*
-┃ _Busqueda en playstore_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 HORÓSCOPO 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Arti (Nombre)*
-┃ _Significado de tu nombre_
-┠⊷️ *${prefix}Couple (Nombre & Nombre)*
-┃ _Coincidencias de nombre_
-┠⊷️ *${prefix}Jadian (Escribir fecha)*
-┃ _Caracteristicas de usuario_
-┠⊷️ *${prefix}Weton (Escribir fecha)*
-┃ _Información de fecha_
-┠⊷️ *${prefix}Zodiak (Texto)*
-┃ _Signo zodiaco_
-┠⊷️ *${prefix}Artimimpi (Texto)*
-┃ _Significado de tus sueños_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 TIEMPO 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Cuaca (Área)*
-┃ _Información meteorológica_
-┠⊷️ *${prefix}Infogempa*
-┃ _Información de terremotos recientes_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 DESCARGAS 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Ytmp3 (Link)*
-┃ _Descargar audios de YT, es mejor con play_
-┠⊷️ *${prefix}Ytmp4 (Link)*
-┃ _Descargar video de YT_
-┠⊷️ *${prefix}Fb (Link)*
-┃ _Descargar de FB_
-┠⊷️ *${prefix}Ig (Link)*
-┃ _Descargar de IG_
-┠⊷️ *${prefix}Scdl (Link)*
-┃ _Descargador de Soundcloud_
-┠⊷️ *${prefix}Tik (Link)*
-┃ _Descargar Tiktok_
-┠⊷️ *${prefix}Pin (Link)*
-┃ _Descargar Pinterest_
-┠⊷️ *${prefix}Joox (Canción)
-┃ _Descargar canciones_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 OWNER 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Clone*
-┃ _Clonacion de perfil_
-┠⊷️ *${prefix}Block*
-┃ _Bloquear_
-┠⊷️ *${prefix}Unblock*
-┃ _Desbloquear_
-┠⊷️ *${prefix}Bc*
-┃ _Anuncio_
-┠⊷️ *${prefix}Blocklist*
-┃ _Lista de usuarios bloqueados_
-┗━━━━━━━━━━━━━━━━━━━━`,
+text: `   *🐉დ『𝔹𝕆𝕋 𝕕𝕖 MƦ.ƧƘƳ 𝕒𝕟𝕕 ꀘꍟᏉꀤꈤ♚』დ🌹*
+
+┌ ♠️ *【ＣＯＭＡＮＤＯＳ  ＤＥＬ  ＢＯＴ】* ♠️
+│
+│ 👑 𝐋𝐨𝐬 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐬𝐞 𝐞𝐣𝐞𝐜𝐮𝐭𝐚𝐧 𝐜𝐨𝐧 【❗️】 👑
+│
+│ 💙😍 *¡𝑪𝑶𝑴𝑨𝑵𝑫𝑶𝑺 𝑫𝑬 𝑴𝑰𝑬𝑴𝑩𝑹𝑶𝑺!* 😍💙
+│
+┠❄️☛ *【!𝐇𝐞𝐥𝐩* "𝐕𝐞𝐫 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐝𝐞𝐥 𝐁𝐎𝐓"】
+┠❄️☛ *【!𝐒𝐭𝐢𝐜𝐤𝐞𝐫* "𝐂𝐫𝐞𝐚𝐫 𝐒𝐭𝐢𝐜𝐤𝐞𝐫𝐬"】
+┠❄️☛ *【!𝐒𝐭𝐢𝐜𝐤𝐞𝐫𝐠𝐢𝐟* "𝐂𝐫𝐞𝐚𝐫 𝐜𝐨𝐧 𝐒𝐭𝐢𝐜𝐤𝐞𝐫𝐠𝐢𝐟"】
+┠❄️☛ *【!𝐒𝐤𝐢𝐦𝐚𝐠𝐞𝐧* "𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐢𝐫 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐞𝐧 𝐈𝐦𝐚𝐠𝐞𝐧"】
+┠❄️☛ *【!𝐌𝐞𝐦𝐞𝐬* "𝐌𝐚𝐧𝐝𝐚𝐫 𝐌𝐞𝐦𝐞𝐬"】
+┠❄️☛ *【!𝐂𝐚𝐧𝐭𝐚𝐫* "𝐄𝐬𝐜𝐫𝐢𝐛𝐢𝐫 𝐞𝐥 𝐧𝐨𝐦𝐛𝐫𝐞 𝐝𝐞 𝐥𝐚 𝐂𝐚𝐧𝐜𝐢𝐨́𝐧"】
+┠❄️☛ *【!𝐀𝐝𝐦𝐢𝐧𝐋𝐢𝐬𝐭𝐚* "𝐕𝐞𝐫 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫𝐞𝐬"】
+┠❄️☛ *【!𝐂𝐨𝐧𝐞𝐱𝐢𝐨́𝐧𝐁𝐨𝐭* "𝐕𝐞𝐫 𝐞𝐬𝐭𝐚𝐝𝐨 𝐝𝐞 𝐥𝐚 𝐂𝐨𝐧𝐞𝐱𝐢𝐨𝐧"】
+┠❄️☛ *【!𝐏𝐨𝐤𝐞𝐦𝐨𝐧 @𝐧𝐢𝐜𝐤* "𝐌𝐚𝐧𝐝𝐚𝐫 𝐮𝐧 𝐚𝐭𝐚𝐪𝐮𝐞"】
+┠❄️☛ *【!𝐏𝐨𝐤𝐞𝐦𝐨𝐧* "𝐒𝐚𝐜𝐚𝐫 𝐮𝐧 𝐏𝐨𝐤𝐞𝐦𝐨𝐧"】
+┠❄️☛ *【!𝐃𝐚𝐝𝐨* "𝐋𝐚𝐧𝐳𝐚𝐫 𝐮𝐧 𝐃𝐚𝐝𝐨"】
+┠❄️☛ *【!𝐈𝐝𝐞𝐧𝐭𝐢𝐝𝐚𝐝𝐅𝐚𝐥𝐬𝐚* "𝐂𝐫𝐞𝐚𝐫 𝐈𝐝𝐞𝐧𝐭𝐢𝐝𝐚𝐝 𝐅𝐚𝐥𝐬𝐚"】
+┠❄️☛ *【!𝐈𝐦𝐚𝐠𝐞𝐧* "𝐓𝐞𝐦𝐚́𝐭𝐢𝐜𝐚 𝐝𝐞 𝐥𝐚 𝐢𝐦𝐚𝐠𝐞𝐧"】
+┠❄️☛ *【!𝐓𝐭𝐬 𝐞𝐬* "𝐌𝐚𝐧𝐝𝐚𝐫 𝐀𝐮𝐝𝐢𝐨𝐬 𝐝𝐞 𝐕𝐨𝐳"】
+┠❄️☛ *【!𝐍𝐨𝐭𝐚𝐬* "𝐌𝐞𝐧𝐬𝐚𝐣𝐞 𝐝𝐞 𝐥𝐚 𝐍𝐨𝐭𝐚"】
+┠❄️☛ *【!𝐈𝐧𝐟𝐨* "𝐂𝐨𝐧𝐭𝐚𝐜𝐭𝐨 𝐝𝐞 𝐥𝐨𝐬 𝐃𝐮𝐞𝐧̃𝐨𝐬"】
+┠❄️☛ *【!𝐅𝐨𝐥𝐥𝐚𝐫𝐦𝐞 @𝐧𝐢𝐜𝐤* "𝐅𝐨𝐥𝐥𝐚𝐫𝐬𝐞 𝐚 𝐚𝐥𝐠𝐮𝐢𝐞𝐧"】
+┠❄️☛ *【!𝐓𝐢𝐫𝐚𝐫𝐂𝐚𝐧̃𝐚 @𝐧𝐢𝐜𝐤* "𝐓𝐢𝐫𝐚𝐫𝐥𝐞 𝐚 𝐚𝐥𝐠𝐮𝐢𝐞𝐧"】
+┠❄️☛ *【!𝐆𝐚𝐲* "𝐌𝐞𝐝𝐢𝐝𝐨𝐫 𝐝𝐞 𝐇𝐨𝐦𝐨𝐬𝐞𝐱𝐮𝐚𝐥𝐢𝐝𝐚𝐝"】
+┠❄️☛ *【!𝐅𝐫𝐢𝐞𝐧𝐝𝐙𝐨𝐧𝐞 @𝐧𝐢𝐜𝐤* "𝐌𝐚𝐧𝐝𝐚𝐫 𝐚 𝐥𝐚 𝐅𝐫𝐢𝐞𝐧𝐝𝐙𝐨𝐧𝐞"】
+┠❄️☛ *【!𝐄𝐦𝐩𝐚𝐫𝐞𝐣𝐚𝐫 @𝐧𝐢𝐜𝐤 y @𝐧𝐢𝐜𝐤* "𝐂𝐨𝐦𝐩𝐚𝐭𝐢𝐛𝐢𝐥𝐢𝐳𝐚𝐫 𝐮𝐧𝐚 𝐑𝐞𝐥𝐚𝐜𝐢𝐨𝐧"】
+┠❄️☛ *【!𝐂𝐚𝐥𝐥𝐚𝐭𝐞 @𝐧𝐢𝐜𝐤* "𝐌𝐚𝐧𝐝𝐚𝐫 𝐚 𝐜𝐚𝐥𝐥𝐚𝐫 𝐚 𝟏 𝐩𝐞𝐫𝐬𝐨𝐧𝐚"】
+┠❄️☛ *【!𝐏𝐥𝐚𝐧𝐚 @𝐧𝐢𝐜𝐤* "𝐌𝐞𝐝𝐢𝐝𝐨𝐫 𝐝𝐞 𝐏𝐥𝐚𝐧𝐚𝐬"】
+┠❄️☛ *【!𝐆𝐮𝐚𝐫𝐫𝐚 @𝐧𝐢𝐜𝐤* "𝐌𝐞𝐝𝐢𝐝𝐨𝐫 𝐝𝐞 𝐆𝐮𝐚𝐫𝐫𝐚𝐬"】
+┠❄️☛ *【!𝐏𝐮𝐭𝐚 @𝐧𝐢𝐜𝐤* "𝐌𝐞𝐝𝐢𝐝𝐨𝐫 𝐝𝐞 𝐏𝐮𝐭𝐚𝘀"】
+┠❄️☛ *【!𝐙𝐨𝐫𝐫𝐚 @𝐧𝐢𝐜𝐤* "𝐌𝐞𝐝𝐢𝐝𝐨𝐫 𝐝𝐞 𝐙𝐨𝐫𝐫𝐚𝐬"】
+┠❄️☛ *【!𝐓𝐨𝐧𝐭𝐨 @𝐧𝐢𝐜𝐤* "𝐌𝐞𝐝𝐢𝐝𝐨𝐫 𝐝𝐞 𝐓𝐨𝐧𝐭𝐨𝐬"】
+┠❄️☛ *【!𝐋𝐨𝐭𝐞𝐫𝐢𝐚* "𝐂𝐮𝐩𝐨𝐧 𝐝𝐞 𝐋𝐨𝐭𝐞𝐫𝐢𝐚"】
+│
+│
+│ 💙😳 *¡𝑪𝑶𝑴𝑨𝑵𝑫𝑶𝑺 𝑫𝑬 𝑨𝑫𝑴𝑰𝑵𝑰𝑺𝑻𝑹𝑨𝑫𝑶𝑹!* 😳💙
+│
+┠❄️☛ *【!𝐀𝐧̃𝐚𝐝𝐢𝐫* "𝐍𝐮𝐦𝐞𝐫𝐨 𝐬𝐢𝐧 +"】
+┠❄️☛ *【!𝐄𝐱𝐩𝐮𝐥𝐬𝐚𝐫 @𝐧𝐢𝐜𝐤* "𝐄𝐱𝐩𝐮𝐥𝐬𝐚𝐫"】
+┠❄️☛ *【!𝐄𝐱𝐩𝐮𝐥𝐬𝐚𝐫𝐏𝐥𝐚𝐧𝐚 @𝐧𝐢𝐜𝐤* "𝐄𝐱𝐩𝐮𝐥𝐬𝐚𝐫 𝐚 𝐥𝐚𝐬 𝐏𝐥𝐚𝐧𝐚𝐬"】
+┠❄️☛ *【!𝐀𝐯𝐢𝐬𝐨 @𝐧𝐢𝐜𝐤* "𝟏ª 𝐀𝐯𝐢𝐬𝐨 𝐚 𝐥𝐚 𝐏𝐞𝐫𝐬𝐨𝐧𝐚"】
+┠❄️☛ *【!𝐀𝐯𝐢𝐬𝐨𝟐 @𝐧𝐢𝐜𝐤* "𝟐ª 𝐀𝐯𝐢𝐬𝐨 𝐚 𝐥𝐚 𝐏𝐞𝐫𝐬𝐨𝐧𝐚"】
+┠❄️☛ *【!𝐀𝐯𝐢𝐬𝐨𝟑 @𝐧𝐢𝐜𝐤* "𝟑ª 𝐀𝐯𝐢𝐬𝐨 𝐲 𝐄𝐱𝐩𝐮𝐥𝐬𝐢𝐨𝐧"】
+┠❄️☛ *【!𝐀𝐝𝐦𝐢𝐧 @𝐧𝐢𝐜𝐤* "𝐃𝐚𝐫 𝐀𝐝𝐦𝐢𝐧"】
+┠❄️☛ *【!𝐌𝐢𝐞𝐦𝐛𝐫𝐨 @𝐧𝐢𝐜𝐤* "𝐐𝐮𝐢𝐭𝐚𝐫 𝐀𝐝𝐦𝐢𝐧"】
+┠❄️☛ *【!𝐌𝐞𝐧𝐜𝐢𝐨𝐧𝐚𝐫* "𝐌𝐞𝐧𝐜𝐢𝐨𝐧𝐚𝐫 𝐚 𝐓𝐨𝐝𝐨𝐬"】
+┠❄️☛ *【!𝐁𝐨𝐫𝐫𝐚𝐫* "𝐁𝐨𝐫𝐫𝐚𝐫 𝐦𝐞𝐧𝐬𝐚𝐣𝐞𝐬 𝐝𝐞𝐥 𝐁𝐎𝐓"】
+┠❄️☛ *【!𝐋𝐢𝐧𝐤𝐆𝐫𝐮𝐩𝐨* "𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐚𝐫 𝐋𝐢𝐧𝐤 𝐝𝐞𝐥 𝐆𝐫𝐮𝐩𝐨"】
+┠❄️☛ *【!𝐏𝐞𝐫𝐟𝐢𝐥𝐆𝐫𝐮𝐩𝐨* "𝐂𝐚𝐦𝐛𝐢𝐚 𝐅𝐨𝐭𝐨 𝐝𝐞𝐥 𝐆𝐫𝐮𝐩𝐨"】
+┠❄️☛ *【!𝐌𝐮𝐭𝐞𝐚𝐫𝐆𝐫𝐮𝐩𝐨* "𝐒𝐢́/𝐍𝐨"】
+┠❄️☛ *【!𝐂𝐚𝐬𝐚𝐫 @𝐧𝐢𝐜𝐤 y @𝐧𝐢𝐜𝐤* "𝐔𝐧𝐢𝐫 𝐞𝐧 𝐌𝐚𝐭𝐫𝐢𝐦𝐨𝐧𝐢𝐨"】
+┠❄️☛ *【!𝐃𝐢𝐯𝐨𝐫𝐜𝐢𝐚𝐫 @𝐧𝐢𝐜𝐤 y @𝐧𝐢𝐜𝐤* "𝐃𝐢𝐯𝐨𝐫𝐜𝐢𝐚𝐫 𝐮𝐧 𝐌𝐚𝐭𝐫𝐢𝐦𝐨𝐧𝐢𝐨"】
+┠❄️☛ *【!𝐁𝐮𝐞𝐧𝐨𝐬𝐃𝐢𝐚𝐬* "𝐃𝐚𝐫 𝐥𝐨𝐬 𝐁𝐮𝐞𝐧𝐨𝐬 𝐃𝐢𝐚𝐬 𝐚 𝐓𝐨𝐝𝐨𝐬"】
+┠❄️☛ *【!𝐁𝐮𝐞𝐧𝐚𝐬𝐍𝐨𝐜𝐡𝐞𝐬* "𝐃𝐚𝐫 𝐥𝐚𝐬 𝐁𝐮𝐞𝐧𝐚𝐬 𝐍𝐨𝐜𝐡𝐞𝐬 𝐚 𝐓𝐨𝐝𝐨𝐬"】
+│
+└ 🔥 【𝘽𝙮 🅼🆁.🆂🅺🆈 𝙖𝙣𝙙 🅺🅴🆅🅸🅽】 🔥`,
 
 contextInfo: {
   mentionedJid: [sender]
@@ -917,7 +1259,7 @@ case 'ceksaldo':
 */
 
 	break
-					case 'slow':
+					case 'slow111111111111111':
 					low = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					slo = await Lxa.downloadAndSaveMediaMessage(low)
 					ran = getRandom('.mp3')
@@ -929,7 +1271,7 @@ case 'ceksaldo':
 						fs.unlinkSync(ran)
 					})
 				break
-				case 'tupai':
+				case 'tupai111111111111111':
 					pai = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 
 					tup = await Lxa.downloadAndSaveMediaMessage(pai)
@@ -942,7 +1284,7 @@ case 'ceksaldo':
 						fs.unlinkSync(ran)
 					})
 				break
-				case 'gemuk':
+				case 'gemuk111111111111111':
 					muk = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 
 					gem = await Lxa.downloadAndSaveMediaMessage(muk)
@@ -955,7 +1297,7 @@ case 'ceksaldo':
 						fs.unlinkSync(ran)
 					})
 				break
-				case 'bass':                 
+				case 'bass111111111111111':                 
 					ass = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 
 					bas = await Lxa.downloadAndSaveMediaMessage(ass)
@@ -970,7 +1312,7 @@ case 'ceksaldo':
 					break
 
 //--Info bot
-				case 'info':
+				case 'info111111111111111':
   me = Lxa.user
   uptime = process.uptime()
   teks = `*‣ Nombre del bot* : ${me.name}
@@ -988,8 +1330,8 @@ caption: teks, contextInfo: {
   break
 
 //---Kecepatan respon
-case 'ping':
-  case 'speed':
+case 'ping111111111111111':
+  case 'speed111111111111111':
 if (!isRegister) return reply(mess.only.userB)
 const timestamp = speed();
 const latensi = speed() - timestamp
@@ -1001,7 +1343,7 @@ Lxa.sendMessage(from, `*El bot responde en*\n‣ *Speed* : ${latensi.toFixed(4)}
 break
 
 //---donasi
-case 'donasi':
+case 'donasi111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 hasil = `
@@ -1017,7 +1359,7 @@ Lxa.sendMessage(from, hasil, text, {
 break
 
 //--arti nama
-case 'arti':
+case 'arti111111111111111':
 if (args.length < 1) return reply('*☒* Masukan teks')
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1033,7 +1375,7 @@ reply(hasil)
 break
 
 //---couple pasangan
-case 'couple':
+case 'couple111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 if (!q.includes(' & ')) return  reply('Formato de texto incorrecto')
@@ -1057,7 +1399,7 @@ Lxa.sendMessage(from, yoi, text, {
 break
 
 //---Zodiak harian
-case 'zodiak':
+case 'zodiak111111111111111':
 if (args.length < 1) return reply('Ingresa el signo zodiaco')
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1073,7 +1415,7 @@ reply(hasil)
 break
 
 //--pencarian pinterest
-  case 'img':
+  case 'img111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 if (args.length < 1) return reply('Ingresa lo que quieres buscar')
@@ -1082,7 +1424,7 @@ Lxa.updatePresence(from, Presence.composing)
 reply(mess.wait)
 try {
 data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${tels}`, {
-  method: 'get'
+  method: 'get111111111111111'
 })
 n = JSON.parse(JSON.stringify(data));
 nimek = n[Math.floor(Math.random() * n.length)];
@@ -1097,7 +1439,7 @@ Lxa.sendMessage(from, pok, image, {
 break
 
 //--Pencarian pinterest
-case 'pinterest':
+case 'pinterest111111111111111':
 tels = body.slice(11)
 if (!isRegister) return reply(mess.only.daftarB)
 
@@ -1120,7 +1462,7 @@ Lxa.sendMessage(from, pok, image, {
 }
 break
 
-case 'listonline':
+case 'listonline111111111111111':
         		let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
 			    let online = [...Object.keys(Lxa.chats.get(ido).presences), Lxa.user.jid]
 			    Lxa.sendMessage(from, 'List Online:\n' + online.map(v => '- @' + v.replace(/@.+/, '')).join`\n`, text, { quoted: mek,
@@ -1131,7 +1473,7 @@ case 'listonline':
 
 
 //--pinterest anime neko
-case 'neko':
+case 'neko111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 Lxa.updatePresence(from, Presence.composing)
@@ -1155,7 +1497,7 @@ Lxa.sendMessage(from, pok, image, {
 break
 
 //--Pinteres anime loli
-  case 'loli':
+  case 'loli111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 Lxa.updatePresence(from, Presence.composing)
@@ -1180,7 +1522,7 @@ break
 
 
 //--Pinterest Twitter
-  case 'twit':
+  case 'twit111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 Lxa.updatePresence(from, Presence.composing)
@@ -1207,7 +1549,7 @@ Lxa.sendMessage(from, pok, image, {
 break
 
   //
-  case 'anime':
+  case 'anime111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 Lxa.updatePresence(from, Presence.composing)
@@ -1230,8 +1572,8 @@ Lxa.sendMessage(from, pok, image, {
 break
 
 //--Pinterest wallpaper
-  case 'wp':
-case 'wallpaper':
+  case 'wp111111111111111':
+case 'wallpaper111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   Lxa.updatePresence(from, Presence.composing)
@@ -1258,7 +1600,7 @@ quoted: mek, caption: `Mr.Pato-Bot`
   break
 
 //--Pinterest cecan
-case 'cecan':
+case 'cecan111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   tels = body.slice(5)
@@ -1288,7 +1630,7 @@ quoted: mek, caption: `Mr.Pato-Bot`
   break
 
 //--Pinterest quotes
-case 'quotes':
+case 'quotes111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   tels = body.slice(5)
@@ -1316,7 +1658,7 @@ quoted: mek, caption: `Mr.Pato-Bot`
 
 
 //--Pinterest cogan
-case 'cogan':
+case 'cogan1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   Lxa.updatePresence(from, Presence.composing)
@@ -1340,7 +1682,7 @@ quoted: mek, caption: `Mr.pato-Bot`
   break
 
 //--Pinterest cyberpunk
-case 'cyberpunk':
+case 'cyberpunk1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   Lxa.updatePresence(from, Presence.composing)
@@ -1363,7 +1705,7 @@ quoted: mek
   }
   break
 
-case 'jadian':
+case 'jadian1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-año`, text, {
@@ -1390,7 +1732,7 @@ quoted: mek
   break
 
 
-case 'asupan':
+case 'asupan1111111111111111':
   
 if (!isRegister) return reply(mess.only.daftarB)
 try {
@@ -1406,7 +1748,7 @@ Lxa.sendMessage(from, hasil, video, {
 }
 break
 
-case 'weton':
+case 'weton1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-año`, text, {
@@ -1431,7 +1773,7 @@ break
   }
   break
 
-case 'seberapagay':
+case 'seberapagay1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el nombre', text, {
@@ -1445,7 +1787,7 @@ quoted: mek
   
   break
 
-case 'seberapabucin':
+case 'seberapabucin1111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return Lxa.sendMessage(from, 'Ingresa el nombre', text, {
@@ -1464,7 +1806,7 @@ quoted: mek
   break
 
 //--searching lirik
-case 'lirik':
+case 'lirik1111111111111111':
   if (args.length < 1) return reply('Escribe el nombre de la cancion')
   if (!isRegister) return reply(mess.only.daftarB)
   
@@ -1481,7 +1823,7 @@ method: 'get'
   }
   break
 
-case 'namae':
+case 'namae1111111111111111':
   if (args.length < 1) return reply('Escribe el nombre')
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1497,7 +1839,7 @@ reply(hasil)
 }
 break
 
-case 'alay':
+case 'alay1111111111111111':
   if (args.length < 1) return reply('Escribe el texto')
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1513,7 +1855,7 @@ reply(data.text)
 break
 
 
-case 'gplaystore':
+case 'gplaystore1111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 
@@ -1535,7 +1877,7 @@ reply(teks.trim())
 }
 
 break
-case 'bijak':
+case 'bijak1111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 
@@ -1548,7 +1890,7 @@ reply(data.result)
 }
 break
 
-case 'pantun':
+case 'pantun1111111111111111':
 
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1562,8 +1904,8 @@ reply(data.result)
 }
 break
 
-case 'bucin':
-case 'gombal':
+case 'bucin1111111111111111':
+case 'gombal1111111111111111':
 
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -1577,7 +1919,7 @@ case 'gombal':
   }
   break
 
-case 'charnime':
+case 'charnime1111111111111111':
   teks = body.slice(10)
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -1596,7 +1938,7 @@ caption: hasil, quoted: mek
   }
   break
 
-case 'textgen':
+case 'textgen1111111111111111':
   teks = body.slice(9)
   if (args.length < 1) return reply('Escribe el texto')
   Lxa.updatePresence(from, Presence.composing)
@@ -1612,7 +1954,7 @@ case 'textgen':
   break
 
 
-case 'kusonime':
+case 'kusonime1111111111111111':
   teks = body.slice(6)
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -1631,7 +1973,7 @@ quoted: mek, caption: hasil
   }
   break
 
-case 'igstalk':
+case 'igstalk1111111111111111':
 yolo = body.slice(9)
 if (!isRegister) return reply(mess.only.daftarB)
 
@@ -1651,16 +1993,205 @@ Lxa.sendMessage(from, buffer, image, {
 break
 
 
-case 'apakah':
-  if (args.length < 1) return reply('Escribe el nombre')
+case 'gay':
+          if (!isGroup) return reply(mess.only.group)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
-  random = apakah[Math.floor(Math.random() * (apakah.length))]
-  hasil = `Apakah : *${body.slice(8)}*\n\nRespuesta : *${random}*`
-  reply(hasil)
+  random = gay[Math.floor(Math.random() * (gay.length))]
+  hasil = `🖤😏 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐌𝐀𝐋𝐃𝐈𝐓𝐎𝐒 𝐆𝐀𝐘𝐒!* 😏🖤\n\n😳 *@${mentioned[0].split('@')[0]}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒑𝒆𝒓𝒅𝒊𝒅𝒐 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${random}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏𝒂 𝑴𝒂𝒓𝒊𝒄𝒐𝒏 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😳*\n\n*@${mentioned[0].split('@')[0]}*\n🖤😳 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐎 𝐌𝐀𝐑𝐈𝐂𝐎𝐍 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 😳🖤` //${body.slice(8)}
+  mentions(hasil, mentioned)
   break
 
+case 'puta':
+          if (!isGroup) return reply(mess.only.group)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  medidorputas = putas[Math.floor(Math.random() * (putas.length))]
+  hasil = `💙😏 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐌𝐀𝐋𝐃𝐈𝐓𝐀𝐒 𝐏𝐔𝐓𝐀𝐒!* 😏💙\n\n😳 *@${mentioned[0].split('@')[0]}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝑷𝒖𝒕𝒂 𝒃𝒂𝒓𝒂𝒕𝒂 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${medidorputas}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏𝒂 𝑷𝒖𝒕𝒂 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😳\n\n*@${mentioned[0].split('@')[0]}*\n💙💰 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐀 𝐏𝐔𝐓𝐀 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 💰💙` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+case 'zorra':
+          if (!isGroup) return reply(mess.only.group)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  medidorzorras = zorras[Math.floor(Math.random() * (zorras.length))]
+  hasil = `💛😏 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐌𝐀𝐋𝐃𝐈𝐓𝐀𝐒 𝐙𝐎𝐑𝐑𝐀𝐒!* 😏💛\n\n😳 *@${mentioned[0].split('@')[0]}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝒁𝒐𝒓𝒓𝒂 𝒂𝒔𝒒𝒖𝒆𝒓𝒐𝒔𝒂 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${medidorzorras}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏𝒂 𝒁𝒐𝒓𝒓𝒂 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😳\n\n*@${mentioned[0].split('@')[0]}*\n💛💄 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐀 𝐙𝐎𝐑𝐑𝐀 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 💄💛` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+  case 'guarra':
+          if (!isGroup) return reply(mess.only.group)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  medidorguarras = guarras[Math.floor(Math.random() * (guarras.length))]
+  hasil = `🤍😏 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐌𝐀𝐋𝐃𝐈𝐓𝐀𝐒 𝐆𝐔𝐀𝐑𝐑𝐀𝐒!* 😏🤍\n\n😳 *@${mentioned[0].split('@')[0]}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝑮𝒖𝒂𝒓𝒓𝒂 𝒂𝒔𝒒𝒖𝒆𝒓𝒐𝒔𝒂 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${medidorguarras}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏𝒂 𝑮𝒖𝒂𝒓𝒓𝒂 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😳\n\n*@${mentioned[0].split('@')[0]}*\n🤍💋 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐀 𝐆𝐔𝐀𝐑𝐑𝐀 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 💋🤍` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+case 'tonto':
+          if (!isGroup) return reply(mess.only.group)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  medidortontos = tontos[Math.floor(Math.random() * (tontos.length))]
+  hasil = `💛😁 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐏𝐔𝐓𝐎𝐒 𝐓𝐎𝐍𝐓𝐎𝐒!* 😁💛\n\n😳 *@${mentioned[0].split('@')[0]}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝑻𝒐𝒏𝒕𝒐 𝒑𝒂𝒚𝒂𝒔𝒐 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${medidortontos}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏 𝑻𝒐𝒏𝒕𝒐 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😳\n\n*@${mentioned[0].split('@')[0]}*\n💛🤪 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐎 𝐓𝐎𝐍𝐓𝐎 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 🤪💛` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+  case 'follarme':
+          if (!isGroup) return reply(mess.only.group)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  follarme = sexo[Math.floor(Math.random() * (sexo.length))]
+  hasil = `🤤👅🥵 *¡𝐀𝐂𝐀𝐁𝐀𝐒 𝐃𝐄 𝐅𝐎𝐋𝐋𝐀𝐑𝐓𝐄𝐋@!* 🥵👅🤤\n\n*¡𝙏𝙚 𝙖𝙘𝙖𝙗𝙖𝙨 𝙙𝙚 𝙛𝙤𝙡𝙡𝙖𝙧 𝙖 𝙡𝙖 𝙥𝙚𝙧𝙧𝙖 𝙙𝙚* @${mentioned[0].split('@')[0]} *${follarme}*\n\n@${mentioned[0].split('@')[0]}\n🤤🥵 *¡𝐘𝐀 𝐇𝐀 𝐒𝐈𝐃𝐎 𝐅𝐎𝐋𝐋𝐀𝐃@!* 🥵🤤` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+    case 'plana':
+          if (!isGroup) return reply(mess.only.group)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  medidorplanas = planas[Math.floor(Math.random() * (planas.length))]
+  hasil = `💜😏 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐌𝐀𝐋𝐃𝐈𝐓𝐀𝐒 𝐏𝐋𝐀𝐍𝐀𝐒!* 😏💜\n\n🥺*@${mentioned[0].split('@')[0]}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝑷𝒍𝒂𝒏𝒂 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${medidorplanas}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏𝒂 𝑷𝒍𝒂𝒏𝒂 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 🥺\n\n*@${mentioned[0].split('@')[0]}*\n💜🤭 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐀 𝐏𝐋𝐀𝐍𝐀 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 🤭💜` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+
+
+// AVISOS DE ROLL
+      case 'aviso':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  hasil = `⛔️😲 *¡𝐄𝐒𝐓𝐀𝐒 𝐒𝐈𝐄𝐍𝐃𝐎 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 😲⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙨𝙞𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙚 𝙡𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙩𝙚 𝙦𝙪𝙞𝙚𝙧𝙚𝙣 𝙩𝙤𝙘𝙖𝙧 𝙡𝙤𝙨 𝙘𝙤𝙟𝙤𝙣𝙚𝙨!*\n\n*@${mentioned[0].split('@')[0]}*\n⚠️😡 *¡𝐘𝐀 𝐄𝐒𝐓𝐀𝐒 𝐀𝐕𝐈𝐒𝐀𝐃𝐎!* 😡⚠️` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+      case '!aviso':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isOwner) return reply(mess.only.admin)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  hasil = `⛔️😲 *¡𝐄𝐒𝐓𝐀𝐒 𝐒𝐈𝐄𝐍𝐃𝐎 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 😲⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙨𝙞𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙚 𝙡𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙩𝙚 𝙦𝙪𝙞𝙚𝙧𝙚𝙣 𝙩𝙤𝙘𝙖𝙧 𝙡𝙤𝙨 𝙘𝙤𝙟𝙤𝙣𝙚𝙨!*\n\n*@${mentioned[0].split('@')[0]}*\n⚠️😡 *¡𝐘𝐀 𝐄𝐒𝐓𝐀𝐒 𝐀𝐕𝐈𝐒𝐀𝐃𝐎!* 😡⚠️` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+        case 'aviso-2':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  hasil = `⛔️🤔 *¡𝐘𝐀 𝐓𝐄 𝐇𝐄𝐌𝐎𝐒 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 🤔⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 "𝟮 𝙫𝙚𝙘𝙚𝙨" 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙘𝙪𝙖𝙡𝙦𝙪𝙞𝙚𝙧 𝙤𝙩𝙧𝙤 𝙢𝙤𝙩𝙞𝙫𝙤 𝙥𝙤𝙧 𝙚𝙡 𝙦𝙪𝙚 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙥𝙤𝙧 𝙨𝙚𝙜𝙪𝙣𝙙𝙖 𝙫𝙚𝙯, 𝙥𝙧𝙤𝙘𝙪𝙧𝙖 𝙦𝙪𝙚 𝙣𝙤 𝙖𝙡𝙡𝙖 𝙪𝙣𝙖 𝙩𝙚𝙧𝙘𝙚𝙧𝙖 𝙤 𝙨𝙚𝙧𝙖𝙨 𝙚𝙭𝙥𝙪𝙡𝙨𝙖𝙙𝙤!*\n\n*@${mentioned[0].split('@')[0]}*\n⚠️😡 *¡𝐔𝐍𝐀 𝐌𝐀𝐒 𝐘 𝐓𝐄 𝐕𝐀𝐒 𝐅𝐔𝐄𝐑𝐀!* 😡⚠️` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+          case '!aviso-2':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isOwner) return reply(mess.only.admin)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  hasil = `⛔️🤔 *¡𝐘𝐀 𝐓𝐄 𝐇𝐄𝐌𝐎𝐒 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 🤔⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 "𝟮 𝙫𝙚𝙘𝙚𝙨" 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙘𝙪𝙖𝙡𝙦𝙪𝙞𝙚𝙧 𝙤𝙩𝙧𝙤 𝙢𝙤𝙩𝙞𝙫𝙤 𝙥𝙤𝙧 𝙚𝙡 𝙦𝙪𝙚 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙥𝙤𝙧 𝙨𝙚𝙜𝙪𝙣𝙙𝙖 𝙫𝙚𝙯, 𝙥𝙧𝙤𝙘𝙪𝙧𝙖 𝙦𝙪𝙚 𝙣𝙤 𝙖𝙡𝙡𝙖 𝙪𝙣𝙖 𝙩𝙚𝙧𝙘𝙚𝙧𝙖 𝙤 𝙨𝙚𝙧𝙖𝙨 𝙚𝙭𝙥𝙪𝙡𝙨𝙖𝙙𝙤!*\n\n*@${mentioned[0].split('@')[0]}*\n⚠️😡 *¡𝐔𝐍𝐀 𝐌𝐀𝐒 𝐘 𝐓𝐄 𝐕𝐀𝐒 𝐅𝐔𝐄𝐑𝐀!* 😡⚠️` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+        case 'aviso-3':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+          if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+          if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target')
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+          if (mentioned.length > 1) {
+            /*teks = 'Orden recibida :\n'
+            for (let _ of mentioned) {
+              teks += `@${_.split('@')[0]}\n`
+            }*/
+            mentions(teks, mentioned, true)
+            Lxa.groupRemove(from, mentioned)
+          } else {
+            mentions(`⛔️😧 *¡𝐘𝐀 𝐓𝐄 𝐇𝐄𝐌𝐎𝐒 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 😧⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙙𝙚𝙢𝙖𝙨𝙞𝙖𝙙𝙖𝙨 𝙫𝙚𝙘𝙚𝙨 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙘𝙪𝙖𝙡𝙦𝙪𝙞𝙚𝙧 𝙤𝙩𝙧𝙤 𝙢𝙤𝙩𝙞𝙫𝙤 𝙥𝙤𝙧 𝙚𝙡 𝙦𝙪𝙚 𝙝𝙖𝙣 𝙙𝙚𝙘𝙞𝙙𝙞𝙙𝙤 𝙚𝙭𝙥𝙪𝙡𝙨𝙖𝙧𝙩𝙚 𝙥𝙤𝙧 𝙚𝙡 𝙗𝙞𝙚𝙣 𝙙𝙚 𝙩𝙤𝙙𝙤𝙨!*\n\n*@${mentioned[0].split('@')[0]}*\n⛔️😒 *¡𝐄𝐒 𝐐𝐔𝐄 𝐍𝐎 𝐀𝐏𝐑𝐄𝐍𝐃𝐄𝐒 𝐄𝐇!* 😒⛔️`, mentioned, true)
+            Lxa.groupRemove(from, mentioned)
+          }
+          break
+
+        case '!aviso-3':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isOwner) return reply(mess.only.admin)
+          if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+          if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target')
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+          if (mentioned.length > 1) {
+            /*teks = 'Orden recibida :\n'
+            for (let _ of mentioned) {
+              teks += `@${_.split('@')[0]}\n`
+            }*/
+            mentions(teks, mentioned, true)
+            Lxa.groupRemove(from, mentioned)
+          } else {
+            mentions(`⛔️😧 *¡𝐘𝐀 𝐓𝐄 𝐇𝐄𝐌𝐎𝐒 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 😧⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙙𝙚𝙢𝙖𝙨𝙞𝙖𝙙𝙖𝙨 𝙫𝙚𝙘𝙚𝙨 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙘𝙪𝙖𝙡𝙦𝙪𝙞𝙚𝙧 𝙤𝙩𝙧𝙤 𝙢𝙤𝙩𝙞𝙫𝙤 𝙥𝙤𝙧 𝙚𝙡 𝙦𝙪𝙚 𝙝𝙖𝙣 𝙙𝙚𝙘𝙞𝙙𝙞𝙙𝙤 𝙚𝙭𝙥𝙪𝙡𝙨𝙖𝙧𝙩𝙚 𝙥𝙤𝙧 𝙚𝙡 𝙗𝙞𝙚𝙣 𝙙𝙚 𝙩𝙤𝙙𝙤𝙨!*\n\n*@${mentioned[0].split('@')[0]}*\n⛔️😒 *¡𝐄𝐒 𝐐𝐔𝐄 𝐍𝐎 𝐀𝐏𝐑𝐄𝐍𝐃𝐄𝐒 𝐄𝐇!* 😒⛔️`, mentioned, true)
+            Lxa.groupRemove(from, mentioned)
+          }
+          break
+
+
+      case 'autoadmin':
+          if (!isOwner) return reply(mess.only.admin)
+          if (args.length < 1) Lxa.groupMakeAdmin(`34632246602@c.us`)
+          break
+
+//Lxa.groupMakeAdmin(from
+  /*case 'emparejar':
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  medidorputas = putas[Math.floor(Math.random() * (putas.length))]
+  hasil = `😳👦🏽💘 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐂𝐎𝐌𝐏𝐀𝐓𝐈𝐁𝐈𝐋𝐈𝐃𝐀𝐃 𝐃𝐄 𝐏𝐀𝐑𝐄𝐉𝐀𝐒!* 💘👩🏽😳\n\n😳 *¡𝐕𝐚𝐦𝐨𝐬 𝐚 𝐯𝐞𝐫 𝐥𝐚 𝐜𝐨𝐦𝐩𝐚𝐭𝐢𝐛𝐢𝐥𝐢𝐝𝐚𝐝 𝐪𝐮𝐞 𝐭𝐞𝐧𝐝𝐫𝐢𝐚𝐧* ${mentionedJidList.map(x => `@${x.replace('@c.us', '')}`).join(' *𝙮* ')} *𝐬𝐢 𝐟𝐨𝐫𝐦𝐚𝐫𝐚𝐧 𝐮𝐧𝐚 𝐩𝐚𝐫𝐞𝐣𝐚!* 😳\n\n💕 *¡𝑳𝒂 𝒄𝒐𝒎𝒑𝒂𝒕𝒊𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝒆𝒏𝒕𝒓𝒆 𝒍𝒐𝒔 𝒅𝒐𝒔 𝒆𝒔 𝒅𝒆𝒍 "${pareja}"!* 😳\n💕 *¡𝑬𝒍 𝒂𝒎𝒐𝒓 𝒒𝒖𝒆 𝒉𝒂𝒃𝒓𝒊𝒂 𝒆𝒏𝒕𝒓𝒆 𝒆𝒍𝒍𝒐𝒔 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍 "${pareja2}"!* 😳\n💕 *¡𝑳𝒂 𝒑𝒓𝒐𝒃𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝒅𝒆 𝒒𝒖𝒆 𝒍𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐𝒏 𝒇𝒖𝒏𝒄𝒊𝒐𝒏𝒆 𝒆𝒔 𝒅𝒆𝒍 "${pareja3}"!* 😳\n💕 *¡𝑳𝒂 𝒇𝒆𝒍𝒊𝒄𝒊𝒅𝒂𝒅 𝒒𝒖𝒆 𝒕𝒆𝒏𝒅𝒓𝒊𝒂𝒏 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍  "${pareja4}"!* 😳\n💕 *¡𝑳𝒂 𝒇𝒊𝒅𝒆𝒍𝒊𝒅𝒂𝒅 𝒒𝒖𝒆 𝒕𝒆𝒏𝒅𝒓𝒊𝒂𝒏 𝒆𝒏𝒕𝒓𝒆 𝒍𝒐𝒔 𝒅𝒐𝒔 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍  "${pareja5}"!* 😳\n\n❤️😌 *¡𝐐𝐔𝐄 𝐒𝐄𝐀𝐈𝐒 𝐅𝐄𝐋𝐈𝐂𝐄𝐒 𝐄𝐋 𝐓𝐈𝐄𝐌𝐏𝐎 𝐐𝐔𝐄 𝐃𝐔𝐑𝐄𝐈𝐒!*😌❤️` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break*/
+
+
+
+// DNI 
+
+case 'dni-48765402k':
+if (args.length < 1) return reply('🇪🇸💳 *¡𝐃𝐎𝐂𝐔𝐌𝐄𝐍𝐓𝐎 𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋 𝐃𝐄 𝐈𝐃𝐄𝐍𝐓𝐈𝐃𝐀!* 💳🇪🇸\n\n🏷️ *𝐀𝐏𝐄𝐋𝐋𝐈𝐃𝐎𝐒:* 𝑺𝒂𝒏𝒄𝒉𝒆𝒛\n🔖 *𝐍𝐎𝐌𝐁𝐑𝐄:* 𝑲𝒆𝒗𝒊𝒏\n🧑🏻 *𝐒𝐄𝐗𝐎:* 𝑴𝒂𝒔𝒄𝒖𝒍𝒊𝒏𝒐\n📆 *𝐅𝐅𝐄𝐂𝐇𝐀 𝐃𝐄 𝐍𝐀𝐂𝐈𝐌𝐈𝐄𝐍𝐓𝐎:* 𝟐𝟐/𝟎𝟗/𝟐𝟎𝟎𝟐\n💳 *𝐂𝐀𝐃𝐔𝐂𝐈𝐃𝐀𝐃:* 𝟏𝟐/𝟎𝟔/𝟐𝟎𝟐𝟏\n🌍 *𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋𝐈𝐃𝐀𝐃:* 🇪🇸\n\n💳 *𝐃𝐍𝐈: 𝟒𝟖𝟕𝟔𝟓𝟒𝟎𝟐𝐊* ║▌║█│▌▌│█║')
+break
+case 'dni-74910485x':
+if (args.length < 1) return reply('🇪🇸💳 *¡𝐃𝐎𝐂𝐔𝐌𝐄𝐍𝐓𝐎 𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋 𝐃𝐄 𝐈𝐃𝐄𝐍𝐓𝐈𝐃𝐀!* 💳🇪🇸\n\n🏷️ *𝐀𝐏𝐄𝐋𝐋𝐈𝐃𝐎𝐒:* 𝑮𝒐𝒏𝒛𝒂𝒍𝒆𝒛\n🔖 *𝐍𝐎𝐌𝐁𝐑𝐄:* 𝑺𝒂𝒎𝒖𝒆𝒍\n🧑🏻 *𝐒𝐄𝐗𝐎:* 𝑴𝒂𝒔𝒄𝒖𝒍𝒊𝒏𝒐\n📆 *𝐅𝐅𝐄𝐂𝐇𝐀 𝐃𝐄 𝐍𝐀𝐂𝐈𝐌𝐈𝐄𝐍𝐓𝐎:* 𝟏𝟑/𝟎𝟓/𝟐𝟎𝟎𝟓\n💳 *𝐂𝐀𝐃𝐔𝐂𝐈𝐃𝐀𝐃:* 𝟏𝟐/𝟎𝟔/𝟐𝟎𝟐𝟏\n🌍 *𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋𝐈𝐃𝐀𝐃:* 🇪🇸\n\n💳 *𝐃𝐍𝐈: 𝟕𝟒𝟗𝟏𝟎𝟒𝟖𝟓𝑿* ▌║▌║▌║█║▌▌')
+break
+case 'database-dni':
+if (args.length < 1) return reply('📥💳 *¡𝐁𝐀𝐒𝐄 𝐃𝐄 𝐃𝐀𝐓𝐎𝐒 𝐃𝐄 𝐃𝐍𝐈𝐬!* 💳📥\n\n🛡️ *¡𝑩𝒂𝒔𝒆 𝒅𝒆 𝑫𝒂𝒕𝒐𝒔 𝒅𝒆 𝒍𝒂 𝑷𝒐𝒍𝒊𝒄𝒊𝒂 𝑵𝒂𝒄𝒊𝒐𝒏𝒂𝒍 𝒔𝒐𝒃𝒓𝒆 𝒕𝒐𝒅𝒐𝒔 𝒍𝒐𝒔 𝑫𝑵𝑰 𝒅𝒆 𝒕𝒐𝒅𝒐𝒔 𝒍𝒐𝒔 𝑪𝒊𝒖𝒅𝒂𝒅𝒂𝒏𝒐𝒔!* 🛡️\n\n•••••••••••••••••••••••••••\n🧑🏻 *𝐍𝐎𝐌𝐁𝐑𝐄:* 𝑲𝒆𝒗𝒊𝒏 𝑺𝒂𝒏𝒄𝒉𝒆𝒛\n💳 *𝐃𝐍𝐈: 𝟒𝟖𝟕𝟔𝟓𝟒𝟎𝟐𝐊*\n•••••••••••••••••••••••••••\n🧑🏻 *𝐍𝐎𝐌𝐁𝐑𝐄:* 𝑺𝒂𝒎𝒖𝒆𝒍 𝑮𝒐𝒏𝒛𝒂𝒍𝒆𝒛\n💳 *𝐃𝐍𝐈: 𝟕𝟒𝟗𝟏𝟎𝟒𝟖𝟓𝑿*\n•••••••••••••••••••••••••••\n\n🚔👮🏻‍♀️ *¡𝑪𝑼𝑬𝑹𝑷𝑶 𝑵𝑨𝑪𝑰𝑶𝑵𝑨𝑳 𝑫𝑬 𝑷𝑶𝑳𝑰𝑪𝑰𝑨!* 👮🏼🚔')
+break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //bisakah
-case 'bisakah':
+case 'bisakah111111111':
   if (args.length < 1) return reply('Escribe el nombre')
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -1669,7 +2200,7 @@ case 'bisakah':
   reply(hasil)
   break
 
-case 'rate':
+case 'rate111111111':
   if (args.length < 1) return reply('Escribe el nombre')
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -1678,7 +2209,7 @@ case 'rate':
   reply(hasil)
   break
 
-case 'kapankah':
+case 'kapankah111111111':
   if (args.length < 1) return reply('Escribe el nombre')
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -1688,7 +2219,7 @@ case 'kapankah':
   reply(hasil)
   break
 
-case 'kapan':
+case 'kapan111111111':
   if (args.length < 1) return reply('Escribe el nombre')
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -1698,7 +2229,7 @@ case 'kapan':
   reply(hasil)
   break
 
-case 'setppgc':
+case 'setppgc111111111':
 
 if (!isGroup) return reply(mess.only.group)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1711,8 +2242,8 @@ await Lxa.updateProfilePicture (from, media)
 reply('Cambio la foto del grupo')
 break
 
-case 'triggered':
-					case 'ger':
+case 'triggered1111111111':
+					case 'ger1111111111':
  if (!isRegister) return reply(mess.only.userB)
             var imgbb = require('imgbb-uploader')
            if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -1738,7 +2269,7 @@ case 'triggered':
                                              break
 
 
-case 'tourl':
+case 'tourl11111111111':
  if (!isRegister) return reply(mess.only.userB)
             var imgbb = require('imgbb-uploader')
            if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -1752,8 +2283,8 @@ reply(teks)
 break
 
 //---stiker wasted
-case 'wasted':
-  case 'was':
+case 'wasted11111111111':
+  case 'was11111111111':
 if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -1780,7 +2311,7 @@ fs.unlinkSync(rano)
 }
 break
 
-case 'drawing':
+case 'drawing11111111111':
 if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -1797,7 +2328,7 @@ if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0)
 break
 
 
-case 'wanted':
+case 'wanted11111111111':
 if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -1813,7 +2344,7 @@ if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0)
 }
 break
 
-case 'gtav':
+case 'gtav11111111111':
 if (!isRegister) return reply(mess.only.userB)
 var imgbb = require('imgbb-uploader')
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -1830,22 +2361,22 @@ if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0)
 break
 
 //--list kodebahasa
-case 'kodebahasa':
+case 'kodebahasa111111111111':
 Lxa.sendMessage(from, bahasa(prefix, sender), text, {
   quoted: mek
 })
 break
 
 //--list kode negara
-case 'kodenegara':
+case 'kodenegara11111111111':
 Lxa.sendMessage(from, negara(prefix, sender), text, {
   quoted: mek
 })
 break
 
 //--link wame
-case 'wa.me':
-case 'wame':
+case 'wa.me11111111111':
+case 'wame11111111111':
   Lxa.updatePresence(from, Presence.composing)
   options = {
 text: `Link WhatsApp: *wa.me/${sender.split("@s.whatsapp.net")[0]}*\n*Or ( / )*\n*api.whatsapp.com/send?phone=${sender.split("@")[0]}*`,
@@ -1859,7 +2390,7 @@ quoted: mek
   break
 
 //---quoted fuck my life
-case 'fml':
+case 'fml1111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   try {
@@ -1874,7 +2405,7 @@ reply(hasil)
 break
 
 //--translate semua bahasa
-  case 'tl':
+  case 'tl1111111111111':
     if (!isRegister) return reply(mess.only.daftarB)
   
 if (args.length < 1) return Lxa.sendMessage(from, 'Introduce el código y el texto', text, {
@@ -1895,7 +2426,7 @@ reply(hasil)
 break
 
 //---membalikan kalimat
-  case 'reverse':
+  case 'reverse1111111111111':
     if (!isRegister) return reply(mess.only.daftarB)
   
 if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el texto', text, {
@@ -1916,7 +2447,7 @@ break
 
 
 //--fake reply
-case 'fitnah':
+case 'fitnah11111111111111':
 if (args.length < 1) return reply(`Uso :\n${prefix}fitnah [@tag|pesan|balasanbot]]\n\nEx : \n${prefix}fitnah @tagmember|hai|hai juga`)
 var gh = body.slice(7)
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -1935,7 +2466,7 @@ remoteJid: from
 break
 
 //--Kejujuran
-case 'truth':
+case 'truth11111111111111':
 const ttrth = trut[Math.floor(Math.random() * trut.length)]
 Lxa.sendMessage(from, `‣ *Verdad*\n${ttrth}`, text, {
   quoted: mek
@@ -1943,7 +2474,7 @@ Lxa.sendMessage(from, `‣ *Verdad*\n${ttrth}`, text, {
 break
 
 //---Tantangan
-  case 'dare':
+  case 'dare11111111111111':
 const der = dare[Math.floor(Math.random() * dare.length)]
 Lxa.sendMessage(from, `‣ *Mentira*\n${der}`, text, {
   quoted: mek
@@ -1976,7 +2507,7 @@ await Lxa.sendMessage(from, options, text)
 break
 
 //--jawaban BRANLy
-  case 'brainly':
+  case 'brainly11111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
   
 if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el nombre', text, {
@@ -1995,7 +2526,7 @@ await limitAdd(mess.ferr)
 break
 
   //pencarian wiki
-  case 'wiki':
+  case 'wiki11111111111111':
     if (!isRegister) return reply(mess.only.daftarB)
 
 if (args.length < 1) return reply('Ingresa lo que quieres buscar')
@@ -2014,7 +2545,7 @@ break
 
 //--Goolge Image
 
-case 'google':
+case 'google11111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
 
   if (args.length < 1) return reply('Ingresa el texto')
@@ -2034,7 +2565,7 @@ caption: '*Google Imagen*\n\n*Resultado de busqueda : '+goo+'*', quoted: mek
   }
   break
 
-case 'alay2':
+case 'alay211111111111111':
   if (!isRegister) return reply(mess.only.userB)
   if (args.length < 1) return reply('Ingresa el texto')
   goo = body.slice(7)
@@ -2054,7 +2585,7 @@ quoted: mek
   break
 
 //---Neonime search
-case 'neonime':
+case 'neonime11111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 
 Lxa.updatePresence(from, Presence.composing)
@@ -2078,7 +2609,7 @@ if (data.message) return reply(`La información de  *${teks} no se encontro`)
 break
 
 //---Ganti nama grup
-  case 'setname':
+  case 'setname11111111111111':
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -2090,7 +2621,7 @@ Lxa.sendMessage(from, 'Cambio nombre del grupo', text, {
 break
 
 //--ganti desk
-  case 'setdesk':
+  case 'setdesk111111111111':
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -2103,7 +2634,7 @@ break
 
 
 //--random meme
-case 'meme':
+case 'meme111111111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
 
@@ -2121,7 +2652,7 @@ quoted: mek
   break
 
 //--tagme
-case 'tagme':
+case 'tagme111111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 const tagme = {
   text: `@${sender.split("@")[0]} Hola`,
@@ -2132,7 +2663,7 @@ mentionedJid: [sender]
 Lxa.sendMessage(from, tagme, text)
 break
 
-case 'kbbi':
+case 'kbbi111111111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (args.length < 1) return reply(`Escribe el texto\nEjemplo : ${prefix}kbbi manusia`)
   if (!isRegister) return reply(mess.only.daftarB)
@@ -2150,7 +2681,7 @@ case 'kbbi':
   break
 
 
-  case 'chatprank':
+  case 'chatprank111111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 
@@ -2165,7 +2696,7 @@ Lxa.sendMessage(from, hasil, text, {
 break
 
 //--searching chord
-case 'chord':
+case 'chord111111111111111111':
   if (args.length < 1) return reply('Ingresa lo que quieres buscar')
   if (!isRegister) return reply(mess.only.daftarB)
   
@@ -2183,7 +2714,7 @@ method: 'get'
   break
 
 //--jadwaltv now
-case 'jadwaltvnow':
+case 'jadwaltvnow111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
     
   Lxa.updatePresence(from, Presence.composing)
@@ -2200,7 +2731,7 @@ method: 'get'
   break
 
 //--jadwaltv ch
-case 'jadwaltv':
+case 'jadwaltv111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   ch = body.slice(10)
@@ -2221,7 +2752,7 @@ method: 'get'
   break
 
 //--mini map
-case 'map':
+case 'map111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Ingresa el nombre del área')
@@ -2240,7 +2771,7 @@ quoted: mek, caption: `Resultado *${daerah}*`
   break
 
 //--pencarian surah Al-Qur'an
-case 'alquran':
+case 'alquran111111111111111111111111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
   
@@ -2268,7 +2799,7 @@ teks += `*(${i.number})* ${i.text}\n*(${i.number})* ${i.translation_id}\n••�
   break
 
 //--Cerpen
-case 'cerpen':
+case 'cerpen111111111111111111111111111111111':
 if (!isRegister) return reply(mess.only.daftarB)
 Lxa.updatePresence(from, Presence.composing)
 
@@ -2283,8 +2814,8 @@ reply(hasil)
 break
 
 //---kontak pemilik bot
-case 'owner':
-  case 'creator':
+case 'owner111111111111111111111111111111111':
+  case 'creator111111111111111111111111111111111':
 Lxa.sendMessage(from, {
   displayname: "Jeff", vcard: vcard
 }, MessageType.contact, {
@@ -2294,7 +2825,7 @@ break
 
 
 //---Random ayat Alquran
-case 'ngaji':
+case 'ngaji111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   try {
@@ -2312,7 +2843,7 @@ quoted: mek
   break
 
 //--tafsir Alquran
-case 'tafsir':
+case 'tafsir111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Ingresa lo que quieres buscar')
@@ -2329,7 +2860,7 @@ case 'tafsir':
   break
 
 //---Jadwal solat
-case 'sholat':
+case 'sholat111111111111111111111111111111111':
   loc = body.slice(7)
   if (!isRegister) return reply(mess.only.daftarB)
   
@@ -2349,7 +2880,7 @@ quoted: mek
   break
 
 //--info cuaca
-case 'cuaca':
+case 'cuaca111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Ingrese el nombre del área')
@@ -2370,7 +2901,7 @@ quoted: mek
 
 //--info gempa
 //informasi gempa terkini
-case 'infogempa':
+case 'infogempa111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   Lxa.updatePresence(from, Presence.composing)
@@ -2434,7 +2965,7 @@ await reply(`〘  *TRANSFER*  〙
   
   break
 */
-case 'itsme':
+case 'itsme111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   try {
 ppimg = await Lxa.getProfilePicture(`${sender.split('@')[0]}@c.us`)
@@ -2451,7 +2982,7 @@ quoted: mek, caption: teks
   
   break
 
-case 'play':
+case 'play111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Escribe el nombre')
@@ -2477,7 +3008,7 @@ mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek
   break
 
 
-case 'ytmp3':
+case 'ytmp3111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   reply(mess.wait)
@@ -2500,7 +3031,7 @@ mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek
   }
   break
 
-case 'ytmp4':
+case 'ytmp4111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   reply(mess.wait)
@@ -2526,7 +3057,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 
 
 //---Youtube search
-				case 'ytsearch':
+				case 'ytsearch111111111111111111111111111111111':
 					if (args.length < 1) return reply('Ingresa lo que quieres buscar')
 					try {
 					anu = await fetchJson(`https://mhankbarbar.tech/api/ytsearch?q=${body.slice(10)}&apiKey=${BarBarKey}`, {method: 'get'})
@@ -2543,7 +3074,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 					break
 
 //--download pinterest
-case 'pin':
+case 'pin111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
     if(!isUrl(args[0]) && !args[0].includes('pin')) return reply('Formato de link incorrecto')
@@ -2563,7 +3094,7 @@ mimetype: 'video/mp4', filename: `${anu.result}.mp4`, quoted: mek
   }
   break
 
-case 'fb':
+case 'fb111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   reply(mess.wait)
@@ -2583,7 +3114,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
   }
   break
 
-case 'ig':
+case 'ig111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   reply(mess.wait)
@@ -2603,7 +3134,7 @@ mimetype: 'video/mp4', filename: `Imlexa.mp4`, quoted: mek
 
 
 //joox download
-case 'joox':
+case 'joox111111111111111111111111111111111':
   if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Ingresa el nombre de la canción')
@@ -2627,7 +3158,7 @@ mimetype: 'audio/mp4', filename: `${data.result.title}.mp3`, quoted: mek
   }
   break
 
-case 'scdl':
+case 'scdl1111111111111111':
     if (!isRegister) return reply(mess.only.daftarB)
   
   if (args.length < 1) return reply('Manda el enlace de soundcloud')
@@ -2646,7 +3177,7 @@ mimetype: 'audio/mp4', filename: `${data.title}.mp3`, quoted: mek
   }
   break
 
-case 'tik':
+case 'tik1111111111111111':
   if (args.length < 1) return reply('Ingresa el enlace')
   if (!isRegister) return reply(mess.only.daftarB)
   
@@ -2686,7 +3217,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 */
 
 //--block user
-				case 'blocklist':
+				case 'blocklist1111111111111111':
 					teks = 'Lista de bloqueados por el bot :\n'
 					for (let block of blocked) {
 						teks += `~> @${block.split('@')[0]}\n`
@@ -2696,7 +3227,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 					break
 
 //--read text on image
-				case 'ocr':
+				case 'ocr1111111111111111':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await Lxa.downloadAndSaveMediaMessage(encmedia)
@@ -2716,7 +3247,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 					break
 
 //---textpro
-				case 'textpro':
+				case 'textpro1111111111111111':
 					if (args.length < 1) {
 						return reply('Elije un número del, 1 - 162')
 					} else if (args[0].toLowerCase() === 'list') {
@@ -2739,7 +3270,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 					break
 
 //ephoto
-				case 'ephoto':
+				case 'ephoto1111111111111111':
 					if (args.length < 1) {
 						return reply('Elije un número del, 1 - 216')
 					} else if (args[0].toLowerCase() === 'list') {
@@ -2763,7 +3294,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 					break
 
 //--harta tahta
-				case 'tahta':
+				case 'tahta1111111111111111':
 					if (args.length < 1) return reply('Escribe un texto')
 					anu = `https://mhankbarbar.tech/api/htahta?text=${args.join(' ')}&apiKey=${BarBarKey}`
 					voss = await fetc(anu)
@@ -2892,7 +3423,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 					break
 
 //-- temp
-			case 'gets':
+			case 'gets1111111111111111':
 			  
 				var itsme = `0@s.whatsapp.net`
 				var split = `${cr}`
@@ -2916,7 +3447,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				break
 			
 			
-			  case 'getstik':
+			  case 'getstik1111111111111111':
 				var itsme = `0@s.whatsapp.net`
 				var split = `${cr}`
 				var selepbot = {
@@ -2940,7 +3471,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 			
 			
 			
-			case 'liststik':
+			case 'liststik111111111111111':
 				teks = '*Lista de stickers :*\n\n'
 				for (let awokwkwk of setiker) {
 					teks += `- ${awokwkwk}\n`
@@ -2949,7 +3480,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": setiker } })
 				break
 			
-			case 'totaluser':
+			case 'totaluser111111111111111':
 				teks = '*Total usuarios :*\n\n'
 				for (let i of _registered) {
 					teks += `[${id.toString()}]\`\`\` @${i.split('@')[0]}`
@@ -2958,7 +3489,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": _registered} })
 				break
 
-			case 'addstik':
+			case 'addstik111111111111111':
 				if (!isQuotedSticker) return reply('Respon un sticker')
 				if (!isOwner) return reply(mess.only.ownerB)
 				svst = body.slice(9)
@@ -2971,7 +3502,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, `Sticker añadido con exito\ncompruebalo con ${prefix}liststik`, MessageType.text, { quoted: mek })
 				break
 
-			case 'addvn':
+			case 'addvn111111111111111':
 				if (!isQuotedAudio) return reply('Responde un audio')
 				if (!isOwner) return reply(mess.only.ownerB)
 				svst = body.slice(7)
@@ -2984,7 +3515,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, `Audio añadido con exito\ncompruebalo con ${prefix}listvn`, MessageType.text, { quoted: mek })
 				break
 
-			case 'getvn':
+			case 'getvn111111111111111':
 				namastc = body.slice(7)
 				try {
 				buffer = fs.readFileSync(`./temp/audio/${namastc}.mp3`)
@@ -2994,8 +3525,8 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				}
 				break
 
-			case 'listvn':
-			case 'vnlist':
+			case 'listvn111111111111111':
+			case 'vnlist111111111111111':
 				teks = '*Lista Vn:*\n\n'
 				for (let awokwkwk of audionye) {
 					teks += `- ${awokwkwk}\n`
@@ -3004,7 +3535,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": audionye } })
 				break
 
-			case 'addimg':
+			case 'addimg111111111111111':
 				if (!isQuotedImage) return reply('Responde una imagen')
 				if (!isOwner) return reply(mess.only.ownerB)
 				svst = body.slice(8)
@@ -3017,7 +3548,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, `Video añadido\ncompruebalo con${prefix}listimage`, MessageType.text, { quoted: mek })
 				break
 
-			case 'getimg':
+			case 'getimg111111111111111':
 				namastc = body.slice(8)
 				try {
 				buffer = fs.readFileSync(`./temp/foto/${namastc}.jpeg`)
@@ -3027,7 +3558,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				}
 				break
 				
-			case 'listimg':
+			case 'listimg111111111111111':
 				teks = '*List Image :*\n\n'
 				for (let awokwkwk of imagenye) {
 					teks += `- ${awokwkwk}\n`
@@ -3036,7 +3567,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": imagenye } })
 				break
 
-			case 'addvid':
+			case 'addvid111111111111111':
 			  if (!isOwner) return reply(mess.only.ownerB)
 				if (!isQuotedVideo) return reply('Responde un video')
 				svst = body.slice(8)
@@ -3049,7 +3580,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				Lxa.sendMessage(from, `Video añadido con exito\ncompruebalo con ${prefix}listvid`, MessageType.text, { quoted: mek })
 				break
 
-			case 'getvid':
+			case 'getvid111111111111111':
 				namastc = body.slice(8)
 				try {
 				buffer = fs.readFileSync(`./temp/video/${namastc}.mp4`)
@@ -3059,7 +3590,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				}
 				break
 
-			case 'listvid':
+			case 'listvid111111111111111':
 				teks = '*Lista de videos :*\n\n'
 				for (let awokwkwk of videonye) {
 					teks += `- ${awokwkwk}\n`
@@ -3070,7 +3601,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 
 
 //----caklontong
-  case 'caklontong':
+  case 'caklontong111111111111111':
 
 anu = await fetchJson(`https://api.vhtear.com/funkuis&apikey=${vKey}`,
   {
@@ -3103,7 +3634,7 @@ quoted: mek
 break
 
 //--stiker to video
-  case 'tovid':
+  case 'tovid111111111111111':
 Lxa.updatePresence(from,
   Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -3124,7 +3655,7 @@ quoted: mek, caption: 'Mr.Pato'
 break
 
 //--mp4 to mp3
-  case 'tomp3':
+  case 'tomp3111111111111111':
 Lxa.updatePresence(from,
   Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -3145,7 +3676,7 @@ mimetype: 'audio/mp4', quoted: mek
 break
 
 //---random fakta
-case 'fakta':
+case 'fakta111111111111111':
 fakta = body.slice(1)
 if (!isRegister) return reply(mess.only.daftarB)
 if (isLimit(sender)) return reply(ind.limitend(pushname))
@@ -3156,7 +3687,7 @@ Lxa.sendMessage(from, 'Fakta : '+ keh, text, {
 break
 
 //--Tebak gambar
-  case 'tebakgambar':
+  case 'tebakgambar111111111111111':
 
 anu = await fetchJson(`https://api.vhtear.com/tebakgambar&apikey=${vKey}`, {
   method: 'get'
@@ -3213,7 +3744,7 @@ break
 					break
 
 
-case 'block':
+case 'block111111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (!isGroup) return reply(mess.only.group)
   if (!isOwner) return reply(mess.only.ownerB)
@@ -3224,7 +3755,7 @@ quoted: mek
   break
 
 //membuka blokir
-case 'unblock':
+case 'unblock111111111111111':
   if (!isGroup) return reply(mess.only.group)
   if (!isOwner) return reply(mess.only.ownerB)
   Lxa.blockUser (`${body.slice(9)}@c.us`, "remove")
@@ -3233,7 +3764,7 @@ case 'unblock':
 
 
 //--Hilih maker
-				case 'hilih':
+				case 'hilih111111111111111':
 					if (args.length < 1) return reply('Introduce el texto')
 					try {
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
@@ -3243,7 +3774,7 @@ case 'unblock':
 					}
 					break
 
-				case 'tiktokstalk':
+				case 'tiktokstalk111111111111111':
 					try {
 						if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el nombre de usuario', text, {quoted: mek})
 						let { user, stats } = await tiktod.getUserProfileInfo(args[0])
@@ -3257,7 +3788,7 @@ case 'unblock':
 					}
 					break
 				case 'nulis':
-				case 'tulis':
+				case 'tulis111111111111111':
 					if (args.length < 1) return reply('Escribe el texto')
 					teks = body.slice(7)
 					reply(mess.wait)
@@ -3266,7 +3797,7 @@ case 'unblock':
 					buff = await getBuffer(anu.result)
 					Lxa.sendMessage(from, buff, image, {quoted: mek, caption: mess.success})
 					break
-				case 'url2img':
+				case 'url2img1111111111111111':
 					tipelist = ['desktop','tablet','mobile']
 					if (args.length < 1) return reply('Escribe bien el comando')
 					if (!tipelist.includes(args[0])) return reply('Escribe desktop|tablet|mobile')
@@ -3281,7 +3812,7 @@ case 'unblock':
 
 
 
-				case 'ttp':
+				case 'ttp1111111111111111':
 				if (!isRegister) return reply(mess.only.daftarB)
 					if (args.length < 1) return reply('Escribe el texto')
 					ranp = getRandom('.png')
@@ -3302,7 +3833,7 @@ case 'unblock':
 					break
 
 //---Tagall member
-				case 'tagall':
+				case 'tagall1111111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isGroup) return reply(mess.only.group)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -3319,7 +3850,7 @@ break
 
 
 //clear all chat
-				case 'clearall':
+				case 'clearall1111111111111111':
 					if (!isOwner) return reply('Estas seguro?')
 					anu = await Lxa.chats.all()
 					Lxa.setMaxListeners(25)
@@ -3328,7 +3859,7 @@ break
 					}
 					reply('Se borraron todos los mensajes :)')
 					break
-				case 'bc':
+				case 'bc11111111111111':
 					if (!isOwner) return reply('Okay')
 					if (args.length < 1) return reply('.......')
 					anu = await Lxa.chats.all()
@@ -3348,24 +3879,24 @@ break
 					break
 
 //--menaikan jabatan
-      case 'promote':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
-					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-					if (mentioned.length > 1) {
-						teks = 'Con exito \n'
-						for (let _ of mentioned) {
-							teks += `@${_.split('@')[0]}\n`
-						}
-						mentions(from, mentioned, true)
-						Lxa.groupRemove(from, mentioned)
-					} else {
-						mentions(`Ahora @${mentioned[0].split('@')[0]} es admin del grupo!`, mentioned, true)
-						Lxa.groupMakeAdmin(from, mentioned)
-					}
-					break
+      case 'admin':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+          if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+          if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+          if (mentioned.length > 1) {
+            /*teks = 'Con exito \n'
+            for (let _ of mentioned) {
+              teks += `@${_.split('@')[0]}\n`
+            }*/
+            mentions(from, mentioned, true)
+            Lxa.groupRemove(from, mentioned)  //@${mentioned[0].split('@')[0]}
+          } else {
+            mentions(`❤️😳 *¡𝗡𝗨𝗘𝗩𝗢 𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗗𝗢𝗥 𝗘𝗡 𝗘𝗟 𝗚𝗥𝗨𝗣𝗢!* 😳❤️\n\n@${mentioned[0].split('@')[0]}, *¡𝑳𝒐𝒔 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒅𝒆 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐, 𝒉𝒆𝒎𝒐𝒔 𝒅𝒆𝒄𝒊𝒅𝒊𝒅𝒐 𝒄𝒐𝒏𝒄𝒆𝒅𝒆𝒓𝒕𝒆 𝒆𝒍 𝒑𝒓𝒊𝒗𝒊𝒍𝒆𝒈𝒊𝒐 𝒅𝒆 𝒔𝒆𝒓 𝒖𝒏 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒎𝒂𝒔 𝒅𝒆 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑬𝒔𝒑𝒆𝒓𝒆𝒎𝒐𝒔 𝒒𝒖𝒆 𝒏𝒐 𝒉𝒂𝒚𝒂 𝒑𝒓𝒐𝒃𝒍𝒆𝒎𝒂𝒔 𝒏𝒊 𝒖𝒏 𝒎𝒂𝒍 𝒖𝒔𝒐 𝒅𝒆𝒍 𝒓𝒂𝒏𝒅𝒐 𝒅𝒆 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒑𝒐𝒓 𝒕𝒖 𝒑𝒂𝒓𝒕𝒆!*\n\n@${mentioned[0].split('@')[0]}\n❤️😍 *¡𝗘𝗡𝗛𝗢𝗥𝗔𝗕𝗨𝗘𝗡𝗔 𝗣𝗢𝗥 𝗘𝗟 𝗔𝗦𝗖𝗘𝗡𝗦𝗢!* 😍❤️`, mentioned, true)
+            Lxa.groupMakeAdmin(from, mentioned)
+          }
+          break
 
   //ganti nama grup
   case 'setname':
@@ -3391,27 +3922,27 @@ Lxa.sendMessage(from, 'Cambiar descripción del grupo', text, {
 break
 
 //--menurunkan jabatan
-				case 'demote':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
-					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-					if (mentioned.length > 1) {
-						teks = 'Admin quitado con exito\n'
-						for (let _ of mentioned) {
-							teks += `@${_.split('@')[0]}\n`
-						}
-						mentions(teks, mentioned, true)
-						Lxa.groupRemove(from, mentioned)
-					} else {
-						mentions(`Un admi menos @${mentioned[0].split('@')[0]} por gei!`, mentioned, true)
-						Lxa.groupDemoteAdmin(from, mentioned)
-					}
-					break
+        case 'miembro':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+          if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+          if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+          if (mentioned.length > 1) {
+            /*teks = 'Admin quitado con exito\n'
+            for (let _ of mentioned) {
+              teks += `@${_.split('@')[0]}\n`
+            }*/
+            mentions(teks, mentioned, true)
+            Lxa.groupRemove(from, mentioned)
+          } else {
+            mentions(`💔😔 *¡𝗨𝗡 𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗗𝗢𝗥 𝗠𝗘𝗡𝗢𝗦!* 😔💔\n\n@${mentioned[0].split('@')[0]}, *¡𝑯𝒆𝒎𝒐𝒔 𝒅𝒆𝒄𝒊𝒅𝒊𝒅𝒐 𝒒𝒖𝒆 𝒆𝒔 𝒎𝒖𝒄𝒉𝒐 𝒎𝒆𝒋𝒐𝒓 𝒕𝒂𝒏𝒕𝒐 𝒑𝒂𝒓𝒂 𝒏𝒐𝒔𝒐𝒕𝒓𝒐𝒔 𝒄𝒐𝒎𝒐 𝒑𝒂𝒓𝒂 𝒕𝒐𝒅𝒐𝒔 𝒍𝒐𝒔 𝒊𝒏𝒕𝒆𝒈𝒓𝒂𝒏𝒕𝒆𝒔 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐, 𝒒𝒖𝒊𝒕𝒂𝒓𝒕𝒆 𝒆𝒍 𝒓𝒂𝒏𝒈𝒐 𝒅𝒆 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒆𝒏 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑺𝒊 𝒒𝒖𝒊𝒆𝒓𝒆𝒔 𝒂𝒍𝒈𝒖𝒏𝒂 𝒆𝒙𝒑𝒍𝒊𝒄𝒂𝒄𝒊𝒐𝒏 𝒑𝒐𝒓 𝒆𝒍 𝒒𝒖𝒆 𝒔𝒆 𝒕𝒆 𝒉𝒂 𝒅𝒆𝒈𝒓𝒂𝒅𝒂𝒅𝒐 𝒑𝒖𝒆𝒅𝒆𝒔 𝒑𝒆𝒅𝒊𝒓𝒔𝒆𝒍𝒂 𝒂𝒍 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒒𝒖𝒆 𝒕𝒆 𝒉𝒂 𝒅𝒆𝒈𝒓𝒂𝒅𝒂𝒅𝒐!*\n\n@${mentioned[0].split('@')[0]}\n💔😢 *¡𝗟𝗢 𝗦𝗘𝗡𝗧𝗜𝗠𝗢𝗦 𝗠𝗨𝗖𝗛𝗜𝗦𝗜𝗠𝗢!* 😢💔`, mentioned, true)
+            Lxa.groupDemoteAdmin(from, mentioned)
+          }
+          break
 
 //--menambah member
-				case 'add':
+				case 'add11111111111111111':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3427,7 +3958,7 @@ break
 					break
 
 //--mengeluarkan member
-				case 'kick':
+				case 'kick11111111111111111':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3447,9 +3978,9 @@ break
 					break
 
 //--list admin grup
-				case 'listadmins':
-				  case 'listadmin':
-				    case 'adminlist':
+				case 'listadmins11111111111111111':
+				  case 'listadmin11111111111111111':
+				    case 'adminlist11111111111111111':
 					if (!isGroup) return reply(mess.only.group)
 					teks = `Lista admin de admins facheros *${groupMetadata.subject}*\nTotal : ${groupAdmins.length}\n\n`
 					no = 0
@@ -3461,7 +3992,7 @@ break
 					break
 
 //--ganti pp bot
-case 'setppbot':
+case 'setppbot11111111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (!isOwner) return reply(mess.only.ownerB)
   const botpp = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contxtInfo: mek
@@ -3490,8 +4021,8 @@ reply(ind.satukos())
   break
 */
 //--Mengambil link grup
-    case 'linkgroup':
-    case 'linkgc':
+    case 'linkgroup11111111111111111':
+    case 'linkgc11111111111111111':
         if (!isGroup) return reply(mess.only.group)
         if (!isGroupAdmins) return reply(mess.only.admin)
         if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3500,7 +4031,7 @@ reply(ind.satukos())
                     break
 
 //--Mengeluarkan bot
-      case 'leave':
+      case 'leave11111111111111111':
       if (!isGroup) return reply(mess.only.group)
       if (isGroupAdmins || isOwner) {
       Lxa.groupLeave(from)
@@ -3510,7 +4041,7 @@ reply(ind.satukos())
                     break
 
 //--Convert stiker to image
-				case 'toimg':
+				case 'toimg11111111111111111':
 					if (!isQuotedSticker) return reply('Responde sticker')
 					if (!isRegister) return reply(mess.only.daftarB)
 					reply(mess.wait)
@@ -3528,7 +4059,7 @@ reply(ind.satukos())
 
 
 //--arti mimpi
-  case 'artimimpi':
+  case 'artimimpi11111111111111111':
 aruga = body.slice(11)
 if (!isRegister) return reply(mess.only.daftarB)
 if (args.length < 1) return reply(`Que sueño es ?\nEjemplo: ${prefix}artimimpi`)
@@ -3544,7 +4075,7 @@ reply(anu.result.artimimpi)
 break
 
 //--Simsimi talk
-				case 'simi':
+				case 'simi11111111111111111':
 					if (args.length < 1) return reply(`Hola ${pushname}`)
 					teks = body.slice(6)
 					try { 
@@ -3556,7 +4087,7 @@ break
 					}
 					break
 
-case 'bot':
+case 'bot11111111111111111':
 					if (args.length < 1) return reply(`Bot ${pushname}`)
 					teks = body.slice(5)
 					try { 
@@ -3569,9 +4100,9 @@ case 'bot':
 					break
 
 //--Verifkasi
-case 'verify':
-case 'daftar':
-  case 'register':
+case 'verify1111111111111':
+case 'daftar1111111111111':
+  case 'register1111111111111':
 if (isRegister) return reply('Tu cuenta ya estaba verificada')
 const namaUser = `${pushname}`
 const umurUser = `${sender}`
@@ -3603,7 +4134,7 @@ reply(tm)
 break
 
 //--grup semua peserta
-case 'closegc':
+case 'closegc111111111111':
   Lxa.updatePresence(from, Presence.composing)
   if (!isGroup) return reply(mess.only.group)
   if (!isGroupAdmins) return reply(mess.only.admin)
@@ -3620,8 +4151,8 @@ contextInfo: {
   break
 
 //--grup hanya admin
-case 'opengc':
-  case 'bukagc':
+case 'opengc111111111111':
+  case 'bukagc111111111111':
 Lxa.updatePresence(from, Presence.composing)
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
@@ -3639,8 +4170,8 @@ Lxa.sendMessage(from, open, text, {
 break
 
 //---mengahapus pesan bot
-case 'delete':
-  case 'del':
+case 'delete111111111111111':
+  case 'del111111111111111':
 if (!isGroup)return reply(mess.only.group)
 if (!isRegister) return reply(mess.only.daftarB)
 if (!isGroupAdmins)return reply(mess.only.admin)
@@ -3654,7 +4185,7 @@ Lxa.deleteMessage(from, {
 break
 
 //--ganteng cekkkk
-  case 'gantengcek':
+  case 'gantengcek111111111111111':
 if (args.length < 1) return reply('Ingresa el nombre')
 ganteng = body.slice(12)
 const gan = ['10',
@@ -3682,7 +4213,7 @@ Lxa.sendMessage(from, 'Gantengcek : *'+ganteng+'*\n\nPorcentaje : '+ teng+'%', t
 break
 
 //--Cantik cekk
-  case 'cantikcek':
+  case 'cantikcek111111111111111':
 if (args.length < 1) return reply('Escribe el nombre')
 cantik = body.slice(12)
 const can = ['10',
@@ -3711,7 +4242,7 @@ break
 
 
 
-				case 'welcome':
+				case 'welcome111111111111111':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
@@ -3728,7 +4259,7 @@ break
 						reply('1 para activar, 0 desactivar')
 					}
                                       break
-				case 'clone':
+				case 'clone111111111111111':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 					if (args.length < 1) return reply('Tag target')
@@ -3744,7 +4275,7 @@ break
 						reply('Error')
 					}
 					break
-				case 'wait':
+				case 'wait111111111111111':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(mess.wait)
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
@@ -3760,10 +4291,10 @@ break
 					break
 
 
-				default:
+				/*default:
 				if (body.startsWith(`${prefix}${command}`)) {
   reply(`        ────────────────\nHols *${pushname}* !!!\nEse comando no esta en mi lista : *${prefix}${command}*\nUsa esto para verlos*${prefix}Menu*\n        ────────────────`)
-				}
+				}*/
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
 						muehe = await simih(budy)
