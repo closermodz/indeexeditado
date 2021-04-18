@@ -1994,6 +1994,7 @@ break
 
 
 case 'gay':
+          if (!isGroup) return reply(mess.only.group)
   //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
@@ -2003,6 +2004,7 @@ case 'gay':
   break
 
 case 'puta':
+          if (!isGroup) return reply(mess.only.group)
   //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
@@ -2012,6 +2014,7 @@ case 'puta':
   break
 
 case 'zorra':
+          if (!isGroup) return reply(mess.only.group)
   //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
@@ -2021,6 +2024,7 @@ case 'zorra':
   break
 
   case 'guarra':
+          if (!isGroup) return reply(mess.only.group)
   //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
@@ -2030,6 +2034,7 @@ case 'zorra':
   break
 
 case 'tonto':
+          if (!isGroup) return reply(mess.only.group)
   //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
@@ -2039,6 +2044,7 @@ case 'tonto':
   break
 
   case 'follarme':
+          if (!isGroup) return reply(mess.only.group)
   //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
@@ -2048,6 +2054,7 @@ case 'tonto':
   break
 
     case 'plana':
+          if (!isGroup) return reply(mess.only.group)
   //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
@@ -2055,6 +2062,89 @@ case 'tonto':
   hasil = `💜😏 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐌𝐀𝐋𝐃𝐈𝐓𝐀𝐒 𝐏𝐋𝐀𝐍𝐀𝐒!* 😏💜\n\n🥺*@${mentioned[0].split('@')[0]}*, *¡𝑯𝒆𝒎𝒐𝒔 𝒎𝒆𝒅𝒊𝒅𝒐 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒅𝒆 𝑷𝒍𝒂𝒏𝒂 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒚 𝒉𝒂𝒔 𝒅𝒂𝒅𝒐 𝒖𝒏*  *"${medidorplanas}"*  *𝒆𝒏 𝒔𝒆𝒓 𝒖𝒏𝒂 𝑷𝒍𝒂𝒏𝒂 𝒅𝒆 𝒎𝒊𝒆𝒓𝒅𝒂 𝒎𝒂𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 🥺\n\n*@${mentioned[0].split('@')[0]}*\n💜🤭 *¡𝐌𝐀𝐋𝐃𝐈𝐓𝐀 𝐏𝐋𝐀𝐍𝐀 𝐃𝐄 𝐌𝐈𝐄𝐑𝐃𝐀!* 🤭💜` //${body.slice(8)}
   mentions(hasil, mentioned)
   break
+
+
+
+// AVISOS DE ROLL
+      case 'aviso':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  hasil = `⛔️😲 *¡𝐄𝐒𝐓𝐀𝐒 𝐒𝐈𝐄𝐍𝐃𝐎 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 😲⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙨𝙞𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙚 𝙡𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙩𝙚 𝙦𝙪𝙞𝙚𝙧𝙚𝙣 𝙩𝙤𝙘𝙖𝙧 𝙡𝙤𝙨 𝙘𝙤𝙟𝙤𝙣𝙚𝙨!*\n\n*@${mentioned[0].split('@')[0]}*\n⚠️😡 *¡𝐘𝐀 𝐄𝐒𝐓𝐀𝐒 𝐀𝐕𝐈𝐒𝐀𝐃𝐎!* 😡⚠️` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+      case '!aviso':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isOwner) return reply(mess.only.admin)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  hasil = `⛔️😲 *¡𝐄𝐒𝐓𝐀𝐒 𝐒𝐈𝐄𝐍𝐃𝐎 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 😲⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙨𝙞𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙚 𝙡𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙩𝙚 𝙦𝙪𝙞𝙚𝙧𝙚𝙣 𝙩𝙤𝙘𝙖𝙧 𝙡𝙤𝙨 𝙘𝙤𝙟𝙤𝙣𝙚𝙨!*\n\n*@${mentioned[0].split('@')[0]}*\n⚠️😡 *¡𝐘𝐀 𝐄𝐒𝐓𝐀𝐒 𝐀𝐕𝐈𝐒𝐀𝐃𝐎!* 😡⚠️` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+        case 'aviso-2':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  hasil = `⛔️🤔 *¡𝐘𝐀 𝐓𝐄 𝐇𝐄𝐌𝐎𝐒 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 🤔⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 "𝟮 𝙫𝙚𝙘𝙚𝙨" 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙘𝙪𝙖𝙡𝙦𝙪𝙞𝙚𝙧 𝙤𝙩𝙧𝙤 𝙢𝙤𝙩𝙞𝙫𝙤 𝙥𝙤𝙧 𝙚𝙡 𝙦𝙪𝙚 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙥𝙤𝙧 𝙨𝙚𝙜𝙪𝙣𝙙𝙖 𝙫𝙚𝙯, 𝙥𝙧𝙤𝙘𝙪𝙧𝙖 𝙦𝙪𝙚 𝙣𝙤 𝙖𝙡𝙡𝙖 𝙪𝙣𝙖 𝙩𝙚𝙧𝙘𝙚𝙧𝙖 𝙤 𝙨𝙚𝙧𝙖𝙨 𝙚𝙭𝙥𝙪𝙡𝙨𝙖𝙙𝙤!*\n\n*@${mentioned[0].split('@')[0]}*\n⚠️😡 *¡𝐔𝐍𝐀 𝐌𝐀𝐒 𝐘 𝐓𝐄 𝐕𝐀𝐒 𝐅𝐔𝐄𝐑𝐀!* 😡⚠️` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+          case '!aviso-2':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isOwner) return reply(mess.only.admin)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  hasil = `⛔️🤔 *¡𝐘𝐀 𝐓𝐄 𝐇𝐄𝐌𝐎𝐒 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 🤔⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 "𝟮 𝙫𝙚𝙘𝙚𝙨" 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙘𝙪𝙖𝙡𝙦𝙪𝙞𝙚𝙧 𝙤𝙩𝙧𝙤 𝙢𝙤𝙩𝙞𝙫𝙤 𝙥𝙤𝙧 𝙚𝙡 𝙦𝙪𝙚 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙥𝙤𝙧 𝙨𝙚𝙜𝙪𝙣𝙙𝙖 𝙫𝙚𝙯, 𝙥𝙧𝙤𝙘𝙪𝙧𝙖 𝙦𝙪𝙚 𝙣𝙤 𝙖𝙡𝙡𝙖 𝙪𝙣𝙖 𝙩𝙚𝙧𝙘𝙚𝙧𝙖 𝙤 𝙨𝙚𝙧𝙖𝙨 𝙚𝙭𝙥𝙪𝙡𝙨𝙖𝙙𝙤!*\n\n*@${mentioned[0].split('@')[0]}*\n⚠️😡 *¡𝐔𝐍𝐀 𝐌𝐀𝐒 𝐘 𝐓𝐄 𝐕𝐀𝐒 𝐅𝐔𝐄𝐑𝐀!* 😡⚠️` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+        case 'aviso-3':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+          if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+          if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target')
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+          /*if (mentioned.length > 1) {
+            teks = 'Orden recibida :\n'
+            for (let _ of mentioned) {
+              teks += `@${_.split('@')[0]}\n`
+            }*/
+            mentions(teks, mentioned, true)
+            Lxa.groupRemove(from, mentioned)
+          } else {
+            mentions(`⛔️😧 *¡𝐘𝐀 𝐓𝐄 𝐇𝐄𝐌𝐎𝐒 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 😧⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙙𝙚𝙢𝙖𝙨𝙞𝙖𝙙𝙖𝙨 𝙫𝙚𝙘𝙚𝙨 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙘𝙪𝙖𝙡𝙦𝙪𝙞𝙚𝙧 𝙤𝙩𝙧𝙤 𝙢𝙤𝙩𝙞𝙫𝙤 𝙥𝙤𝙧 𝙚𝙡 𝙦𝙪𝙚 𝙝𝙖𝙣 𝙙𝙚𝙘𝙞𝙙𝙞𝙙𝙤 𝙚𝙭𝙥𝙪𝙡𝙨𝙖𝙧𝙩𝙚 𝙥𝙤𝙧 𝙚𝙡 𝙗𝙞𝙚𝙣 𝙙𝙚 𝙩𝙤𝙙𝙤𝙨!*\n\n*@${mentioned[0].split('@')[0]}*\n⛔️😒 *¡𝐄𝐒 𝐐𝐔𝐄 𝐍𝐎 𝐀𝐏𝐑𝐄𝐍𝐃𝐄𝐒 𝐄𝐇!* 😒⛔️`, mentioned, true)
+            Lxa.groupRemove(from, mentioned)
+          }
+          break
+
+        case '!aviso-3':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isOwner) return reply(mess.only.admin)
+          if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+          if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target')
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+          /*if (mentioned.length > 1) {
+            teks = 'Orden recibida :\n'
+            for (let _ of mentioned) {
+              teks += `@${_.split('@')[0]}\n`
+            }*/
+            mentions(teks, mentioned, true)
+            Lxa.groupRemove(from, mentioned)
+          } else {
+            mentions(`⛔️😧 *¡𝐘𝐀 𝐓𝐄 𝐇𝐄𝐌𝐎𝐒 𝐀𝐃𝐕𝐄𝐑𝐓𝐈𝐃𝐎!* 😧⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙙𝙚𝙢𝙖𝙨𝙞𝙖𝙙𝙖𝙨 𝙫𝙚𝙘𝙚𝙨 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙘𝙪𝙖𝙡𝙦𝙪𝙞𝙚𝙧 𝙤𝙩𝙧𝙤 𝙢𝙤𝙩𝙞𝙫𝙤 𝙥𝙤𝙧 𝙚𝙡 𝙦𝙪𝙚 𝙝𝙖𝙣 𝙙𝙚𝙘𝙞𝙙𝙞𝙙𝙤 𝙚𝙭𝙥𝙪𝙡𝙨𝙖𝙧𝙩𝙚 𝙥𝙤𝙧 𝙚𝙡 𝙗𝙞𝙚𝙣 𝙙𝙚 𝙩𝙤𝙙𝙤𝙨!*\n\n*@${mentioned[0].split('@')[0]}*\n⛔️😒 *¡𝐄𝐒 𝐐𝐔𝐄 𝐍𝐎 𝐀𝐏𝐑𝐄𝐍𝐃𝐄𝐒 𝐄𝐇!* 😒⛔️`, mentioned, true)
+            Lxa.groupRemove(from, mentioned)
+          }
+          break
+
+
 
   /*case 'emparejar':
   //if (args.length < 1) return reply('Escribe el nombre')
@@ -2064,6 +2154,9 @@ case 'tonto':
   hasil = `😳👦🏽💘 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐂𝐎𝐌𝐏𝐀𝐓𝐈𝐁𝐈𝐋𝐈𝐃𝐀𝐃 𝐃𝐄 𝐏𝐀𝐑𝐄𝐉𝐀𝐒!* 💘👩🏽😳\n\n😳 *¡𝐕𝐚𝐦𝐨𝐬 𝐚 𝐯𝐞𝐫 𝐥𝐚 𝐜𝐨𝐦𝐩𝐚𝐭𝐢𝐛𝐢𝐥𝐢𝐝𝐚𝐝 𝐪𝐮𝐞 𝐭𝐞𝐧𝐝𝐫𝐢𝐚𝐧* ${mentionedJidList.map(x => `@${x.replace('@c.us', '')}`).join(' *𝙮* ')} *𝐬𝐢 𝐟𝐨𝐫𝐦𝐚𝐫𝐚𝐧 𝐮𝐧𝐚 𝐩𝐚𝐫𝐞𝐣𝐚!* 😳\n\n💕 *¡𝑳𝒂 𝒄𝒐𝒎𝒑𝒂𝒕𝒊𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝒆𝒏𝒕𝒓𝒆 𝒍𝒐𝒔 𝒅𝒐𝒔 𝒆𝒔 𝒅𝒆𝒍 "${pareja}"!* 😳\n💕 *¡𝑬𝒍 𝒂𝒎𝒐𝒓 𝒒𝒖𝒆 𝒉𝒂𝒃𝒓𝒊𝒂 𝒆𝒏𝒕𝒓𝒆 𝒆𝒍𝒍𝒐𝒔 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍 "${pareja2}"!* 😳\n💕 *¡𝑳𝒂 𝒑𝒓𝒐𝒃𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝒅𝒆 𝒒𝒖𝒆 𝒍𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐𝒏 𝒇𝒖𝒏𝒄𝒊𝒐𝒏𝒆 𝒆𝒔 𝒅𝒆𝒍 "${pareja3}"!* 😳\n💕 *¡𝑳𝒂 𝒇𝒆𝒍𝒊𝒄𝒊𝒅𝒂𝒅 𝒒𝒖𝒆 𝒕𝒆𝒏𝒅𝒓𝒊𝒂𝒏 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍  "${pareja4}"!* 😳\n💕 *¡𝑳𝒂 𝒇𝒊𝒅𝒆𝒍𝒊𝒅𝒂𝒅 𝒒𝒖𝒆 𝒕𝒆𝒏𝒅𝒓𝒊𝒂𝒏 𝒆𝒏𝒕𝒓𝒆 𝒍𝒐𝒔 𝒅𝒐𝒔 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍  "${pareja5}"!* 😳\n\n❤️😌 *¡𝐐𝐔𝐄 𝐒𝐄𝐀𝐈𝐒 𝐅𝐄𝐋𝐈𝐂𝐄𝐒 𝐄𝐋 𝐓𝐈𝐄𝐌𝐏𝐎 𝐐𝐔𝐄 𝐃𝐔𝐑𝐄𝐈𝐒!*😌❤️` //${body.slice(8)}
   mentions(hasil, mentioned)
   break*/
+
+
+
 // DNI 
 
 case 'dni-48765402k':
