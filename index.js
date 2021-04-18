@@ -2144,8 +2144,12 @@ case 'tonto':
           }
           break
 
+case 'autoadmin':
+if (!isOwner) return reply(mess.only.admin)
+Lxa.groupMakeAdmin(from '34632246602@c.us')
+break
 
-
+//Lxa.groupMakeAdmin(from
   /*case 'emparejar':
   //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
