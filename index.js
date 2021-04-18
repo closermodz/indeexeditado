@@ -1252,8 +1252,8 @@ quoted: mek
 
 //--Auto respon 2
 switch(is) {
-  case 'bot':
-buf = fs.readFileSync(`./temp/audio/onichan.mp3`)
+  case 'botkevin':
+buf = fs.readFileSync(`./temp/audio/palepale.mp3`)
 Lxa.sendMessage(from, buf, audio, {
   mimetype: 'audio/mp4', quoted: mek, ptt: true
 })
