@@ -4341,10 +4341,10 @@ break
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('😳 *¡𝑯𝒂𝒔 𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐 𝒍𝒂𝒔 𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒂𝒔!* 😳')
+						if (isWelkom) return reply('✅ *¡𝒀𝑨 𝑬𝑺𝑻𝑨 𝑨𝑪𝑻𝑰𝑽𝑨𝑫𝑶!* ✅')
 						welkom.push(from)
 						fs.writeFileSync('./data/welkom.json', JSON.stringify(welkom))
-						reply('✅ *¡𝒀𝑨 𝑬𝑺𝑻𝑨 𝑨𝑪𝑻𝑰𝑽𝑨𝑫𝑶!* ✅')
+						reply('😳 *¡𝑯𝒂𝒔 𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐 𝒍𝒂𝒔 𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒂𝒔!* 😳')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./data/welkom.json', JSON.stringify(welkom))
