@@ -266,13 +266,13 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `Hola @${num.split('@')[0]}
+				teks = `🎊😍 *¡𝐁𝐈𝐄𝐍𝐕𝐄𝐍𝐈𝐃𝐎 𝐀𝐋 𝐆𝐑𝐔𝐏𝐎!* 😍🎊\n\n@${num.split('@')[0]}, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙮 𝙩𝙤𝙙𝙤𝙨 𝙡𝙤𝙨 𝙈𝙞𝙚𝙢𝙗𝙧𝙤𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙙𝙖𝙢𝙤𝙨 𝙡𝙖 𝙗𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙖 𝙮 𝙩𝙚 𝙖𝙜𝙧𝙖𝙙𝙚𝙘𝙚𝙢𝙤𝙨 𝙚𝙡 𝙦𝙪𝙚 𝙚𝙨𝙩𝙚𝙨 𝙖𝙦𝙪𝙞. 𝙋𝙖𝙧𝙖 𝙥𝙤𝙙𝙚𝙧 𝙚𝙨𝙩𝙖𝙧 𝙖𝙦𝙪𝙞 𝙙𝙚𝙗𝙚𝙨 𝙙𝙚 𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙪𝙣𝙖𝙨 𝙣𝙤𝙧𝙢𝙖𝙨 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖𝙨 𝙦𝙪𝙚 𝙩𝙚𝙣𝙙𝙧𝙖𝙨 𝙚𝙣 𝙡𝙖 𝙙𝙚𝙨𝙘𝙧𝙞𝙥𝙘𝙞𝙤𝙣!*\n\n⚠️ *¡𝐒𝐢 𝐢𝐧𝐜𝐥𝐮𝐦𝐩𝐥𝐞𝐬 𝐥𝐚𝐬 𝐧𝐨𝐫𝐦𝐚𝐬, 𝐓𝐞 𝐕𝐚𝐬 𝐅𝐮𝐞𝐫𝐚!*\n⚠️ *¡𝐒𝐢 𝐩𝐚𝐬𝐚𝐬 𝐜𝐨𝐧𝐭𝐞𝐧𝐢𝐝𝐨 𝐢𝐧𝐚𝐝𝐞𝐜𝐮𝐚𝐝𝐨, 𝐓𝐞 𝐕𝐚𝐬 𝐅𝐮𝐞𝐫𝐚!*\n⚠️ *¡𝐒𝐢 𝐦𝐨𝐥𝐞𝐬𝐭𝐚𝐬 𝐚 𝐜𝐮𝐚𝐥𝐪𝐮𝐢𝐞𝐫𝐚, 𝐓𝐞 𝐕𝐚𝐬 𝐅𝐮𝐞𝐫𝐚!*\n\n@${num.split('@')[0]}\n😇💙 *¡¡𝐃𝐈𝐕𝐈𝐄𝐑𝐓𝐄𝐓𝐄 𝐘 𝐃𝐈𝐒𝐅𝐑𝐔𝐓𝐀!!* 💙😇
         `
 				Lxa.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
-			} else if (anu.action == 'remove') {
+			/*} else if (anu.action == 'remove') {
 				num = anu.participants[0]
 				teks = `Que bueno que te fuiste @${num.split('@')[0]} no te queriamos 👋`
-				Lxa.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
+				Lxa.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})*/
 			}
 		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
@@ -341,6 +341,7 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
 			const isSimi = isGroup ? samih.includes(from): false
       const isRegister = checkRegisteredUser(sender)
+      const isPutas = checkPutasUser(sender)
       const q = args.join(' ')
       const tescuk = ["0@s.whatsapp.net"]
 			let pushname = Lxa.contacts[sender] != undefined ? Lxa.contacts[sender].vname || Lxa.contacts[sender].notify: undefined
@@ -2040,59 +2041,9 @@ caption: hasil, quoted: mek
   }
   break
 
-case 'textgen1111111111111111':
-  teks = body.slice(9)
-  if (args.length < 1) return reply('Escribe el texto')
-  Lxa.updatePresence(from, Presence.composing)
-  if (!isRegister) return reply(mess.only.daftarB)
-  
-  try {
-  data = await fetchJson(`https://api.arugaz.my.id/api/random/text/fancytext?text=${teks}`)
-  reply(data.result)
-  
-  } catch {
-    reply(mess.ferr)
-  }
-  break
 
 
-case 'kusonime1111111111111111':
-  teks = body.slice(6)
-  Lxa.updatePresence(from, Presence.composing)
-  if (!isRegister) return reply(mess.only.daftarB)
-  
-  if (args.length < 1) return reply('Escribe el nombre')
-  try {
-  data = await fetchJson(`https://st4rz.herokuapp.com/api/kuso?q=${teks}`)
-  hasil = `‣ *Nombre* : ${data.title}\n‣ *Info* : ${data.info}\n‣ *Sinopsis* : ${data.sinopsis}\n‣ *Link download* :\n${data.link_dl}`
-  buf = await getBuffer(data.thumb)
-  Lxa.sendMessage(from, buf, image, {
-quoted: mek, caption: hasil
-  })
-  
-  } catch {
-    reply(mess.ferr)
-  }
-  break
 
-case 'igstalk1111111111111111':
-yolo = body.slice(9)
-if (!isRegister) return reply(mess.only.daftarB)
-
-if (args.length < 1) return reply('Escribe el nombre de usuario')
-try {
-hmm = await fetchJson(`http://lolhuman.herokuapp.com/api/stalkig/${yolo}?apikey=${lolKey}`)
-reply(mess.wait)
-buffer = await getBuffer(hmm.result.photo_profile)
-hasil = `‣ *Usuario* : ${hmm.result.username}\n‣ *Nombre* : ${hmm.result.fullname}\n‣ *Seguidores* : ${hmm.result.followers}\n‣ *Seguidos* : ${hmm.result.following}\n‣ *Bio* : ${hmm.result.bio}\n‣ *Link* : https://www.instagram.com/${hmm.result.username}\n‣ Suscribete: ${Ig}`
-Lxa.sendMessage(from, buffer, image, {
-  quoted: mek, caption: hasil
-})
-
-} catch {
-  reply(mess.ferr)
-}
-break
 
 
 case 'gay':
@@ -4386,21 +4337,21 @@ break
 
 
 
-				case 'welcome111111111111111':
+				case 'bienvenida':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('Ya esta activo')
+						if (isWelkom) return reply('😳 *¡𝑯𝒂𝒔 𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐 𝒍𝒂𝒔 𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒂𝒔!* 😳')
 						welkom.push(from)
 						fs.writeFileSync('./data/welkom.json', JSON.stringify(welkom))
-						reply('Se activo con exito')
+						reply('✅ *¡𝒀𝑨 𝑬𝑺𝑻𝑨 𝑨𝑪𝑻𝑰𝑽𝑨𝑫𝑶!* ✅')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./data/welkom.json', JSON.stringify(welkom))
-						reply('Se desactivo con exito')
+						reply('❎ *¡𝒀𝑨 𝑬𝑺𝑻𝑨 𝑫𝑬𝑺𝑨𝑪𝑻𝑰𝑽𝑨𝑫𝑶!* ❎')
 					} else {
-						reply('1 para activar, 0 desactivar')
+						//reply('1 para activar, 0 desactivar')
 					}
                                       break
 				case 'clone111111111111111':
