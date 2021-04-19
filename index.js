@@ -3532,7 +3532,7 @@ break
           break
 
 //--menambah member
-				case 'add11111111111111111':
+				case 'add':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
