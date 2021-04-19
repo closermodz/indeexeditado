@@ -1444,21 +1444,6 @@ Lxa.sendMessage(from, `*El bot responde en*\n‣ *Speed* : ${latensi.toFixed(4)}
 })
 break
 
-//---donasi
-case 'donasi111111111111111':
-Lxa.updatePresence(from, Presence.composing)
-if (!isRegister) return reply(mess.only.daftarB)
-hasil = `
-
-_Este bot es gratis :)_
-
-*Pulsa :* _${Pulsa}_
-*Dana :* _${Dana}_
-*OVO :* _${Ovo}_`,
-Lxa.sendMessage(from, hasil, text, {
-  quoted: mek
-})
-break
 
 //--arti nama
 case 'arti111111111111111':
@@ -1500,21 +1485,7 @@ Lxa.sendMessage(from, yoi, text, {
 }
 break
 
-//---Zodiak harian
-case 'zodiak111111111111111':
-if (args.length < 1) return reply('Ingresa el signo zodiaco')
-Lxa.updatePresence(from, Presence.composing)
-if (!isRegister) return reply(mess.only.daftarB)
-teks = body.slice(8)
-try {
-data = await fetchJson(`https://api.vhtear.com/zodiak?query=${teks}&apikey=${vKey}`)
-hasil = `Zodiaco : *${data.result.zodiak}*\nPronostico de hoy : *${data.result.ramalan}*\n${data.result.inspirasi}`
-reply(hasil)
 
-} catch {
-  reply(mess.ferr)
-}
-break
 
 //--pencarian pinterest
   case 'img111111111111111':
@@ -1526,7 +1497,7 @@ Lxa.updatePresence(from, Presence.composing)
 reply(mess.wait)
 try {
 data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${tels}`, {
-  method: 'get111111111111111'
+  method: 'get'
 })
 n = JSON.parse(JSON.stringify(data));
 nimek = n[Math.floor(Math.random() * n.length)];
