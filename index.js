@@ -1436,7 +1436,7 @@ const timestamp = speed();
 const latensi = speed() - timestamp
 Lxa.updatePresence(from, Presence.composing)
 uptime = process.uptime()
-Lxa.sendMessage(from, `*✅ *¡𝑳𝒂 𝒄𝒐𝒏𝒆𝒙𝒊́𝒐𝒏 𝒅𝒆𝒍 𝑩𝒐𝒕 𝒆𝒔 𝑬𝒔𝒕𝒂𝒃𝒍𝒆!* ✅*\n\n😊 *𝑳𝒂 𝒗𝒆𝒍𝒐𝒄𝒊𝒅𝒂𝒅 𝒅𝒆 𝒄𝒐𝒏𝒆𝒙𝒊𝒐́𝒏 𝒅𝒆𝒍 𝑩𝒐𝒕 𝒆𝒔 𝒅𝒆: 〔${latensi.toFixed(4)}〕* 😊`, text, {
+Lxa.sendMessage(from, `✅ *¡𝑳𝒂 𝒄𝒐𝒏𝒆𝒙𝒊́𝒐𝒏 𝒅𝒆𝒍 𝑩𝒐𝒕 𝒆𝒔 𝑬𝒔𝒕𝒂𝒃𝒍𝒆!* ✅\n\n😊 *𝑳𝒂 𝒗𝒆𝒍𝒐𝒄𝒊𝒅𝒂𝒅 𝒅𝒆 𝒄𝒐𝒏𝒆𝒙𝒊𝒐́𝒏 𝒅𝒆𝒍 𝑩𝒐𝒕 𝒆𝒔 𝒅𝒆: 〔${latensi.toFixed(4)}〕* 😊`, text, {
   quoted: mek
 })
 break
