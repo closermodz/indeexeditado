@@ -1495,7 +1495,7 @@ case 'conectados':
 				break
 
 // Lxa.sendMessage(from, '😳 *¡𝑷𝒆𝒓𝒔𝒐𝒏𝒂𝒔 𝑪𝒐𝒏𝒆𝒄𝒕𝒂𝒅𝒂𝒔 𝒆𝒏 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑! 😳*\n\n' + online.map(v => '   👇🏻 *𝑬𝒔𝒕𝒂 𝒆𝒏 𝑳𝒊𝒏𝒆𝒂* 😊💚\n' + v.replace(/@.+/, '')).join`\n\n`, text, { quoted: mek,
- // 
+
 
 //--pinterest anime neko
 case 'neko111111111111111':
