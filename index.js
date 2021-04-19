@@ -1442,11 +1442,11 @@ Lxa.sendMessage(from, `*✅ *¡𝑳𝒂 𝒄𝒐𝒏𝒆𝒙𝒊́𝒐𝒏 𝒅�
 break
 
 case 'actividad':
-const timestamp = speed();
-const latensi = speed() - timestamp
+const timestamp1 = speed();
+const latensi1 = speed() - timestamp1
 Lxa.updatePresence(from, Presence.composing)
-uptime = process.uptime()
-Lxa.sendMessage(from, `💚😳 *¿𝑪𝒖𝒂𝒏𝒕𝒐 𝒕𝒊𝒆𝒎𝒑𝒐 𝒍𝒍𝒆𝒗𝒂 𝒆𝒍 𝑩𝒐𝒕 𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐?* 😳💚\n\n➦ 😌 *〔${kyun(uptime)}〕* ⌚`, text, {
+uptime1 = process.uptime()
+Lxa.sendMessage(from, `💚😳 *¿𝑪𝒖𝒂𝒏𝒕𝒐 𝒕𝒊𝒆𝒎𝒑𝒐 𝒍𝒍𝒆𝒗𝒂 𝒆𝒍 𝑩𝒐𝒕 𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐?* 😳💚\n\n➦ 😌 *〔${kyun(uptime1)}〕* ⌚`, text, {
   quoted: mek
 })
 break
