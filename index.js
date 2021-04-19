@@ -1617,10 +1617,10 @@ case 'tonto':
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
   medidorplanas = amor[Math.floor(Math.random() * (planas.length))]
-  medidorplanas2 = amor[Math.floor(Math.random() * (planas.length))]
-  medidorplanas3 = amor[Math.floor(Math.random() * (planas.length))]
-  medidorplanas4 = amor[Math.floor(Math.random() * (planas.length))]  //*𝙮* *@${mentioned[0].split('@')[0]}*
-  medidorplanas5 = amor[Math.floor(Math.random() * (planas.length))]
+  pareja2 = amor[Math.floor(Math.random() * (planas.length))]
+  pareja3 = amor[Math.floor(Math.random() * (planas.length))]
+  pareja4 = amor[Math.floor(Math.random() * (planas.length))]  //*𝙮* *@${mentioned[0].split('@')[0]}*
+  pareja5 = amor[Math.floor(Math.random() * (planas.length))]
   hasil = `😳👦🏽💘 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐂𝐎𝐌𝐏𝐀𝐓𝐈𝐁𝐈𝐋𝐈𝐃𝐀𝐃 𝐃𝐄 𝐏𝐀𝐑𝐄𝐉𝐀𝐒!* 💘👩🏽😳\n\n😳 *¡𝐕𝐚𝐦𝐨𝐬 𝐚 𝐯𝐞𝐫 𝐥𝐚 𝐜𝐨𝐦𝐩𝐚𝐭𝐢𝐛𝐢𝐥𝐢𝐝𝐚𝐝 𝐪𝐮𝐞 𝐭𝐞𝐧𝐝𝐫𝐢𝐚𝐧* *@${mentioned[0].split('@')[0]}* *𝐬𝐢 𝐟𝐨𝐫𝐦𝐚𝐫𝐚𝐧 𝐮𝐧𝐚 𝐩𝐚𝐫𝐞𝐣𝐚!* 😳\n\n💕 *¡𝑳𝒂 𝒄𝒐𝒎𝒑𝒂𝒕𝒊𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝒆𝒏𝒕𝒓𝒆 𝒍𝒐𝒔 𝒅𝒐𝒔 𝒆𝒔 𝒅𝒆𝒍 "${pareja}"!* 😳\n💕 *¡𝑬𝒍 𝒂𝒎𝒐𝒓 𝒒𝒖𝒆 𝒉𝒂𝒃𝒓𝒊𝒂 𝒆𝒏𝒕𝒓𝒆 𝒆𝒍𝒍𝒐𝒔 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍 "${pareja2}"!* 😳\n💕 *¡𝑳𝒂 𝒑𝒓𝒐𝒃𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝒅𝒆 𝒒𝒖𝒆 𝒍𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐𝒏 𝒇𝒖𝒏𝒄𝒊𝒐𝒏𝒆 𝒆𝒔 𝒅𝒆𝒍 "${pareja3}"!* 😳\n💕 *¡𝑳𝒂 𝒇𝒆𝒍𝒊𝒄𝒊𝒅𝒂𝒅 𝒒𝒖𝒆 𝒕𝒆𝒏𝒅𝒓𝒊𝒂𝒏 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍  "${pareja4}"!* 😳\n💕 *¡𝑳𝒂 𝒇𝒊𝒅𝒆𝒍𝒊𝒅𝒂𝒅 𝒒𝒖𝒆 𝒕𝒆𝒏𝒅𝒓𝒊𝒂𝒏 𝒆𝒏𝒕𝒓𝒆 𝒍𝒐𝒔 𝒅𝒐𝒔 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍  "${pareja5}"!* 😳\n\n❤️😌 *¡𝐐𝐔𝐄 𝐒𝐄𝐀𝐈𝐒 𝐅𝐄𝐋𝐈𝐂𝐄𝐒 𝐄𝐋 𝐓𝐈𝐄𝐌𝐏𝐎 𝐐𝐔𝐄 𝐃𝐔𝐑𝐄𝐈𝐒!*😌❤️` //${body.slice(8)}
   mentions(hasil, mentioned)
   break
@@ -2015,35 +2015,17 @@ reply(hasil)
 }
 break
 
-//---membalikan kalimat
-  case 'reverse1111111111111':
-    if (!isRegister) return reply(mess.only.daftarB)
-  
-if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el texto', text, {
-  quoted: mek
-})
-var pc = body.slice(9)
-try {
-data = await fetchJson(`https://videfikri.com/api/hurufterbalik/?query=${pc}`)
-if (!isRegister) return reply(mess.only.daftarB)
-hasil = data.result.kata
-reply(hasil)
-
-} catch {
-  reply(mess.ferr)
-}
-break
 
 
 
 //--fake reply
-case 'fitnah11111111111111':
+case 'mensajefalso':
 if (args.length < 1) return reply(`Uso :\n${prefix}fitnah [@tag|pesan|balasanbot]]\n\nEx : \n${prefix}fitnah @tagmember|hai|hai juga`)
 var gh = body.slice(7)
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-var replace = gh.split("|")[0];
-var target = gh.split("|")[1];
-var bot = gh.split("|")[2];
+var replace = gh.split("-")[0];
+var target = gh.split("-")[1];
+var bot = gh.split("-")[2];
 Lxa.sendMessage(from, `${bot}`, text, {
   quoted: {
 key: {
@@ -2055,21 +2037,6 @@ remoteJid: from
 }}})
 break
 
-//--Kejujuran
-case 'truth11111111111111':
-const ttrth = trut[Math.floor(Math.random() * trut.length)]
-Lxa.sendMessage(from, `‣ *Verdad*\n${ttrth}`, text, {
-  quoted: mek
-})
-break
-
-//---Tantangan
-  case 'dare11111111111111':
-const der = dare[Math.floor(Math.random() * dare.length)]
-Lxa.sendMessage(from, `‣ *Mentira*\n${der}`, text, {
-  quoted: mek
-})
-break
 
 
 //--notifikasi grup
@@ -2096,64 +2063,9 @@ mentionedJid: jids
 await Lxa.sendMessage(from, options, text)
 break
 
-//--jawaban BRANLy
-  case 'brainly11111111111111':
-if (!isRegister) return reply(mess.only.daftarB)
-  
-if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el nombre', text, {
-  quoted: mek
-})
-teks = body.slice(9)
-try {
-Lxa.updatePresence(from, Presence.composing)
-data = await fetchJson(`https://api.vhtear.com/branly?query=${teks}&apikey=${vKey}`)
-hasil = data.result.data
-reply(hasil)
-await limitAdd(mess.ferr)
-} catch {
-  reply(mess.ferr)
-}
-break
-
-  //pencarian wiki
-  case 'wiki11111111111111':
-    if (!isRegister) return reply(mess.only.daftarB)
-
-if (args.length < 1) return reply('Ingresa lo que quieres buscar')
-tels = body.slice(6)
-try {
-anu = await fetchJson(`https://tobz-api.herokuapp.com/api/wiki?q=${tels}&apikey=BotWeA`, {
-  method: 'get'
-})
-reply(anu.result)
-
-} catch {
-  reply(mess.ferr)
-}
-break
 
 
 //--Goolge Image
-
-case 'google11111111111111':
-  if (!isRegister) return reply(mess.only.daftarB)
-
-  if (args.length < 1) return reply('Ingresa el texto')
-  goo = body.slice(7)
-  try {
-  pint = await getBuffer(`http://lolhuman.herokuapp.com/api/gimage?apikey=${lolKey}&query=${goo}`, {
-method: 'get'
-  })
-  Lxa.updatePresence(from, Presence.composing)
-  reply(mess.wait)
-  Lxa.sendMessage(from, pint, image, {
-caption: '*Google Imagen*\n\n*Resultado de busqueda : '+goo+'*', quoted: mek
-  })
-  
-  } catch {
-    reply(mess.ferr)
-  }
-  break
 
 case 'alay211111111111111':
   if (!isRegister) return reply(mess.only.userB)
@@ -3592,11 +3504,12 @@ case 'setppbot11111111111111111':
   break
 
 //event
-case 'event':
+/*case 'event':
   if (!isGroup) return reply(mess.only.group)
   if (!isOwner) return reply(mess.only.ownerB)
   if (args.length < 1) return reply('ketik 1 untuk mengaktifkan')
   if (Number(args[0]) === 1) {
+if (isEventon) return reply('*SUDAH AKTIF* !!!')
 event.push(from)
 fs.writeFileSync('./datauser/event.json', JSON.stringify(event))
 reply('*☉]* Mengaktifkan *EVENT* di group ini*')
@@ -3608,7 +3521,7 @@ reply('*☉* Menonaktifkan *EVENT* di group ini*')
 reply(ind.satukos())
   }
   break
-
+*/
 //--Mengambil link grup
     case 'linkgroup11111111111111111':
     case 'linkgc11111111111111111':
@@ -3630,7 +3543,7 @@ reply(ind.satukos())
                     break
 
 //--Convert stiker to image
-				case 'toimg11111111111111111':
+				case 'imagen':
 					if (!isQuotedSticker) return reply('Responde sticker')
 					if (!isRegister) return reply(mess.only.daftarB)
 					reply(mess.wait)
@@ -3644,36 +3557,6 @@ reply(ind.satukos())
 						Lxa.sendMessage(from, buffer, image, {quoted: mek, caption: ''})
 						fs.unlinkSync(ran)
 					})
-					break
-
-
-//--arti mimpi
-  case 'artimimpi11111111111111111':
-aruga = body.slice(11)
-if (!isRegister) return reply(mess.only.daftarB)
-if (args.length < 1) return reply(`Que sueño es ?\nEjemplo: ${prefix}artimimpi`)
-try {
-anu = await fetchJson(`https://videfikri.com/api/primbon/artimimpi/?mimpi=${aruga}`, {
-  method: 'get'
-})
-reply(anu.result.artimimpi)
-
-} catch {
-  reply('Lo siento hubo un error')
-}
-break
-
-//--Simsimi talk
-				case 'simi11111111111111111':
-					if (args.length < 1) return reply(`Hola ${pushname}`)
-					teks = body.slice(6)
-					try { 
-					anu = await fetchJson(`https://api.xteam.xyz/simsimi?kata=${teks}&APIKEY=${xKey}`, {method: 'get'})
-					if (anu.error) return reply('Escribe el texto bien')
-					reply(anu.jawaban)
-					} catch {
-					  reply(mess.ferr)
-					}
 					break
 
 case 'bot11111111111111111':
@@ -3834,7 +3717,7 @@ break
 				case 'bienvenida':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm')
+					if (args.length < 1) return reply('*El Bot está siendo Remasterizado, pronto estará todo listo.*')
 					if (Number(args[0]) === 1) {
 						if (isWelkom) return reply('✅ *¡𝒀𝑨 𝑬𝑺𝑻𝑨 𝑨𝑪𝑻𝑰𝑽𝑨𝑫𝑶!* ✅')
 						welkom.push(from)
