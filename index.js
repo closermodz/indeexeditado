@@ -1611,7 +1611,7 @@ case 'tonto':
   mentions(hasil, mentioned)
   break
 
-    case 'emparejar':
+    /*case 'emparejar':
           if (!isGroup) return reply(mess.only.group)
   //if (args.length < 1) return reply('Escribe el nombre')let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -1623,7 +1623,7 @@ case 'tonto':
   pareja5 = amor[Math.floor(Math.random() * (planas.length))]
   hasil = `😳👦🏽💘 *¡𝐌𝐄𝐃𝐈𝐃𝐎𝐑 𝐃𝐄 𝐂𝐎𝐌𝐏𝐀𝐓𝐈𝐁𝐈𝐋𝐈𝐃𝐀𝐃 𝐃𝐄 𝐏𝐀𝐑𝐄𝐉𝐀𝐒!* 💘👩🏽😳\n\n😳 *¡𝐕𝐚𝐦𝐨𝐬 𝐚 𝐯𝐞𝐫 𝐥𝐚 𝐜𝐨𝐦𝐩𝐚𝐭𝐢𝐛𝐢𝐥𝐢𝐝𝐚𝐝 𝐪𝐮𝐞 𝐭𝐞𝐧𝐝𝐫𝐢𝐚𝐧* *@${mentioned[0].split(/@.+/, ' *𝙮* ')).join}* *𝐬𝐢 𝐟𝐨𝐫𝐦𝐚𝐫𝐚𝐧 𝐮𝐧𝐚 𝐩𝐚𝐫𝐞𝐣𝐚!* 😳\n\n💕 *¡𝑳𝒂 𝒄𝒐𝒎𝒑𝒂𝒕𝒊𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝒆𝒏𝒕𝒓𝒆 𝒍𝒐𝒔 𝒅𝒐𝒔 𝒆𝒔 𝒅𝒆𝒍 "${pareja}"!* 😳\n💕 *¡𝑬𝒍 𝒂𝒎𝒐𝒓 𝒒𝒖𝒆 𝒉𝒂𝒃𝒓𝒊𝒂 𝒆𝒏𝒕𝒓𝒆 𝒆𝒍𝒍𝒐𝒔 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍 "${pareja2}"!* 😳\n💕 *¡𝑳𝒂 𝒑𝒓𝒐𝒃𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅 𝒅𝒆 𝒒𝒖𝒆 𝒍𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐𝒏 𝒇𝒖𝒏𝒄𝒊𝒐𝒏𝒆 𝒆𝒔 𝒅𝒆𝒍 "${pareja3}"!* 😳\n💕 *¡𝑳𝒂 𝒇𝒆𝒍𝒊𝒄𝒊𝒅𝒂𝒅 𝒒𝒖𝒆 𝒕𝒆𝒏𝒅𝒓𝒊𝒂𝒏 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍  "${pareja4}"!* 😳\n💕 *¡𝑳𝒂 𝒇𝒊𝒅𝒆𝒍𝒊𝒅𝒂𝒅 𝒒𝒖𝒆 𝒕𝒆𝒏𝒅𝒓𝒊𝒂𝒏 𝒆𝒏𝒕𝒓𝒆 𝒍𝒐𝒔 𝒅𝒐𝒔 𝒔𝒆𝒓𝒊𝒂 𝒅𝒆𝒍  "${pareja5}"!* 😳\n\n❤️😌 *¡𝐐𝐔𝐄 𝐒𝐄𝐀𝐈𝐒 𝐅𝐄𝐋𝐈𝐂𝐄𝐒 𝐄𝐋 𝐓𝐈𝐄𝐌𝐏𝐎 𝐐𝐔𝐄 𝐃𝐔𝐑𝐄𝐈𝐒!*😌❤️` //${body.slice(8)}
   mentions(hasil, mentioned)
-  break
+  break*/
 
         case '🤫':
         case 'callate':
@@ -1635,6 +1635,26 @@ case 'tonto':
   hasil = `😡🤫 *¡𝐓𝐄 𝐇𝐀𝐍 𝐌𝐀𝐍𝐃𝐀𝐃𝐎 𝐀 𝐂𝐀𝐋𝐋𝐀𝐑!* 🤫😡\n\n*@${mentioned[0].split('@')[0]}*, *${mandarcallar}*\n\n*@${mentioned[0].split('@')[0]}*\n😡🥱 *¡𝐂𝐀𝐋𝐋𝐀𝐓𝐄 𝐃𝐄 𝐔𝐍𝐀 𝐏𝐔𝐓𝐀 𝐕𝐄𝐙!* 🥱😡` //${body.slice(8)}
   mentions(hasil, mentioned)
   break
+
+      case 'friendzone':
+          if (!isGroup) return reply(mess.only.group)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  hasil = `🖤😥 *¡𝐏𝐄𝐑𝐓𝐄𝐍𝐄𝐂𝐄𝐒 𝐀 𝐋𝐀 𝐅𝐑𝐈𝐄𝐍𝐃𝐙𝐎𝐍𝐄!* 😥🖤\n\n*@${mentioned[0].split('@')[0]}*, *¡𝘼𝙘𝙖𝙗𝙖𝙨 𝙙𝙚 𝙨𝙚𝙧 𝙢𝙚𝙩𝙞𝙙𝙤 𝙚𝙣 𝙡𝙖 𝙁𝙧𝙞𝙚𝙣𝙙𝙕𝙤𝙣𝙚 𝙮 𝙪𝙣𝙖 𝙫𝙚𝙯 𝙦𝙪𝙚 𝙨𝙚 𝙚𝙣𝙩𝙧𝙖 𝙖𝙦𝙪𝙞́ 𝙮𝙖 𝙚𝙨 𝙢𝙪𝙮 𝙙𝙞𝙛𝙞𝙘𝙞𝙡 𝙨𝙖𝙡𝙞𝙧 𝙙𝙚 𝙡𝙖 𝙁𝙧𝙞𝙚𝙣𝙙𝙕𝙤𝙣𝙚. 𝙇𝙖𝙨 𝙢𝙪́𝙡𝙩𝙞𝙥𝙡𝙚𝙨 𝙧𝙖𝙯𝙤𝙣𝙚𝙨 𝙥𝙤𝙧 𝙡𝙖𝙨 𝙘𝙪𝙖𝙡𝙚𝙨 𝙩𝙚 𝙝𝙖𝙣 𝙢𝙚𝙩𝙞𝙙𝙤 𝙖𝙝𝙞 𝙥𝙪𝙚𝙙𝙚𝙣 𝙨𝙚𝙧 𝙚𝙨𝙩𝙖𝙨!*\n\n⚠️ *¡𝐒𝐞𝐫 𝐦𝐮𝐲 𝐏𝐞𝐬𝐚𝐝𝐨 𝐲 𝐏𝐚𝐭𝐞́𝐭𝐢𝐜𝐨!*\n⚠️ *¡𝐒𝐞𝐫 𝐝𝐞𝐦𝐚𝐬𝐢𝐚𝐝𝐨 𝐅𝐞𝐨 𝐲 𝐁𝐚𝐛𝐨𝐬𝐨!*\n⚠️ *¡𝐒𝐞𝐫 𝐮𝐧 𝐩𝐮𝐭𝐨 𝐅𝐫𝐢𝐤𝐢 𝐨 𝐏𝐚𝐲𝐚𝐬𝐨!*\n\n😕 *¡𝙃𝙖𝙮 𝙢𝙞𝙡𝙚𝙨 𝙙𝙚 𝙢𝙤𝙩𝙞𝙫𝙤𝙨 𝙥𝙤𝙧 𝙡𝙤𝙨 𝙦𝙪𝙚 𝙥𝙤𝙙𝙧𝙞́𝙖𝙨 𝙚𝙨𝙩𝙖𝙧 𝙖𝙦𝙪𝙞 𝙥𝙚𝙧𝙤, 𝙩𝙤𝙣𝙩@𝙨 𝙘𝙤𝙢𝙤 𝙩𝙪́ 𝙣𝙤 𝙢𝙚𝙧𝙚𝙘𝙚𝙣 𝙣𝙞 𝙪𝙣𝙖 𝙧𝙖𝙯𝙤́𝙣 𝙤 𝙚𝙭𝙥𝙡𝙞𝙘𝙖𝙘𝙞𝙤́𝙣!* 😕\n\n*@${mentioned[0].split('@')[0]}*\n🖤☺️ *¡𝐓𝐄 𝐐𝐔𝐄𝐃𝐀𝐒 𝐄𝐍 𝐋𝐀 𝐅𝐑𝐈𝐄𝐍𝐃𝐙𝐎𝐍𝐄!* ☺️🖤` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
+        case '🎣':
+        case 'tirarcaña':
+          if (!isGroup) return reply(mess.only.group)
+  //if (args.length < 1) return reply('Escribe el nombre')
+  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+  Lxa.updatePresence(from, Presence.composing)
+  hasil = `🥵😏 *¡𝗧𝗘 𝗘𝗦𝗧𝗔𝗡 𝗧𝗜𝗥𝗔𝗡𝗗𝗢 𝗟𝗔 𝗖𝗔𝗡̃𝗔!* 😏🥵\n\n😳 ¡*@${mentioned[0].split('@')[0]}*, *𝙏𝙚 𝙖𝙘𝙖𝙗𝙖𝙣 𝙙𝙚 𝙩𝙞𝙧𝙖𝙧 𝙡𝙖 𝙘𝙖𝙣̃𝙖 𝙪𝙨𝙖𝙣𝙙𝙤 𝙚𝙡 𝘽𝙤𝙩 𝙮𝙖 𝙦𝙪𝙚 𝙚𝙨𝙖 𝙥𝙚𝙧𝙨𝙤𝙣𝙖 𝙣𝙤 𝙨𝙚 𝙖𝙩𝙧𝙚𝙫𝙚 𝙖 𝙩𝙞𝙧𝙖𝙧𝙩𝙚 𝙤 𝙡𝙚 𝙥𝙤𝙣𝙚𝙨 𝙢𝙪𝙮 𝙣𝙚𝙧𝙫𝙞𝙤𝙨𝙞𝙩@ 𝙥𝙖𝙧𝙖 𝙝𝙖𝙘𝙚𝙧𝙡𝙤 𝙥𝙤𝙧 𝙨𝙞 𝙢𝙞𝙨𝙢𝙤!* 😳\n\n*@${mentioned[0].split('@')[0]}*\n🥵😏💦 *¡𝐘𝐀 𝐒𝐀𝐁𝐄𝐒 𝐐𝐔𝐈𝐄𝐍 𝐄𝐒!* 💦😏🥵` //${body.slice(8)}
+  mentions(hasil, mentioned)
+  break
+
 
 
 // AVISOS DE ROLL
@@ -1731,7 +1751,19 @@ case 'tonto':
             mentions('  💜💤 *¡𝑩𝑼𝑬𝑵𝑰𝑺𝑰𝑴𝑨𝑺 𝑵𝑶𝑪𝑯𝑬𝑺 𝑨 𝑻𝑶𝑫@𝑺!* 💤💜\n\n'+teks+'', members_id, true)
             break
             
-
+        case '☀️':
+        case 'buenosdias':
+            Lxa.updatePresence(from, Presence.composing)
+            if (!isGroup) return reply(mess.only.group)
+            if (!isGroupAdmins) return reply(mess.only.admin)
+            members_id = []
+            teks = (args.length > 1) ? body.slice(8).trim(): ''
+            for (let mem1 of groupMembers) {
+              teks += ` 🤗 *¡𝑩𝒖𝒆𝒏𝒊𝒔𝒊𝒎𝒐𝒔 𝑫𝒊𝒂𝒔 𝑷𝒂𝒓𝒂 𝑻𝒊!* 🤗\n❄️😍 *¡@${mem1.jid.split('@')[0]}!* 😍❄️\n\n`
+              members_id.push(mem1.jid)
+            }
+            mentions('  💜🛏️ *¡𝑩𝑼𝑬𝑵𝑰𝑺𝑰𝑴𝑶𝑺 𝑫𝑰𝑨𝑺 𝑨 𝑻𝑶𝑫@𝑺!* 🛏️💜\n\n'+teks+'', members_id, true)
+            break
 
 
 
@@ -3289,10 +3321,8 @@ case 'unblock111111111111111':
 						reply('Nombre de usuario invalido')
 					}
 					break
-				case 'nulis':
-				case 'tulis111111111111111':
-					if (args.length < 1) return reply('Escribe el texto')
-					teks = body.slice(7)
+				case 'notas':
+ 					teks = body.slice(7)
 					reply(mess.wait)
 					anu = await fetchJson(`https://mhankbarbar.tech/nulis?text=${teks}&apiKey=${BarBarKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
