@@ -3532,7 +3532,7 @@ break
           break
 
 //--menambah member
-				case 'add':
+				case 'añadir':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3548,21 +3548,21 @@ break
 					break
 
 //--mengeluarkan member
-				case 'kick11111111111111111':
+				case 'expulsar':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Orden recibida :\n'
+						/*teks = 'Orden recibida :\n'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
-						}
+						}*/
 						mentions(teks, mentioned, true)
 						Lxa.groupRemove(from, mentioned)
 					} else {
-						mentions(`Se elimino a un joto : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						mentions(`⛔️😊 *¡𝐇𝐄𝐌𝐎𝐒 𝐃𝐄𝐂𝐈𝐃𝐈𝐃𝐎 𝐄𝐗𝐏𝐔𝐋𝐒𝐀𝐑𝐓𝐄!* 😊⛔️\n\n*¡@${mentioned[0].split('@')[0]}, 𝙃𝙚𝙢𝙤𝙨 𝙚𝙨𝙩𝙖𝙙𝙤 𝙥𝙚𝙣𝙨𝙖𝙣𝙙𝙤 𝙮 𝙝𝙚𝙢𝙤𝙨 𝙙𝙚𝙘𝙞𝙙𝙞𝙙𝙤 𝙚𝙭𝙥𝙪𝙡𝙨𝙖𝙧𝙩𝙚 𝙙𝙚 𝙚𝙨𝙩𝙚 𝙜𝙧𝙪𝙥𝙤 𝙥𝙤𝙧 𝙦𝙪𝙚 𝙣𝙤 𝙚𝙧𝙚𝙨 𝙖𝙥𝙩𝙤 𝙥𝙖𝙧𝙖 𝙩𝙤𝙙𝙤𝙨 𝙣𝙤𝙨𝙤𝙩𝙧𝙤𝙨. 𝙃𝙖𝙨 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙙𝙤 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖𝙡 𝙤 𝙨𝙞𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙚 𝙚𝙧𝙚𝙨 𝙩𝙖𝙣 𝙜𝙖𝙮 𝙦𝙪𝙚 𝙣𝙞 𝙡𝙤𝙨 𝙢𝙚𝙙𝙞𝙙𝙤𝙧𝙚𝙨 𝙙𝙚 𝙝𝙤𝙢𝙤𝙨𝙚𝙭𝙪𝙖𝙡𝙞𝙙𝙖𝙙 𝙡𝙡𝙚𝙜𝙖𝙣 𝙖 𝙪𝙣𝙖 𝙘𝙞𝙛𝙧𝙖 𝙩𝙖𝙣 𝙖𝙡𝙩𝙖 𝙘𝙤𝙢𝙤 𝙡𝙖 𝙙𝙚 𝙩𝙪 𝙥𝙧𝙤𝙥𝙞𝙤 𝙣𝙞𝙫𝙚𝙡!*\n\n@${mentioned[0].split('@')[0]}\n💙😍 *¡𝐍𝐎 𝐕𝐔𝐄𝐋𝐕𝐀𝐒 𝐌𝐀𝐒!* 😍💙`, mentioned, true)
 						Lxa.groupRemove(from, mentioned)
 					}
 					break
@@ -3592,7 +3592,7 @@ case 'setppbot11111111111111111':
   break
 
 //event
-/*case 'event':
+case 'event':
   if (!isGroup) return reply(mess.only.group)
   if (!isOwner) return reply(mess.only.ownerB)
   if (args.length < 1) return reply('ketik 1 untuk mengaktifkan')
@@ -3609,7 +3609,7 @@ reply('*☉* Menonaktifkan *EVENT* di group ini*')
 reply(ind.satukos())
   }
   break
-*/
+
 //--Mengambil link grup
     case 'linkgroup11111111111111111':
     case 'linkgc11111111111111111':
