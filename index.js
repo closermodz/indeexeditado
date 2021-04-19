@@ -3597,7 +3597,6 @@ case 'event':
   if (!isOwner) return reply(mess.only.ownerB)
   if (args.length < 1) return reply('ketik 1 untuk mengaktifkan')
   if (Number(args[0]) === 1) {
-if (isEventon) return reply('*SUDAH AKTIF* !!!')
 event.push(from)
 fs.writeFileSync('./datauser/event.json', JSON.stringify(event))
 reply('*☉]* Mengaktifkan *EVENT* di group ini*')
