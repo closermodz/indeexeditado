@@ -1486,59 +1486,10 @@ Lxa.sendMessage(from, yoi, text, {
 break
 
 
-
-//--pencarian pinterest
-  case 'img111111111111111':
-if (!isRegister) return reply(mess.only.daftarB)
-
-if (args.length < 1) return reply('Ingresa lo que quieres buscar')
-tels = body.slice(5)
-Lxa.updatePresence(from, Presence.composing)
-reply(mess.wait)
-try {
-data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${tels}`, {
-  method: 'get'
-})
-n = JSON.parse(JSON.stringify(data));
-nimek = n[Math.floor(Math.random() * n.length)];
-pok = await getBuffer(nimek)
-Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `Resultado : *${tels}*`
-})
-
-} catch {
-  reply(mess.ferr)
-}
-break
-
-//--Pencarian pinterest
-case 'pinterest111111111111111':
-tels = body.slice(11)
-if (!isRegister) return reply(mess.only.daftarB)
-
-if (args.length < 1) return reply('Ingresa lo que quieres buscar')
-Lxa.updatePresence(from, Presence.composing)
-try {
-data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${tels}`, {
-  method: 'get'
-})
-reply(mess.wait)
-n = JSON.parse(JSON.stringify(data));
-nimek = n[Math.floor(Math.random() * n.length)];
-pok = await getBuffer(nimek)
-Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `Resultado : *${tels}*`
-})
-
-} catch {
-  reply(mess.ferr)
-}
-break
-
-case 'listonline111111111111111':
+case 'conectados':
         		let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
 			    let online = [...Object.keys(Lxa.chats.get(ido).presences), Lxa.user.jid]
-			    Lxa.sendMessage(from, 'List Online:\n' + online.map(v => '- @' + v.replace(/@.+/, '')).join`\n`, text, { quoted: mek,
+			    Lxa.sendMessage(from, '😳 *¡𝑷𝒆𝒓𝒔𝒐𝒏𝒂𝒔 𝑪𝒐𝒏𝒆𝒄𝒕𝒂𝒅𝒂𝒔 𝒆𝒏 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑! 😳*\n\n' + online.map(v => '   👇🏻 *𝑬𝒔𝒕𝒂 𝒆𝒏 𝑳𝒊𝒏𝒆𝒂* 😊💚\n*' + v.replace(/@.+/, '')).join`*\n\n`, text, { quoted: mek,
   			  contextInfo: { mentionedJid: online }
 			    })
 				break
