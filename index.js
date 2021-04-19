@@ -1464,7 +1464,7 @@ break
 //---couple pasangan
 case 'couple111111111111111':
 Lxa.updatePresence(from, Presence.composing)
-if (!isRegister) return reply(mess.only.daftarB)
+
 if (!q.includes(' & ')) return  reply('Formato de texto incorrecto')
 const aku = q.substring(0, q.indexOf(' &') - 0)
 const kamu = q.substring(q.lastIndexOf('& ') + 1)
@@ -1486,120 +1486,20 @@ Lxa.sendMessage(from, yoi, text, {
 break
 
 
-case 'conectados':
+/*case 'conectados1111':
         		let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
 			    let online = [...Object.keys(Lxa.chats.get(ido).presences), Lxa.user.jid]
 			    Lxa.sendMessage(from, '😳 *¡𝑷𝒆𝒓𝒔𝒐𝒏𝒂𝒔 𝑪𝒐𝒏𝒆𝒄𝒕𝒂𝒅𝒂𝒔 𝒆𝒏 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑! 😳*\n\n•••••••••••••••••••••••••••••••••••••••••\n' + online.map(v => '  *𝑬𝒔𝒕𝒂 𝒆𝒏 𝑳𝒊𝒏𝒆𝒂* 😊💚\n@' + v.replace(/@.+/, '')).join`\n•••••••••••••••••••••••••••••••••••••••••\n`, text, { quoted: mek,
   			  contextInfo: { mentionedJid: online }
 			    })
-				break
+				break*/
 
 // Lxa.sendMessage(from, '😳 *¡𝑷𝒆𝒓𝒔𝒐𝒏𝒂𝒔 𝑪𝒐𝒏𝒆𝒄𝒕𝒂𝒅𝒂𝒔 𝒆𝒏 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑! 😳*\n\n•••••••••••••••••••••••••••••••••••••••••\n' + online.map(v => '  *𝑬𝒔𝒕𝒂 𝒆𝒏 𝑳𝒊𝒏𝒆𝒂* 😊💚\n@' + v.replace(/@.+/, '')).join`\n•••••••••••••••••••••••••••••••••••••••••\n`, text, { quoted: mek,
 
-//--pinterest anime neko
-case 'neko111111111111111':
-if (!isRegister) return reply(mess.only.daftarB)
-
-Lxa.updatePresence(from, Presence.composing)
-uk = ["anime neko"]
-nk = uk[Math.floor(Math.random() * uk.length)]
-try {
-data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${nk}`, {
-  method: 'get'
-})
-reply(mess.wait)
-n = JSON.parse(JSON.stringify(data));
-nimek = n[Math.floor(Math.random() * n.length)];
-pok = await getBuffer(nimek)
-Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `Mr.Pato-Bot`
-})
-
-} catch {
-  reply(mess.ferr)
-}
-break
-
-//--Pinteres anime loli
-  case 'loli111111111111111':
-if (!isRegister) return reply(mess.only.daftarB)
-
-Lxa.updatePresence(from, Presence.composing)
-uk = ["anime loli"]
-nk = uk[Math.floor(Math.random() * uk.length)]
-try {
-data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${nk}`, {
-  method: 'get'
-})
-reply(mess.wait)
-n = JSON.parse(JSON.stringify(data));
-nimek = n[Math.floor(Math.random() * n.length)];
-pok = await getBuffer(nimek)
-Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `Mr.Pato-Bot`
-})
-
-} catch {
-  reply(mess.ferr)
-}
-break
-
-
-//--Pinterest Twitter
-  case 'twit111111111111111':
-if (!isRegister) return reply(mess.only.daftarB)
-
-Lxa.updatePresence(from, Presence.composing)
-tw = ["Twitter lucu Indonesia",
-  "Twitter harian",
-  "Recehkan Twitter",
-  "twit lucu"]
-nk = tw[Math.floor(Math.random() * tw.length)]
-try {
-data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${nk}`, {
-  method: 'get'
-})
-reply(mess.wait)
-n = JSON.parse(JSON.stringify(data));
-nimek = n[Math.floor(Math.random() * n.length)];
-pok = await getBuffer(nimek)
-Lxa.sendMessage(from, pok, image, {
-  quoted: mek
-})
-
-} catch {
-  reply(mess.ferr)
-}
-break
-
-  //
-  case 'anime111111111111111':
-if (!isRegister) return reply(mess.only.daftarB)
-
-Lxa.updatePresence(from, Presence.composing)
-am = ["anime tumblr",
-  "wallpaper anime hd",
-  "anime aestethic",
-  "anime hd"]
-nk = am[Math.floor(Math.random() * am.length)]
-data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${nk}`, {
-  method: 'get'
-})
-reply(mess.wait)
-n = JSON.parse(JSON.stringify(data));
-nimek = n[Math.floor(Math.random() * n.length)];
-pok = await getBuffer(nimek)
-Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `Mr.Pato-Bot`
-})
-
-break
 
 //--Pinterest wallpaper
   case 'wp111111111111111':
-case 'wallpaper111111111111111':
-  if (!isRegister) return reply(mess.only.daftarB)
-  
+case 'wallpaper111111111111111':  
   Lxa.updatePresence(from, Presence.composing)
   pw = ["wallpaper aestethic",
 "wallpaper tumblr",
@@ -1623,92 +1523,7 @@ quoted: mek, caption: `Mr.Pato-Bot`
   }
   break
 
-//--Pinterest cecan
-case 'cecan111111111111111':
-  if (!isRegister) return reply(mess.only.daftarB)
-  
-  tels = body.slice(5)
-  Lxa.updatePresence(from, Presence.composing)
-  ty = ["ulzhang girl",
-"cewek cantik",
-"cewe hijab",
-"cewe rusia cantik",
-"cewe jepang cantik",
-"cecan indo"]
-  nk = ty[Math.floor(Math.random() * ty.length)]
-  try {
-  data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${nk}`, {
-method: 'get'
-  })
-  reply(mess.wait)
-  n = JSON.parse(JSON.stringify(data));
-  nimek = n[Math.floor(Math.random() * n.length)];
-  pok = await getBuffer(nimek)
-  Lxa.sendMessage(from, pok, image, {
-quoted: mek, caption: `Mr.Pato-Bot`
-  })
-  
-  } catch {
-    reply(mess.ferr)
-  }
-  break
-
-//--Pinterest quotes
-case 'quotes111111111111111':
-  if (!isRegister) return reply(mess.only.daftarB)
-  
-  tels = body.slice(5)
-  Lxa.updatePresence(from, Presence.composing)
-  qt = ["quotes galau",
-"quotes aestethic Indonesia"]
-  nk = qt[Math.floor(Math.random() * qt.length)]
-  try {
-  data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${nk}`, {
-method: 'get'
-  })
-  reply(mess.wait)
-  n = JSON.parse(JSON.stringify(data));
-  nimek = n[Math.floor(Math.random() * n.length)];
-  pok = await getBuffer(nimek)
-  Lxa.sendMessage(from, pok, image, {
-quoted: mek, caption: `Mr.Pato-Bot`
-  })
-  
-  } catch {
-    reply(mess.ferr)
-  }
-  break
-
-
-
-//--Pinterest cogan
-case 'cogan1111111111111111':
-  if (!isRegister) return reply(mess.only.daftarB)
-  
-  Lxa.updatePresence(from, Presence.composing)
-  uk = ["ulzhang boy","cowok keren","cowo ganteng","cogan","cogan jawa"]
-  nk = uk[Math.floor(Math.random() * uk.length)]
-  try {
-  data = await fetchJson(`https://api.fdci.se/sosmed/rep.php?gambar=${nk}`, {
-method: 'get'
-  })
-  reply(mess.wait)
-  n = JSON.parse(JSON.stringify(data));
-  nimek = n[Math.floor(Math.random() * n.length)];
-  pok = await getBuffer(nimek)
-  Lxa.sendMessage(from, pok, image, {
-quoted: mek, caption: `Mr.pato-Bot`
-  })
-  
-  } catch {
-    reply(mess.ferr)
-  }
-  break
-
-//--Pinterest cyberpunk
-case 'cyberpunk1111111111111111':
-  if (!isRegister) return reply(mess.only.daftarB)
-  
+case 'cyberpunk1111111111111111':  
   Lxa.updatePresence(from, Presence.composing)
   co = ["anime cyberpunk","fotografi cyberpunk","tokyo cyberpunk"]
   nk = co[Math.floor(Math.random() * co.length)]
@@ -1729,9 +1544,7 @@ quoted: mek
   }
   break
 
-case 'jadian1111111111111111':
-  if (!isRegister) return reply(mess.only.daftarB)
-  
+case 'jadian1111111111111111':  
   if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-año`, text, {
 quoted: mek
   })
@@ -1757,8 +1570,7 @@ quoted: mek
 
 
 case 'asupan1111111111111111':
-  
-if (!isRegister) return reply(mess.only.daftarB)
+
 try {
 data = await fetchJson(`https://api.itsmeikyxsec404.xyz/asupan?apikey=${meKey}`)
 reply(mess.wait)
@@ -1772,9 +1584,7 @@ Lxa.sendMessage(from, hasil, video, {
 }
 break
 
-case 'weton1111111111111111':
-  if (!isRegister) return reply(mess.only.daftarB)
-  
+case 'weton1111111111111111':  
   if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-año`, text, {
 quoted: mek
   })
@@ -1798,8 +1608,7 @@ break
   break
 
 case 'seberapagay1111111111111111':
-  if (!isRegister) return reply(mess.only.daftarB)
-  
+
   if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el nombre', text, {
 quoted: mek
   })
@@ -1811,9 +1620,7 @@ quoted: mek
   
   break
 
-case 'seberapabucin1111111111111111':
-  if (!isRegister) return reply(mess.only.daftarB)
-  
+case 'seberapabucin1111111111111111':  
   if (args.length < 1) return Lxa.sendMessage(from, 'Ingresa el nombre', text, {
 quoted: mek
   })
@@ -1831,9 +1638,7 @@ quoted: mek
 
 //--searching lirik
 case 'lirik1111111111111111':
-  if (args.length < 1) return reply('Escribe el nombre de la cancion')
-  if (!isRegister) return reply(mess.only.daftarB)
-  
+  if (args.length < 1) return reply('Escribe el nombre de la cancion')  
   Lxa.updatePresence(from, Presence.composing)
   tels = body.slice(7)
   try {
@@ -1850,7 +1655,7 @@ method: 'get'
 case 'namae1111111111111111':
   if (args.length < 1) return reply('Escribe el nombre')
 Lxa.updatePresence(from, Presence.composing)
-if (!isRegister) return reply(mess.only.daftarB)
+
 
 teks = body.slice(7) 
 try {
@@ -1866,7 +1671,7 @@ break
 case 'alay1111111111111111':
   if (args.length < 1) return reply('Escribe el texto')
 Lxa.updatePresence(from, Presence.composing)
-if (!isRegister) return reply(mess.only.daftarB)
+
 
 teks = body.slice(6)
 try {
@@ -1881,7 +1686,7 @@ break
 
 case 'gplaystore1111111111111111':
 Lxa.updatePresence(from, Presence.composing)
-if (!isRegister) return reply(mess.only.daftarB)
+
 
 goo = body.slice(12)
 try {
@@ -1903,7 +1708,7 @@ reply(teks.trim())
 break
 case 'bijak1111111111111111':
 Lxa.updatePresence(from, Presence.composing)
-if (!isRegister) return reply(mess.only.daftarB)
+
 
 try {
 data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/katabijak?apikey=${lolKey}`)
@@ -1917,7 +1722,7 @@ break
 case 'pantun1111111111111111':
 
 Lxa.updatePresence(from, Presence.composing)
-if (!isRegister) return reply(mess.only.daftarB)
+
 
 try {
 data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/pantun?apikey=${lolKey}`)
@@ -1932,7 +1737,7 @@ case 'bucin1111111111111111':
 case 'gombal1111111111111111':
 
   Lxa.updatePresence(from, Presence.composing)
-  if (!isRegister) return reply(mess.only.daftarB)
+
   
   try {
   data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/bucin?apikey=${lolKey}`)
@@ -1946,7 +1751,7 @@ case 'gombal1111111111111111':
 case 'charnime1111111111111111':
   teks = body.slice(10)
   Lxa.updatePresence(from, Presence.composing)
-  if (!isRegister) return reply(mess.only.daftarB)
+
   
   if (args.length < 1) return reply('Escribe el nombre')
   try {
