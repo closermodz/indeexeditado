@@ -1431,60 +1431,25 @@ caption: teks, contextInfo: {
   mentionedJid: [me.jid]}})
   break
 
-//---Kecepatan respon
-case 'ping111111111111111':
-  case 'speed111111111111111':
-if (!isRegister) return reply(mess.only.userB)
+case 'conexion':
 const timestamp = speed();
 const latensi = speed() - timestamp
 Lxa.updatePresence(from, Presence.composing)
 uptime = process.uptime()
-Lxa.sendMessage(from, `*El bot responde en*\n‣ *Speed* : ${latensi.toFixed(4)} _Segundos_\n\n*Info bot*\n‣ *Total de chats* : ${totalchat.length}\n‣ *Total de usuarios* : ${_registered.length}\n‣ *Bloqueados* : ${blocked.length}\n‣ *Tiempo activo* : ${kyun(uptime)}`, text, {
+Lxa.sendMessage(from, `*✅ *¡𝑳𝒂 𝒄𝒐𝒏𝒆𝒙𝒊́𝒐𝒏 𝒅𝒆𝒍 𝑩𝒐𝒕 𝒆𝒔 𝑬𝒔𝒕𝒂𝒃𝒍𝒆!* ✅*\n\n😊 *𝑳𝒂 𝒗𝒆𝒍𝒐𝒄𝒊𝒅𝒂𝒅 𝒅𝒆 𝒄𝒐𝒏𝒆𝒙𝒊𝒐́𝒏 𝒅𝒆𝒍 𝑩𝒐𝒕 𝒆𝒔 𝒅𝒆: 〔${latensi.toFixed(4)}〕.* 😊\n\n*¿𝑪𝒖𝒂𝒏𝒕𝒐 𝒕𝒊𝒆𝒎𝒑𝒐 𝒍𝒍𝒆𝒗𝒂 𝒆𝒍 𝑩𝒐𝒕 𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐?*\n\n${kyun(uptime)}`, text, {
   quoted: mek
 })
 break
 
-
-//--arti nama
-case 'arti111111111111111':
-if (args.length < 1) return reply('*☒* Masukan teks')
+case 'actividad':
+const timestamp = speed();
+const latensi = speed() - timestamp
 Lxa.updatePresence(from, Presence.composing)
-if (!isRegister) return reply(mess.only.daftarB)
-teks = body.slice(6)
-try {
-data = await fetchJson(`https://scrap.terhambar.com/nama?n=${teks}`)
-hasil = `Nombre : *${teks}*\n${data.result.arti}`
-reply(hasil)
-
-} catch {
-  reply(mess.ferr)
-}
-break
-
-//---couple pasangan
-case 'couple111111111111111':
-Lxa.updatePresence(from, Presence.composing)
-
-if (!q.includes(' & ')) return  reply('Formato de texto incorrecto')
-const aku = q.substring(0, q.indexOf(' &') - 0)
-const kamu = q.substring(q.lastIndexOf('& ') + 1)
-try {
-data = await fetchJson(`https://arugaz.herokuapp.com/api/jodohku?nama=${aku}&pasangan=${kamu}`, {
-  method: 'get'
-})
-yoi = `‣ *Nombre* : ${aku}
-‣ *Pareja* : ${kamu}
-‣ *Positivo* : ${data.positif}
-‣ *Negativo* : ${data.negatif}`
-Lxa.sendMessage(from, yoi, text, {
+uptime = process.uptime()
+Lxa.sendMessage(from, `💚😳 *¿𝑪𝒖𝒂𝒏𝒕𝒐 𝒕𝒊𝒆𝒎𝒑𝒐 𝒍𝒍𝒆𝒗𝒂 𝒆𝒍 𝑩𝒐𝒕 𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐?* 😳💚\n\n➦ 😌 *〔${kyun(uptime)}〕* ⌚`, text, {
   quoted: mek
 })
-
-} catch {
-  reply(mess.ferr)
-}
 break
-
 
 /*case 'conectados1111':
         		let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
@@ -1498,7 +1463,7 @@ break
 
 
 //--Pinterest wallpaper
-  case 'wp111111111111111':
+/*case 'wp111111111111111':
 case 'wallpaper111111111111111':  
   Lxa.updatePresence(from, Presence.composing)
   pw = ["wallpaper aestethic",
@@ -1521,9 +1486,9 @@ quoted: mek, caption: `Mr.Pato-Bot`
   } catch {
     reply(mess.ferr)
   }
-  break
+  break*/
 
-case 'cyberpunk1111111111111111':  
+/*case 'cyberpunk1111111111111111':  
   Lxa.updatePresence(from, Presence.composing)
   co = ["anime cyberpunk","fotografi cyberpunk","tokyo cyberpunk"]
   nk = co[Math.floor(Math.random() * co.length)]
@@ -1542,102 +1507,10 @@ quoted: mek
   } catch {
     reply(mess.ferr)
   }
-  break
-
-case 'jadian1111111111111111':  
-  if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-año`, text, {
-quoted: mek
-  })
-  if (!q.includes('-')) return  reply('Ingrese la fecha-mes-año\n*Ejemplo : 09-09-2009*')
-  pc = body.slice(9)
-  teks1 = pc.split("-")[0];
-  teks2 = pc.split("-")[1];
-  teks3 = pc.split("-")[2];
-  reply(mess.wait)
-  try {
-  iya = await fetchJson(`http://lolhuman.herokuapp.com/api/jadian/${teks1}/${teks2}/${teks3}?apikey=${lolKey}`, {
-method: 'get'
-  })
-  hasil = `‣ *Características* : ${iya.result.karakteristik}\n‣ *Descripción* : ${iya.result.deskripsi}`
-  Lxa.sendMessage(from, hasil, text, {
-quoted: mek
-  })
-  
-  } catch {
-    reply(mess.ferr)
-  }
-  break
-
-
-case 'asupan1111111111111111':
-
-try {
-data = await fetchJson(`https://api.itsmeikyxsec404.xyz/asupan?apikey=${meKey}`)
-reply(mess.wait)
-hasil = await getBuffer(data.result)
-Lxa.sendMessage(from, hasil, video, {
-  caption: 'Nih gan', quoted: mek
-})
-
-} catch {
-  reply(mess.ferr)
-}
-break
-
-case 'weton1111111111111111':  
-  if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-año`, text, {
-quoted: mek
-  })
-  if (!q.includes('-')) return  reply('Masukan tanggal-bulan-tahun dengan benar\n*Contoh : 09-09-2009*')
-  pc = body.slice(7)
-  teks1 = pc.split("-")[0];
-  teks2 = pc.split("-")[1];
-  teks3 = pc.split("-")[2];
-  reply(mess.wait)
-  try {
-  iya = await fetchJson(`http://lolhuman.herokuapp.com/api/weton/${teks1}/${teks2}/${teks3}?apikey=${lolKey}`, {
-method: 'get'
-  })
-  hasil = `${iya.result.weton}\n\nCaracterísticas: ${iya.result.karakter}\n Profesión : ${iya.result.pekerjaan}\n Rejeki : ${iya.result.rejeki}\nJodoh : ${iya.result.jodoh}`
-reply(hasil)
-break
-  
-  } catch {
-    reply(mess.ferr)
-  }
-  break
-
-case 'seberapagay1111111111111111':
-
-  if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el nombre', text, {
-quoted: mek
-  })
-  teks = body.slice(13)
-  Lxa.updatePresence(from, Presence.composing)
-  data = await fetchJson(`https://arugaz.herokuapp.com/api/howgay`)
-  hasil = `*Gay Detectado*\n‣ Nombre : *${args[0]}*\n‣ Porcentaje : *${data.persen}%*\n*${data.desc}*`
-  reply(hasil)
-  
-  break
-
-case 'seberapabucin1111111111111111':  
-  if (args.length < 1) return Lxa.sendMessage(from, 'Ingresa el nombre', text, {
-quoted: mek
-  })
-  teks = body.slice(15)
-  try {
-  Lxa.updatePresence(from, Presence.composing)
-  data = await fetchJson(`https://arugaz.herokuapp.com/api/howbucins`)
-  hasil = `*Bucin Detectado*\n‣ Nombre : *${args[0]}*\n‣ Porcentaje : *${data.persen}%*\n*${data.desc}*`
-  reply(hasil)
-  
-  } catch {
-    reply(mess.ferr)
-  }
-  break
+  break*/
 
 //--searching lirik
-case 'lirik1111111111111111':
+/*case 'lirik1111111111111111':
   if (args.length < 1) return reply('Escribe el nombre de la cancion')  
   Lxa.updatePresence(from, Presence.composing)
   tels = body.slice(7)
@@ -1650,25 +1523,10 @@ method: 'get'
   } catch {
     reply(mess.ferr)
   }
-  break
-
-case 'namae1111111111111111':
-  if (args.length < 1) return reply('Escribe el nombre')
-Lxa.updatePresence(from, Presence.composing)
+  break*/
 
 
-teks = body.slice(7) 
-try {
-data = await fetchJson(`https://api.terhambar.com/ninja?nama=${teks}`)
-hasil = `*Nombre de ninja*\n*${data.result.ninja}*`
-reply(hasil)
-
-} catch {
-  reply(mess.ferr)
-}
-break
-
-case 'alay1111111111111111':
+/*case 'alay1111111111111111':
   if (args.length < 1) return reply('Escribe el texto')
 Lxa.updatePresence(from, Presence.composing)
 
@@ -1681,96 +1539,7 @@ reply(data.text)
 } catch {
   reply(mess.ferr)
 }
-break
-
-
-case 'gplaystore1111111111111111':
-Lxa.updatePresence(from, Presence.composing)
-
-
-goo = body.slice(12)
-try {
-data = await fetchJson(`https://api.zeks.xyz/api/sgplay?apikey=${viKey}&q=${goo}`, {
-method: 'get'
-  })
-
-teks = '*Google Play Store*\n\n'
-				for (let i of data.result) {
-					teks += `        ────────────────\n\n‣ *Nombre* : ${i.title}\n‣ *Desarrollador* : ${i.developer}\n‣ *Calificación* : ${i.rating}\n‣ *Link* : ${i.url}\n\n`
-				}
-				teks += `        ────────────────`
-reply(teks.trim())
-
-} catch {
-  reply(mess.ferr)
-}
-
-break
-case 'bijak1111111111111111':
-Lxa.updatePresence(from, Presence.composing)
-
-
-try {
-data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/katabijak?apikey=${lolKey}`)
-reply(data.result)
-
-} catch {
-  reply(mess.ferr)
-}
-break
-
-case 'pantun1111111111111111':
-
-Lxa.updatePresence(from, Presence.composing)
-
-
-try {
-data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/pantun?apikey=${lolKey}`)
-reply(data.result)
-
-} catch {
-  reply(mess.ferr)
-}
-break
-
-case 'bucin1111111111111111':
-case 'gombal1111111111111111':
-
-  Lxa.updatePresence(from, Presence.composing)
-
-  
-  try {
-  data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/bucin?apikey=${lolKey}`)
-  reply(data.result)
-  
-  } catch {
-    reply(mess.ferr)
-  }
-  break
-
-case 'charnime1111111111111111':
-  teks = body.slice(10)
-  Lxa.updatePresence(from, Presence.composing)
-
-  
-  if (args.length < 1) return reply('Escribe el nombre')
-  try {
-  data = await fetchJson(`http://lolhuman.herokuapp.com/api/character?apikey=${lolKey}&query=${teks}`)
-  buf = await getBuffer(data.result.image.large)
-  hasil = `‣ *Nombre* : ${data.result.name.full} *(${data.result.name.native})*\n‣ *Descripción* : ${data.result.description}`
-  Lxa.sendMessage(from, buf, image, {
-caption: hasil, quoted: mek
-  })
-  
-  } catch {
-    reply(mess.ferr)
-  }
-  break
-
-
-
-
-
+break*/
 
 case 'gay':
           if (!isGroup) return reply(mess.only.group)
