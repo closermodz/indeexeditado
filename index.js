@@ -1616,7 +1616,7 @@ case 'tonto':
   //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
-  medidorplanas = amor[Math.floor(Math.random() * (planas.length))]
+  pareja = amor[Math.floor(Math.random() * (planas.length))]
   pareja2 = amor[Math.floor(Math.random() * (planas.length))]
   pareja3 = amor[Math.floor(Math.random() * (planas.length))]
   pareja4 = amor[Math.floor(Math.random() * (planas.length))]  //*𝙮* *@${mentioned[0].split('@')[0]}*
