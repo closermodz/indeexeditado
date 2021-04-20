@@ -322,6 +322,7 @@ async function starts() {
     ownerG: '⛔😡 *¡𝐈𝐍𝐓𝐄𝐍𝐓𝐎 𝐃𝐄 𝐒𝐔𝐏𝐋𝐀𝐍𝐓𝐀𝐂𝐈𝐎𝐍!* 😡⛔\n\n*¡𝑵𝒐 𝒊𝒏𝒕𝒆𝒏𝒕𝒆𝒔 𝒖𝒔𝒂𝒓 𝒍𝒐𝒔 𝒄𝒐𝒎𝒂𝒏𝒅𝒐𝒔 𝒅𝒆 𝒍𝒐𝒔 𝑫𝒊𝒐𝒔𝒆𝒔 𝒔𝒂𝒃𝒊𝒆𝒏𝒅𝒐 𝒒𝒖𝒆 𝒆𝒓𝒆𝒔 𝒖𝒏𝒂 𝒎𝒂𝒍𝒅𝒊𝒕𝒂 𝒓𝒂𝒕𝒂 𝒎𝒂́𝒔 𝒆𝒏 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑺𝒐𝒍𝒐 𝒍𝒐𝒔 𝒅𝒊𝒐𝒔𝒆𝒔 𝒑𝒖𝒆𝒅𝒆𝒏 𝒖𝒔𝒂𝒓𝒍𝒐!*\n\n⛔🐀 *¡𝐍𝐎 𝐋𝐎 𝐔𝐒𝐄𝐒 𝐌𝐀𝐒 𝐑𝐀𝐓𝐀!* 🐀⛔',
     ownerB: '⛔😡 *¡𝐈𝐍𝐓𝐄𝐍𝐓𝐎 𝐃𝐄 𝐒𝐔𝐏𝐋𝐀𝐍𝐓𝐀𝐂𝐈𝐎𝐍!* 😡⛔\n\n*¡𝑵𝒐 𝒊𝒏𝒕𝒆𝒏𝒕𝒆𝒔 𝒖𝒔𝒂𝒓 𝒍𝒐𝒔 𝒄𝒐𝒎𝒂𝒏𝒅𝒐𝒔 𝒅𝒆 𝒍𝒐𝒔 𝑫𝒊𝒐𝒔𝒆𝒔 𝒔𝒂𝒃𝒊𝒆𝒏𝒅𝒐 𝒒𝒖𝒆 𝒆𝒓𝒆𝒔 𝒖𝒏𝒂 𝒎𝒂𝒍𝒅𝒊𝒕𝒂 𝒓𝒂𝒕𝒂 𝒎𝒂́𝒔 𝒆𝒏 𝒆𝒔𝒕𝒆 𝑮𝒓𝒖𝒑𝒐. 𝑺𝒐𝒍𝒐 𝒍𝒐𝒔 𝒅𝒊𝒐𝒔𝒆𝒔 𝒑𝒖𝒆𝒅𝒆𝒏 𝒖𝒔𝒂𝒓𝒍𝒐!*\n\n⛔🐀 *¡𝐍𝐎 𝐋𝐎 𝐔𝐒𝐄𝐒 𝐌𝐀𝐒 𝐑𝐀𝐓𝐀!* 🐀⛔',
     lidertops: '❌ *¡𝑫𝒆 𝒎𝒐𝒎𝒆𝒏𝒕𝒐 𝒏𝒐 𝒉𝒂𝒚 𝒏𝒊𝒏𝒈𝒖́𝒏 𝑳𝒊𝒅𝒆𝒓 𝒆𝒏𝒄𝒂𝒓𝒈𝒂𝒅𝒐 𝒅𝒆 𝒍𝒍𝒆𝒗𝒂𝒓 𝒍𝒐𝒔 𝑻𝒐𝒑𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐, 𝒂𝒔𝒊 𝒒𝒖𝒆 𝒑𝒐𝒓 𝒍𝒐 𝒕𝒂𝒏𝒕𝒐 𝒆𝒍 𝑫𝒖𝒆𝒏̃𝒐 𝒅𝒆𝒍 𝑩𝒐𝒕 𝒔𝒆 𝒆𝒏𝒄𝒂𝒓𝒈𝒂 𝒅𝒆 𝒍𝒍𝒆𝒗𝒂𝒓 𝒍𝒐𝒔 𝑻𝒐𝒑𝒔 𝒆𝒏 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* ❌',
+    benned: '*ʙᴀɴɴᴇᴅ*',
     admin: '❌ *¡𝐒𝐨𝐥𝐨 𝐩𝐮𝐞𝐝𝐞𝐧 𝐞𝐣𝐞𝐜𝐮𝐭𝐚𝐫 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐥𝐨𝐬 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫𝐞𝐬 𝐝𝐞 𝐞𝐬𝐭𝐞 𝐠𝐫𝐮𝐩𝐨!* ❌',
     Badmin: '❌ *¡𝐏𝐚𝐫𝐚 𝐮𝐬𝐚𝐫 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐞𝐥 𝐁𝐨𝐭 𝐝𝐞𝐛𝐞 𝐝𝐞 𝐬𝐞𝐫 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐨!* ❌',
     daftarB: `usa .verify`
@@ -341,6 +342,7 @@ async function starts() {
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isWelkom = isGroup ? welkom.includes(from) : false
       const isPrem = premium.includes(sender)
+      const isBanned = ban.includes(sender)
 			const isOwner = ownerNumber.includes(sender)
 			const isSimi = isGroup ? samih.includes(from): false
       const isRegister = checkRegisteredUser(sender)
@@ -1546,6 +1548,7 @@ break*/
 
 case 'gay':
           if (!isGroup) return reply(mess.only.group)
+          if (isBanned) return reply(mess.only.benned)
   //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
@@ -1556,6 +1559,7 @@ case 'gay':
 
 case 'puta':
           if (!isGroup) return reply(mess.only.group)
+          if (isBanned) return reply(mess.only.benned)
   //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
@@ -1566,7 +1570,7 @@ case 'puta':
 
 case 'zorra':
           if (!isGroup) return reply(mess.only.group)
-  //if (args.length < 1) return reply('Escribe el nombre')
+          if (isBanned) return reply(mess.only.benned)  //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
   medidorzorras = zorras[Math.floor(Math.random() * (zorras.length))]
@@ -1576,7 +1580,7 @@ case 'zorra':
 
   case 'guarra':
           if (!isGroup) return reply(mess.only.group)
-  //if (args.length < 1) return reply('Escribe el nombre')
+          if (isBanned) return reply(mess.only.benned)  //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
   medidorguarras = guarras[Math.floor(Math.random() * (guarras.length))]
@@ -1586,7 +1590,7 @@ case 'zorra':
 
 case 'tonto':
           if (!isGroup) return reply(mess.only.group)
-  //if (args.length < 1) return reply('Escribe el nombre')
+          if (isBanned) return reply(mess.only.benned)  //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
   medidortontos = tontos[Math.floor(Math.random() * (tontos.length))]
@@ -1596,7 +1600,7 @@ case 'tonto':
 
   case 'follarme':
           if (!isGroup) return reply(mess.only.group)
-  //if (args.length < 1) return reply('Escribe el nombre')
+          if (isBanned) return reply(mess.only.benned)  //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
   follarme = sexo[Math.floor(Math.random() * (sexo.length))]
@@ -1606,7 +1610,7 @@ case 'tonto':
 
     case 'plana':
           if (!isGroup) return reply(mess.only.group)
-  //if (args.length < 1) return reply('Escribe el nombre')
+          if (isBanned) return reply(mess.only.benned)  //if (args.length < 1) return reply('Escribe el nombre')
   mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
   Lxa.updatePresence(from, Presence.composing)
   medidorplanas = planas[Math.floor(Math.random() * (planas.length))]
@@ -1803,9 +1807,31 @@ break
 
 
 
+// SISTEMA DE BANEO Y DESBANEO DEL BOT
 
-
-
+        case 'banlist':
+        ben = '```List Banned``` :\n'
+          for (let banned of ban) {
+            ben += `~> @${banned.split('@')[0]}\n`
+          }
+          ben += `Total : ${ban.length}`
+          Lxa.sendMessage(from, ben.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": ban}})
+          break
+        case 'ban':
+          if (!isOwner)return reply(mess.only.ownerB)
+          Lxa.updatePresence(from, Presence.composing) 
+          if (args.length < 1) return
+          if (!isOwner) return reply(mess.only.ownerB)
+          mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+              ban = mentioned
+          reply(`berhasil banned : ${ban}`)
+          break
+        case 'unban':
+          if (!isOwner)return reply(mess.only.ownerB)
+          bnnd = body.slice(8)
+          ban.splice(`${bnnd}@s.whatsapp.net`, 1)
+          reply(`Nomor wa.me/${bnnd} telah di unban!`)
+          break
 
 
 
