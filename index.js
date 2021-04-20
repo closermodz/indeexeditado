@@ -3538,7 +3538,7 @@ case 'setppbot11111111111111111':
 
         case 'contratar-policia':
   if (!isGroup) return reply(mess.only.group)
-  if (!isPrem) return reply(mess.only.ownerB)
+  if (!isOwner) return reply(mess.only.ownerB)
       mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
       Lxa.updatePresence(from, Presence.composing)
           addp = body.slice(10)
@@ -3549,7 +3549,7 @@ case 'setppbot11111111111111111':
           break
         case 'despedir-policia':
   if (!isGroup) return reply(mess.only.group)
-  if (!isPrem) return reply(mess.only.ownerB)
+  if (!isOwner) return reply(mess.only.ownerB)
       mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
       Lxa.updatePresence(from, Presence.composing)
           oh = body.slice(11)
@@ -3598,7 +3598,7 @@ case 'setppbot11111111111111111':
 
     case 'lista-policias':
           Lxa.updatePresence(from, Presence.composing) 
-          teks = `🛡️👮🏼 *¡𝐂𝐔𝐄𝐑𝐏𝐎 𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋 𝐃𝐄 𝐏𝐎𝐋𝐈𝐂𝐈𝐀!* 👮🏻‍♀️🛡️\n\n🚨 *¡𝑬𝒍 𝑪𝒖𝒆𝒓𝒑𝒐 𝑵𝒂𝒄𝒊𝒐𝒏𝒂𝒍 𝒅𝒆 𝑷𝒐𝒍𝒊𝒄𝒊𝒂 𝒄𝒖𝒆𝒏𝒕𝒂 𝒄𝒐𝒏* *(${premium.length})* *𝑨𝒈𝒆𝒏𝒕𝒆𝒔 𝒆𝒏𝒕𝒓𝒆𝒏𝒂𝒅𝒐 𝒚 𝒍𝒊𝒔𝒕𝒐𝒔 𝒑𝒂𝒓𝒂 𝒔𝒆𝒓𝒗𝒊𝒓 𝒂 𝒏𝒖𝒆𝒔𝒕𝒓𝒐 𝑷𝒂𝒊́𝒔!* 🚨\n••••••••••••••••••••`
+          teks = `🛡️👮🏼 *¡𝐂𝐔𝐄𝐑𝐏𝐎 𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋 𝐃𝐄 𝐏𝐎𝐋𝐈𝐂𝐈𝐀!* 👮🏻‍♀️🛡️\n\n🚨 *¡𝑬𝒍 𝑪𝒖𝒆𝒓𝒑𝒐 𝑵𝒂𝒄𝒊𝒐𝒏𝒂𝒍 𝒅𝒆 𝑷𝒐𝒍𝒊𝒄𝒊𝒂 𝒄𝒖𝒆𝒏𝒕𝒂 𝒄𝒐𝒏* *(${premium.length})* *𝑨𝒈𝒆𝒏𝒕𝒆𝒔 𝒆𝒏𝒕𝒓𝒆𝒏𝒂𝒅𝒐 𝒚 𝒍𝒊𝒔𝒕𝒐𝒔 𝒑𝒂𝒓𝒂 𝒔𝒆𝒓𝒗𝒊𝒓 𝒂 𝒏𝒖𝒆𝒔𝒕𝒓𝒐 𝑷𝒂𝒊́𝒔!* 🚨\n\n••••••••••••••••••••`
           no = 0
           for (let prem of premium) {
             no += 1
