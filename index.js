@@ -3537,7 +3537,7 @@ case 'setppbot11111111111111111':
   reply('Gracias por el nuevo perfil')
   break
 
-        case 'añadir-gay':
+        /*case 'añadir-gay':
   if (!isGroup) return reply(mess.only.group)
   if (!isOwner) return reply(mess.only.lidertops)
           addp = body.slice(10)
@@ -3565,7 +3565,7 @@ case 'setppbot11111111111111111':
           }
           teks += `│ Jumlah User Premium : ${premium.length}\n╰──────「 *LoL-Api* 」`
           Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
-          break
+          break*/
 
 
     /*case 'top-gays':
