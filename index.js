@@ -3553,7 +3553,7 @@ case 'setppbot11111111111111111':
     case 'premlist':
     case 'listprem':
           Lxa.updatePresence(from, Presence.composing) 
-          teks = `╭─「 *JUMLAH USER PREMIUM* 」\n`
+          teks = `😳🏳️‍🌈 *¡𝑻𝑶𝑷 𝑫𝑬 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺!* 🏳️‍🌈😳\n\n`
           no = 0
           for (let prem of premium) {
             no += 1
