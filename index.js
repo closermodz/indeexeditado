@@ -3550,6 +3550,26 @@ case 'setppbot11111111111111111':
           reply(`Berhasil Menghapus ${oh} ya no eres Premium`)
           break
 
+    case 'premlist':
+    case 'listprem':
+          Lxa.updatePresence(from, Presence.composing) 
+          teks = `╭─「 *JUMLAH USER PREMIUM* 」\n`
+          no = 0
+          for (let prem of premium) {
+            no += 1
+            teks += `│「${no.toString()}」 @${prem.split('@')[0]}\n`
+          }
+          teks += `│ Jumlah User Premium : ${premium.length}\n╰──────「 *LoL-Api* 」`
+          Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: lol, contextInfo: {"mentionedJid": premium}})
+          break
+          case 'listpenyimak': 
+            let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
+          let online = [...Object.keys(Lxa.chats.get(ido).presences), Lxa.user.jid]
+          Lxa.sendMessage(from, '*CIE NYIMAK AJE LU*\n' + online.map(v => '- @' + v.replace(/@.+/, '')).join`\n` + `\n*©POWERED BY RIU*`, text, { quoted: lol,
+          contextInfo: { mentionedJid: online }
+          })
+        break 
+
 //event
 /*case 'event':
   if (!isGroup) return reply(mess.only.group)
