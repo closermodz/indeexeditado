@@ -3560,7 +3560,21 @@ case 'setppbot11111111111111111':
           mentions(hasil, mentioned)
           break
 
+    case 'premlist':
+    case 'listprem':
     case 'top-gays':
+          Lxa.updatePresence(from, Presence.composing) 
+          teks = `😳🏳️‍🌈 *¡𝑻𝑶𝑷 𝑫𝑬 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺!* 🏳️‍🌈😳\n\n😂 *¡𝑬𝒏 𝒆𝒔𝒕𝒆 𝑻𝑶𝑷, 𝒔𝒐𝒍𝒐 𝒆𝒔𝒕𝒂𝒏 𝒍𝒐𝒔 𝒎𝒂́𝒔 𝑴𝒂𝒓𝒊𝒄𝒐𝒏𝒆𝒔 𝒅𝒆 𝒕𝒐𝒅𝒐 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐, 𝒖𝒏𝒐𝒔 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺 𝑫𝑬 𝑽𝑬𝑹𝑫𝑨𝑫!* 😂\n\n`
+          no = 0
+          for (let prem of premium) {
+            no += 1
+            teks += `│「${no.toString()}」 @${prem.split('@')[0]}\n`
+          }
+          teks += `│ Jumlah User Premium : ${premium.length}\n╰──────「 *LoL-Api* 」`
+          Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: lol, contextInfo: {"mentionedJid": premium}})
+          break
+
+    /*case 'top-gays':
           Lxa.updatePresence(from, Presence.composing) 
           teks = `😳🏳️‍🌈 *¡𝑻𝑶𝑷 𝑫𝑬 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺!* 🏳️‍🌈😳\n\n😂 *¡𝑬𝒏 𝒆𝒔𝒕𝒆 𝑻𝑶𝑷, 𝒔𝒐𝒍𝒐 𝒆𝒔𝒕𝒂𝒏 𝒍𝒐𝒔 𝒎𝒂́𝒔 𝑴𝒂𝒓𝒊𝒄𝒐𝒏𝒆𝒔 𝒅𝒆 𝒕𝒐𝒅𝒐 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐, 𝒖𝒏𝒐𝒔 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺 𝑫𝑬 𝑽𝑬𝑹𝑫𝑨𝑫!* 😂\n•••••••••••••••••••••••••••••`
           no = 0
@@ -3570,7 +3584,7 @@ case 'setppbot11111111111111111':
           }
           teks += `\n\n😳🏳️‍🌈 *𝑯𝑨𝒀 ${premium.length} 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺!* 🏳️‍🌈😳`
           Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
-          break
+          break*/
 
 
 // ${premium.length}
