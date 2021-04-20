@@ -3564,7 +3564,7 @@ case 'setppbot11111111111111111':
             teks += `│「${no.toString()}」 @${prem.split('@')[0]}\n`
           }
           teks += `│ Jumlah User Premium : ${premium.length}\n╰──────「 *LoL-Api* 」`
-          lolteam.sendMessage(from, teks.trim(), extendedText, {quoted: lol, contextInfo: {"mentionedJid": premium}})
+          lolteam.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
           break
 
 
