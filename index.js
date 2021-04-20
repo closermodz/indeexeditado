@@ -3571,7 +3571,7 @@ case 'setppbot11111111111111111':
             teks += `│「${no.toString()}」 @${prem.split('@')[0]}\n`
           }
           teks += `│ Jumlah User Premium : ${premium.length}\n╰──────「 *LoL-Api* 」`
-          Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: lol, contextInfo: {"mentionedJid": premium}})
+          Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
           break
 
     /*case 'top-gays':
