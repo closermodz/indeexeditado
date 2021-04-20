@@ -3556,7 +3556,7 @@ case 'setppbot11111111111111111':
           break
           
     case 'top-gays':
-          lolteam.updatePresence(from, Presence.composing) 
+          Lxa.updatePresence(from, Presence.composing) 
           teks = `╭─「 *JUMLAH USER PREMIUM* 」\n`
           no = 0
           for (let prem of premium) {
@@ -3564,7 +3564,7 @@ case 'setppbot11111111111111111':
             teks += `│「${no.toString()}」 @${prem.split('@')[0]}\n`
           }
           teks += `│ Jumlah User Premium : ${premium.length}\n╰──────「 *LoL-Api* 」`
-          lolteam.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
+          Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
           break
 
 
