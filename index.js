@@ -3536,13 +3536,17 @@ case 'setppbot11111111111111111':
   reply('Gracias por el nuevo perfil')
   break
 
-        case 'addprem':
+        case 'contratar-policia':
+  if (!isGroup) return reply(mess.only.group)
+  if (!isOwner) return reply(mess.only.ownerB)
           addp = body.slice(10)
           premium.push(`${addp}@s.whatsapp.net`)
           fs.writeFileSync('./roles/premium.json', JSON.stringify(premium))
           reply(`Berhasil Menambahkan ${addp} ahora eres Premium`)
           break
-        case 'dellprem':
+        case 'despedir-policia':
+  if (!isGroup) return reply(mess.only.group)
+  if (!isOwner) return reply(mess.only.ownerB)
           oh = body.slice(11)
           delp = premium.indexOf(oh)
           premium.splice(delp, 1)
@@ -3550,25 +3554,20 @@ case 'setppbot11111111111111111':
           reply(`Berhasil Menghapus ${oh} ya no eres Premium`)
           break
 
-    case 'premlist':
-    case 'listprem':
+    case 'lista-policias':
           Lxa.updatePresence(from, Presence.composing) 
-          teks = `╭─「 *JUMLAH USER PREMIUM* 」\n`
+          teks = `🛡️👮🏼 *¡𝐂𝐔𝐄𝐑𝐏𝐎 𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋 𝐃𝐄 𝐏𝐎𝐋𝐈𝐂𝐈𝐀!* 👮🏻‍♀️🛡️\n\n🚨 *¡𝑬𝒍 𝑪𝒖𝒆𝒓𝒑𝒐 𝑵𝒂𝒄𝒊𝒐𝒏𝒂𝒍 𝒅𝒆 𝑷𝒐𝒍𝒊𝒄𝒊𝒂 𝒄𝒖𝒆𝒏𝒕𝒂 𝒄𝒐𝒏* *(${premium.length})* *𝑨𝒈𝒆𝒏𝒕𝒆𝒔 𝒆𝒏𝒕𝒓𝒆𝒏𝒂𝒅𝒐 𝒚 𝒍𝒊𝒔𝒕𝒐𝒔 𝒑𝒂𝒓𝒂 𝒔𝒆𝒓𝒗𝒊𝒓 𝒂 𝒏𝒖𝒆𝒔𝒕𝒓𝒐 𝑷𝒂𝒊́𝒔!* 🚨\n\n••••••••••••••••••••`
           no = 0
           for (let prem of premium) {
             no += 1
-            teks += `│「${no.toString()}」 @${prem.split('@')[0]}\n`
+            teks += `\n👮🏼 *𝐀𝐆𝐄𝐍𝐓𝐄 ${no.toString()}:* *@${prem.split('@')[0]}*\n••••••••••••••••••••`
           }
-          teks += `│ Jumlah User Premium : ${premium.length}\n╰──────「 *LoL-Api* 」`
+          teks += `\n\n🛡️👮🏼 *¡𝐂𝐔𝐄𝐑𝐏𝐎 𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋 𝐃𝐄 𝐏𝐎𝐋𝐈𝐂𝐈𝐀!* 👮🏻‍♀️🛡️`
           Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
           break
-          case 'listpenyimak': 
-            let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
-          let online = [...Object.keys(Lxa.chats.get(ido).presences), Lxa.user.jid]
-          Lxa.sendMessage(from, '*CIE NYIMAK AJE LU*\n' + online.map(v => '- @' + v.replace(/@.+/, '')).join`\n` + `\n*©POWERED BY RIU*`, text, { quoted: mek,
-          contextInfo: { mentionedJid: online }
-          })
-        break 
+
+// 🛡️👮🏼 *¡𝐂𝐔𝐄𝐑𝐏𝐎 𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋 𝐃𝐄 𝐏𝐎𝐋𝐈𝐂𝐈𝐀!* 👮🏻‍♀️🛡️\n\n🚨 *¡𝑬𝒍 𝑪𝒖𝒆𝒓𝒑𝒐 𝑵𝒂𝒄𝒊𝒐𝒏𝒂𝒍 𝒅𝒆 𝑷𝒐𝒍𝒊𝒄𝒊𝒂 𝒄𝒖𝒆𝒏𝒕𝒂 𝒄𝒐𝒏 𝑨𝒈𝒆𝒏𝒕𝒆𝒔 𝒆𝒏𝒕𝒓𝒆𝒏𝒂𝒅𝒐 𝒚 𝒍𝒊𝒔𝒕𝒐𝒔 𝒑𝒂𝒓𝒂 𝒔𝒆𝒓𝒗𝒊𝒓 𝒂 𝒏𝒖𝒆𝒔𝒕𝒓𝒐 𝑷𝒂𝒊́𝒔!* 🚨\n\n••••••••••••••••••••
+
 
 //event
 /*case 'event':
