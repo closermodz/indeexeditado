@@ -3536,13 +3536,13 @@ case 'setppbot11111111111111111':
   reply('Gracias por el nuevo perfil')
   break
 
-        case 'addgay':
+        case 'add-gay':
           addp = body.slice(10)
           premium.push(`${addp}@s.whatsapp.net`)
           fs.writeFileSync('./roles/premium.json', JSON.stringify(premium))
           reply(`😳 *¡𝑨𝒄𝒂𝒃𝒂𝒔 𝒅𝒆 𝑨𝒏̃𝒂𝒅𝒊𝒓 𝒂 𝒖𝒏 𝑵𝒖𝒆𝒗𝒐 𝑴𝒂𝒍𝒅𝒊𝒕𝒐 𝑴𝒂𝒓𝒊𝒄𝒐́𝒏 𝒂𝒍 𝑻𝑶𝑷!* 😳`)
           break
-        case 'dellgay':
+        case 'del-gay':
           oh = body.slice(11)
           delp = premium.indexOf(oh)
           premium.splice(delp, 1)
