@@ -3557,9 +3557,9 @@ case 'setppbot11111111111111111':
           no = 0
           for (let prem of premium) {
             no += 1
-            teks += `│「${no.toString()}」 @${prem.split('@')[0]}\n`
+            teks += `*〔𝑻𝑶𝑷 ${no.toString()} 🏆〕* @${prem.split('@')[0]}\n`
           }
-          teks += `\n\n😳🏳️‍🌈 *¡𝑯𝑨𝒀 *〔${premium.length}〕* 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺!* 🏳️‍🌈😳`
+          teks += `•••••••••••••••••••••••••••••\n\n😳🏳️‍🌈 *¡𝑯𝑨𝒀 〔${premium.length}〕 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺!* 🏳️‍🌈😳`
           Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
           break 
 
