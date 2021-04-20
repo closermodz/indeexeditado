@@ -3568,7 +3568,7 @@ case 'setppbot11111111111111111':
           no = 0
           for (let prem of premium) {
             no += 1
-            teks += `│「${no.toString()}」 @${prem.split('@')[0]}\n`
+            teks += `│「${no.toString()}」 ${prem.split('@')[0]}\n`
           }
           teks += `│ Jumlah User Premium : ${premium.length}\n╰──────「 *LoL-Api* 」`
           Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
