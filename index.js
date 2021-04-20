@@ -64,6 +64,7 @@ const imagenye = JSON.parse(fs.readFileSync('./temp/image.json'))
 /*const _limit = JSON.parse(fs.readFileSync('./datauser/limit.json'));
 const uang = JSON.parse(fs.readFileSync('./datauser/uang.json'));*/
 const _registered = JSON.parse(fs.readFileSync('./datauser/registered.json'));
+const premium = JSON.parse(fs.readFileSync('./roles/premium.json'))
 //--
 
 //--File json data
@@ -338,6 +339,7 @@ async function starts() {
 			const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isWelkom = isGroup ? welkom.includes(from) : false
+      const isPrem = premium.includes(sender)
 			const isOwner = ownerNumber.includes(sender)
 			const isSimi = isGroup ? samih.includes(from): false
       const isRegister = checkRegisteredUser(sender)
@@ -1793,6 +1795,7 @@ case 'dni-74910485x':
 if (args.length < 1) return reply('🇪🇸💳 *¡𝐃𝐎𝐂𝐔𝐌𝐄𝐍𝐓𝐎 𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋 𝐃𝐄 𝐈𝐃𝐄𝐍𝐓𝐈𝐃𝐀!* 💳🇪🇸\n\n🏷️ *𝐀𝐏𝐄𝐋𝐋𝐈𝐃𝐎𝐒:* 𝑮𝒐𝒏𝒛𝒂𝒍𝒆𝒛\n🔖 *𝐍𝐎𝐌𝐁𝐑𝐄:* 𝑺𝒂𝒎𝒖𝒆𝒍\n🧑🏻 *𝐒𝐄𝐗𝐎:* 𝑴𝒂𝒔𝒄𝒖𝒍𝒊𝒏𝒐\n📆 *𝐅𝐅𝐄𝐂𝐇𝐀 𝐃𝐄 𝐍𝐀𝐂𝐈𝐌𝐈𝐄𝐍𝐓𝐎:* 𝟏𝟑/𝟎𝟓/𝟐𝟎𝟎𝟓\n💳 *𝐂𝐀𝐃𝐔𝐂𝐈𝐃𝐀𝐃:* 𝟏𝟐/𝟎𝟔/𝟐𝟎𝟐𝟏\n🌍 *𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋𝐈𝐃𝐀𝐃:* 🇪🇸\n\n💳 *𝐃𝐍𝐈: 𝟕𝟒𝟗𝟏𝟎𝟒𝟖𝟓𝑿* ▌║▌║▌║█║▌▌')
 break
 case 'database-dni':
+if (!isPrem) return reply('AND BUKAN USER PREM JIKA MAU JADI PREM KETIK cowner')
 if (args.length < 1) return reply('📥💳 *¡𝐁𝐀𝐒𝐄 𝐃𝐄 𝐃𝐀𝐓𝐎𝐒 𝐃𝐄 𝐃𝐍𝐈𝐬!* 💳📥\n\n🛡️ *¡𝑩𝒂𝒔𝒆 𝒅𝒆 𝑫𝒂𝒕𝒐𝒔 𝒅𝒆 𝒍𝒂 𝑷𝒐𝒍𝒊𝒄𝒊𝒂 𝑵𝒂𝒄𝒊𝒐𝒏𝒂𝒍 𝒔𝒐𝒃𝒓𝒆 𝒕𝒐𝒅𝒐𝒔 𝒍𝒐𝒔 𝑫𝑵𝑰 𝒅𝒆 𝒕𝒐𝒅𝒐𝒔 𝒍𝒐𝒔 𝑪𝒊𝒖𝒅𝒂𝒅𝒂𝒏𝒐𝒔!* 🛡️\n\n•••••••••••••••••••••••••••\n🧑🏻 *𝐍𝐎𝐌𝐁𝐑𝐄:* 𝑲𝒆𝒗𝒊𝒏 𝑺𝒂𝒏𝒄𝒉𝒆𝒛\n💳 *𝐃𝐍𝐈: 𝟒𝟖𝟕𝟔𝟓𝟒𝟎𝟐𝐊*\n•••••••••••••••••••••••••••\n🧑🏻 *𝐍𝐎𝐌𝐁𝐑𝐄:* 𝑺𝒂𝒎𝒖𝒆𝒍 𝑮𝒐𝒏𝒛𝒂𝒍𝒆𝒛\n💳 *𝐃𝐍𝐈: 𝟕𝟒𝟗𝟏𝟎𝟒𝟖𝟓𝑿*\n•••••••••••••••••••••••••••\n\n🚔👮🏻‍♀️ *¡𝑪𝑼𝑬𝑹𝑷𝑶 𝑵𝑨𝑪𝑰𝑶𝑵𝑨𝑳 𝑫𝑬 𝑷𝑶𝑳𝑰𝑪𝑰𝑨!* 👮🏼🚔')
 break
 
@@ -3474,7 +3477,7 @@ break
           break
 
 //--menambah member
-				case 'añadir':
+				case 'añadir': 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3532,6 +3535,20 @@ case 'setppbot11111111111111111':
   await Lxa.updateProfilePicture(botNumber, cuk)
   reply('Gracias por el nuevo perfil')
   break
+
+        case 'addprem':
+          addp = body.slice(10)
+          premium.push(`${addp}@s.whatsapp.net`)
+          fs.writeFileSync('./roles/premium.json', JSON.stringify(premium))
+          reply(`Berhasil Menambahkan ${addp} ahora eres Premium`)
+          break
+        case 'dellprem':
+          oh = body.slice(11)
+          delp = premium.indexOf(oh)
+          premium.splice(delp, 1)
+          fs.writeFileSync('./roles/premium.json', JSON.stringify(premium))
+          reply(`Berhasil Menghapus ${oh} ya no eres Premium`)
+          break
 
 //event
 /*case 'event':
