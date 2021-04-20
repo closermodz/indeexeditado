@@ -3587,8 +3587,8 @@ case 'setppbot11111111111111111':
   //if (!isLiderTops) return reply(mess.only.lidertops)
       mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
       Lxa.updatePresence(from, Presence.composing)
-          addp = body.slice(10)
-          topgays.push(`${addp}@s.whatsapp.net`)
+          addp1 = body.slice(10)
+          topgays.push(`${addp1}@s.whatsapp.net`)
           fs.writeFileSync('./tops/gays/topgays.json', JSON.stringify(topgays))
           hasil = `👮🏻‍♀️😍 *¡𝐁𝐈𝐄𝐍𝐕𝐄𝐍𝐈𝐃@ 𝐀𝐋 𝐂𝐔𝐄𝐑𝐏𝐎 𝐍𝐀𝐂𝐈𝐎𝐍𝐀𝐋 𝐃𝐄 𝐏𝐎𝐋𝐈𝐂𝐈𝐀!* 😍👮🏼\n\n📄 *¡𝑯𝒂𝒔 𝒔𝒊𝒅𝒐 𝒄𝒐𝒏𝒕𝒓𝒂𝒕𝒂𝒅𝒐 𝒑𝒂𝒓𝒂 𝒑𝒆𝒓𝒕𝒆𝒏𝒆𝒄𝒆𝒓 𝒂𝒍 𝑪𝒖𝒆𝒓𝒑𝒐 𝑵𝒂𝒄𝒊𝒐𝒏𝒂𝒍 𝒅𝒆 𝑷𝒐𝒍𝒊𝒄𝒊𝒂 𝒅𝒆 𝒆𝒔𝒕𝒂 𝑪𝒊𝒖𝒅𝒂𝒅* *@${mentioned[0].split('@')[0]}*.\n\n*𝑻𝒆 𝒂𝒈𝒓𝒂𝒅𝒆𝒄𝒆𝒎𝒐𝒔 𝒎𝒖𝒄𝒉𝒐 𝒒𝒖𝒆 𝒎𝒆𝒓𝒕𝒆𝒏𝒆𝒛𝒄𝒂 𝒂𝒍 𝑪𝑵𝑷, 𝒆𝒔𝒑𝒆𝒓𝒐 𝒒𝒖𝒆 𝒄𝒖𝒎𝒑𝒍𝒂𝒔 𝒄𝒐𝒏 𝒕𝒖𝒔 𝒐𝒃𝒍𝒊𝒈𝒂𝒄𝒊𝒐𝒏𝒆𝒔 𝒚 𝒔𝒆𝒂𝒔 𝑯𝒐𝒏𝒓𝒂𝒅𝒐 𝒚 𝑯𝒐𝒏𝒆𝒔𝒕𝒐 𝒄𝒐𝒏 𝒍𝒐𝒔 𝒄𝒊𝒖𝒅𝒂𝒅𝒂𝒏𝒐𝒔 𝒅𝒆 𝒆𝒔𝒕𝒂 𝑪𝒊𝒖𝒅𝒂𝒅!* 📄\n\n🚓👮🏻‍♀️ *¡𝐄𝐒𝐓𝐀𝐒 𝐂𝐎𝐍𝐓𝐑𝐀𝐓𝐀𝐃@ 𝐄𝐍 𝐄𝐋 𝐂𝐍𝐏!* 👮🏼🚓`
           mentions(hasil, mentioned)
@@ -3599,9 +3599,9 @@ case 'setppbot11111111111111111':
   // if (!isLiderTops) return reply(mess.only.lidertops)
       mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
       Lxa.updatePresence(from, Presence.composing)
-          oh = body.slice(11)
-          delp = topgays.indexOf(oh)
-          topgays.splice(delp, 1)
+          oh1 = body.slice(11)
+          delp1 = topgays.indexOf(oh1)
+          topgays.splice(delp1, 1)
           fs.writeFileSync('./tops/gays/topgays.json', JSON.stringify(topgays))
           hasil = `🖤🥺 *¡𝐇𝐀 𝐒𝐈𝐃𝐎 𝐃𝐄𝐒𝐏𝐄𝐃𝐈𝐃@ 𝐃𝐄𝐋 𝐂𝐔𝐄𝐑𝐏𝐎!* 🥺🖤\n\n📄 *¡𝑯𝒂𝒔 𝒔𝒊𝒅𝒐 𝒅𝒆𝒔𝒑𝒆𝒅𝒊𝒅𝒐 𝑪𝒖𝒆𝒓𝒑𝒐 𝑵𝒂𝒄𝒊𝒐𝒏𝒂𝒍 𝒅𝒆 𝑷𝒐𝒍𝒊𝒄𝒊𝒂 𝒅𝒆 𝒆𝒔𝒕𝒂 𝑪𝒊𝒖𝒅𝒂𝒅* *@${mentioned[0].split('@')[0]}*.\n\n*𝒀𝒂 𝒏𝒐 𝒕𝒊𝒆𝒏𝒆𝒔 𝒑𝒆𝒓𝒎𝒊𝒕𝒊𝒅𝒐 𝒔𝒆𝒈𝒖𝒊𝒓 𝒄𝒐𝒏 𝒍𝒂𝒔 𝒐𝒃𝒍𝒊𝒈𝒂𝒄𝒊𝒐𝒏𝒆𝒔 𝒅𝒆 𝑷𝒐𝒍𝒊𝒄𝒊𝒂 𝒆𝒏 𝒆𝒔𝒕𝒂 𝑪𝒊𝒖𝒅𝒂𝒅!* 📄\n\n🚓👮🏻‍♀️ *¡𝐄𝐒𝐓𝐀𝐒 𝐃𝐄𝐒𝐏𝐄𝐃𝐈𝐃@ 𝐃𝐄𝐋 𝐂𝐍𝐏!* 👮🏼🚓`
           mentions(hasil, mentioned)
