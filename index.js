@@ -3536,58 +3536,32 @@ case 'setppbot11111111111111111':
   reply('Gracias por el nuevo perfil')
   break
 
-        case 'añadir-gay':
-  if (!isGroup) return reply(mess.only.group)
-  if (!isOwner) return reply(mess.only.ownerB)
-      mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-      Lxa.updatePresence(from, Presence.composing)
+        case 'addprem':
           addp = body.slice(10)
           premium.push(`${addp}@s.whatsapp.net`)
           fs.writeFileSync('./roles/premium.json', JSON.stringify(premium))
-          hasil = `😌 *¡𝐍𝐔𝐄𝐕𝐎 𝐌𝐀𝐑𝐈𝐂𝐎𝐍 𝐄𝐍 𝐄𝐋 𝐓𝐎𝐏!* 😌\n\n*@${mentioned[0].split('@')[0]}*, *¡𝑻𝒆 𝒉𝒂𝒏 𝒎𝒆𝒕𝒊𝒅𝒐 𝒆𝒏 𝒆𝒍 𝑻𝑶𝑷 𝒅𝒆 𝑴𝒂𝒓𝒊𝒄𝒐𝒏𝒆𝒔 𝒑𝒐𝒔𝒊𝒃𝒍𝒆𝒎𝒆𝒏𝒕𝒆 𝒑𝒐𝒓 𝒉𝒂𝒃𝒆𝒓 𝒅𝒂𝒅𝒐 𝒖𝒏 𝑵𝒊𝒗𝒆𝒍 𝒕𝒂𝒏 𝒂𝒍𝒕𝒐 𝒅𝒆 𝑴𝒂𝒓𝒊𝒄𝒐𝒏𝒊𝒔𝒎𝒐 𝒐 𝒔𝒊𝒎𝒑𝒍𝒆𝒎𝒆𝒏𝒕𝒆 𝒔𝒆 𝒕𝒆 𝒏𝒐𝒕𝒂 𝒍𝒂 𝑷𝒍𝒖𝒎𝒂 𝒅𝒆 𝑴𝒂𝒓𝒊𝒄𝒂 𝒅𝒆𝒎𝒂𝒔𝒊𝒂𝒅𝒐!*\n\n*@${mentioned[0].split('@')[0]}*\n🏳️‍🌈😂 *¡𝐄𝐑𝐄𝐒 𝐃𝐄𝐌𝐀𝐒𝐈𝐀𝐃𝐎 𝐌𝐀𝐑𝐈𝐂𝐀!* 😂🏳️‍🌈`
-          mentions(hasil, mentioned)
+          reply(`Berhasil Menambahkan ${addp} ahora eres Premium`)
           break
-        case 'eliminar-gay':
-  if (!isGroup) return reply(mess.only.group)
-  if (!isOwner) return reply(mess.only.ownerB)
-      mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-      Lxa.updatePresence(from, Presence.composing)
+        case 'dellprem':
           oh = body.slice(11)
           delp = premium.indexOf(oh)
           premium.splice(delp, 1)
           fs.writeFileSync('./roles/premium.json', JSON.stringify(premium))
-          hasil = `😳 *¡𝐘𝐀 𝐍𝐎 𝐄𝐒𝐓𝐀𝐒 𝐄𝐍 𝐄𝐋 𝐓𝐎𝐏!* 😳\n\n*@${mentioned[0].split('@')[0]}*, *¡𝑻𝒆 𝒉𝒂𝒏 𝐬𝐚𝐜𝐚𝐝𝐨 𝐝𝒆𝒍 𝑻𝑶𝑷 𝒅𝒆 𝑴𝒂𝒓𝒊𝒄𝒐𝒏𝒆𝒔 𝐩𝐨𝐫 𝐚𝐥𝐠𝐮𝐧𝐚 𝐫𝐚𝐳𝐨́𝐧, 𝐬𝐞́ 𝐟𝐞𝐥𝐢́𝐳 𝐜𝐨𝐧 𝐭𝐮 𝐇𝐞𝐭𝐞𝐫𝐨𝐬𝐞𝐱𝐮𝐚𝐥𝐢𝐝𝐚𝐝!*\n\n*@${mentioned[0].split('@')[0]}*\n🏳️‍🌈🤗 *¡𝐘𝐀 𝐍𝐎 𝐄𝐑𝐄𝐒 𝐌𝐀𝐑𝐈𝐂𝐀!* 🤗🏳️‍🌈`
-          mentions(hasil, mentioned)
+          reply(`Berhasil Menghapus ${oh} ya no eres Premium`)
           break
 
     case 'premlist':
     case 'listprem':
-    case 'top-gays':
           Lxa.updatePresence(from, Presence.composing) 
           teks = `╭─「 *JUMLAH USER PREMIUM* 」\n`
           no = 0
           for (let prem of premium) {
             no += 1
-            teks += `│「${no.toString()}」 ${prem.split('@')[0]}\n`
+            teks += `│「${no.toString()}」 @${prem.split('@')[0]}\n`
           }
           teks += `│ Jumlah User Premium : ${premium.length}\n╰──────「 *LoL-Api* 」`
           Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
-          break
-
-    /*case 'top-gays':
-          Lxa.updatePresence(from, Presence.composing) 
-          teks = `😳🏳️‍🌈 *¡𝑻𝑶𝑷 𝑫𝑬 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺!* 🏳️‍🌈😳\n\n😂 *¡𝑬𝒏 𝒆𝒔𝒕𝒆 𝑻𝑶𝑷, 𝒔𝒐𝒍𝒐 𝒆𝒔𝒕𝒂𝒏 𝒍𝒐𝒔 𝒎𝒂́𝒔 𝑴𝒂𝒓𝒊𝒄𝒐𝒏𝒆𝒔 𝒅𝒆 𝒕𝒐𝒅𝒐 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐, 𝒖𝒏𝒐𝒔 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺 𝑫𝑬 𝑽𝑬𝑹𝑫𝑨𝑫!* 😂\n•••••••••••••••••••••••••••••`
-          no = 0
-          for (let prem of premium) {
-            no += 1
-            teks += `│「${no.toString()}」 @${prem.split('@')[0]}\n`
-          }
-          teks += `\n\n😳🏳️‍🌈 *𝑯𝑨𝒀 ${premium.length} 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺!* 🏳️‍🌈😳`
-          Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
-          break*/
-
-
-// ${premium.length}
+          break 
 
 //event
 /*case 'event':
