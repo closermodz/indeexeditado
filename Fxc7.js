@@ -1634,6 +1634,7 @@ case 'tonto':
 		case 'daftar111111':
 		case 'verify111111':
 					frhan.updatePresence(from, Presence.composing)
+					if (isUser) return reply('kamu sudah Menjadi Temen IRIENEBOT:D')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
@@ -1851,9 +1852,9 @@ case 'tonto':
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('⛃⃢⃟⃝⃞❤️⃬🇰⃬🇪⃬🇻⃬🇮⃬🇳⃬❤️⃢⃟⃝⃞⛃𝆮', '𝑪𝒓𝒆𝒂𝒅𝒐 𝒄𝒐𝒏 𝒆𝒍 𝑩𝑶𝑻 𝒅𝒆 ⛃⃢⃟⃝⃞❤️⃬🇰⃬🇪⃬🇻⃬🇮⃬🇳⃬❤️⃢⃟⃝⃞⛃𝆮')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
-									await costum(fs.readFileSync(ran), sticker, FarhanGans, ` 𝑪𝒓𝒆𝒂𝒅𝒐 𝒄𝒐𝒏 𝒆𝒍 𝑩𝑶𝑻 𝒅𝒆 ⛃⃢⃟⃝⃞❤️⃬🇰⃬🇪⃬🇻⃬🇮⃬🇳⃬❤️⃢⃟⃝⃞⛃𝆮`)
+									await costum(fs.readFileSync(ran), sticker, FarhanGans, ` ~ Nihh Udah Jadi Stikernya`)
 									fs.unlinkSync(media)	
 									fs.unlinkSync(ran)	
 								})
@@ -1879,9 +1880,9 @@ case 'tonto':
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('⛃⃢⃟⃝⃞❤️⃬🇰⃬🇪⃬🇻⃬🇮⃬🇳⃬❤️⃢⃟⃝⃞⛃𝆮', '𝑪𝒓𝒆𝒂𝒅𝒐 𝒄𝒐𝒏 𝒆𝒍 𝑩𝑶𝑻 𝒅𝒆 ⛃⃢⃟⃝⃞❤️⃬🇰⃬🇪⃬🇻⃬🇮⃬🇳⃬❤️⃢⃟⃝⃞⛃𝆮')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
-									await costum(fs.readFileSync(ran), sticker, FarhanGans, `𝑪𝒓𝒆𝒂𝒅𝒐 𝒄𝒐𝒏 𝒆𝒍 𝑩𝑶𝑻 𝒅𝒆 ⛃⃢⃟⃝⃞❤️⃬🇰⃬🇪⃬🇻⃬🇮⃬🇳⃬❤️⃢⃟⃝⃞⛃𝆮`)
+									await costum(fs.readFileSync(ran), sticker, FarhanGans, `~ Nih Dah Jadi Gif Stikernya`)
 									fs.unlinkSync(media)
 									fs.unlinkSync(ran)
 								})
@@ -1905,7 +1906,7 @@ case 'tonto':
 							exec(`ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${ranw}`, (err) => {
 								fs.unlinkSync(ranp)
 								if (err) return reply(mess.error.stick)
-								exec(`webpmux -set exif ${addMetadata('⛃⃢⃟⃝⃞❤️⃬🇰⃬🇪⃬🇻⃬🇮⃬🇳⃬❤️⃢⃟⃝⃞⛃𝆮', authorname)} ${ranw} -o ${ranw}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', authorname)} ${ranw} -o ${ranw}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									frhan.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: mek})
 									fs.unlinkSync(ranw)
