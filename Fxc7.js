@@ -1763,20 +1763,23 @@ case 'tonto':
 					ben += `Total : ${ban.length}`
 					frhan.sendMessage(from, ben.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": ban}})
 					break
-				case 'ban':
+				case 'banear':
 					frhan.updatePresence(from, Presence.composing) 
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 			        ban = mentioned
-					reply(`berhasil banned : ${ban}`)
-					break
-				case 'unban':
+    				hasil = `⛔️😲 *¡ESTAS BANEAO!* 😲⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙨𝙞𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙚 𝙡𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙩𝙚 𝙦𝙪𝙞𝙚𝙧𝙚𝙣 𝙩𝙤𝙘𝙖𝙧 𝙡𝙤𝙨 𝙘𝙤𝙟𝙤𝙣𝙚𝙨!*\n\n*@${mentioned[0].split('@')[0]}*\n⚠️😡 *¡𝐘𝐀 𝐄𝐒𝐓𝐀𝐒 𝐀𝐕𝐈𝐒𝐀𝐃𝐎!* 😡⚠️` //${body.slice(8)}
+    				mentions(hasil, mentioned)
+    				break
+				case 'desbanear':
 					if (!isOwner)return reply(mess.only.ownerB)
 					bnnd = body.slice(8)
+				    mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					ban.splice(`${bnnd}@s.whatsapp.net`, 1)
-					reply(`Nomor wa.me/${bnnd} telah di unban!`)
-					break
+    				hasil = `⛔️😲 *¡𝐄𝐒𝐓𝐀𝐒 DESBANEAOO!* 😲⛔️\n\n*@${mentioned[0].split('@')[0]}*, *¡𝙇𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙩𝙚 𝙝𝙖𝙣 𝙖𝙙𝙫𝙚𝙧𝙩𝙞𝙙𝙤 𝙥𝙤𝙧 𝙞𝙣𝙘𝙪𝙢𝙥𝙡𝙞𝙧 𝙖𝙡𝙜𝙪𝙣𝙖 𝙣𝙤𝙧𝙢𝙖 𝙚𝙨𝙩𝙖𝙗𝙡𝙚𝙘𝙞𝙙𝙖 𝙚𝙣 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤, 𝙚𝙣𝙫𝙞𝙖𝙧 𝙘𝙤𝙣𝙩𝙚𝙣𝙞𝙙𝙤 𝙞𝙣𝙖𝙙𝙚𝙘𝙪𝙖𝙙𝙤 𝙤 𝙨𝙞𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙚 𝙡𝙤𝙨 𝘼𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨 𝙩𝙚 𝙦𝙪𝙞𝙚𝙧𝙚𝙣 𝙩𝙤𝙘𝙖𝙧 𝙡𝙤𝙨 𝙘𝙤𝙟𝙤𝙣𝙚𝙨!*\n\n*@${mentioned[0].split('@')[0]}*\n⚠️😡 *¡𝐘𝐀 𝐄𝐒𝐓𝐀𝐒 𝐀𝐕𝐈𝐒𝐀𝐃𝐎!* 😡⚠️` //${body.slice(8)}
+    				mentions(hasil, mentioned)
+    				break
 				case 'block111111':
 				 frhan.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
