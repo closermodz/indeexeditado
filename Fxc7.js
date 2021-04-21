@@ -246,10 +246,10 @@ async function starts() {
 
 	fs.existsSync('./Fxc7.json') && frhan.loadAuthInfo('./Fxc7.json')
 	frhan.on('connecting', () => {
-		start('2', 'Connecting...')
+		start('2', 'Conectando con el BOT...')
 	})
 	frhan.on('open', () => {
-		success('2', 'Connected:)')
+		success('2', 'EL BOT ESTA CONECTADO')
 	})
 	await frhan.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./Fxc7.json', JSON.stringify(frhan.base64EncodedAuthInfo(), null, '\t'))
@@ -1918,7 +1918,7 @@ case 'tonto':
 					
 					
 					if (isBanned) return reply (mess.only.benned)
-					if (isLimit(sender)) return reply(limits.limitend(pushname2))
+					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
@@ -1947,7 +1947,7 @@ case 'tonto':
 					
 					
 					if (isBanned) return reply (mess.only.benned)
-					if (isLimit(sender)) return reply(limits.limitend(pushname2))
+					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
@@ -1977,7 +1977,7 @@ case 'tonto':
 					
 					
 					if (isBanned) return reply (mess.only.benned)
-					if (isLimit(sender)) return reply(limits.limitend(pushname2))
+					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
@@ -2006,7 +2006,7 @@ case 'tonto':
 					
 					
 					if (isBanned) return reply (mess.only.benned)
-					if (isLimit(sender)) return reply(limits.limitend(pushname2))
+					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
@@ -2035,7 +2035,7 @@ case 'tonto':
 					
 					
 					if (isBanned) return reply (mess.only.benned)
-					if (isLimit(sender)) return reply(limits.limitend(pushname2))
+					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
@@ -2064,7 +2064,7 @@ case 'tonto':
 					
 					
 					if (isBanned) return reply (mess.only.benned)
-					if (isLimit(sender)) return reply(limits.limitend(pushname2))
+					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
@@ -2093,7 +2093,7 @@ case 'tonto':
 					
 					
 					if (isBanned) return reply (mess.only.benned)
-					if (isLimit(sender)) return reply(limits.limitend(pushname2))
+					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
@@ -2122,7 +2122,7 @@ case 'tonto':
 					
 					
 					if (isBanned) return reply (mess.only.benned)
-					if (isLimit(sender)) return reply(limits.limitend(pushname2))
+					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
@@ -2580,7 +2580,7 @@ case 'tonto':
 				if (isBanned) return reply(mess.only.benned)    
 				
 				
-				if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				
 				if (!isNsfw) return reply(' *FALSE* ')
 				res = await fetchFxc7(`https://api.vhtear.com/randomloli&apikey=${VthearApi}`, {method: 'get'})
 				buffer = await getBuffer(res.result.result)
@@ -2596,7 +2596,7 @@ case 'tonto':
 				if (isBanned) return reply(mess.only.benned)    
 				
 				
-				if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				
 				if (!isNsfw) return reply(' *FALSE* ')
 				res = await fetchFxc7(`http://lolhuman.herokuapp.com/api/random2/solo?apikey=${LolApi}`, {method: 'get'})
 				buffer = await getBuffer(res.result)
@@ -2612,7 +2612,7 @@ case 'tonto':
 				if (isBanned) return reply(mess.only.benned)    
 				
 				
-				if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				
 				if (!isNsfw) return reply(' *FALSE* ')
 				res = await fetchFxc7(`http://lolhuman.herokuapp.com/api/random2/eron?apikey=${LolApi}`, {method: 'get'})
 				buffer = await getBuffer(res.result)
@@ -2628,7 +2628,7 @@ case 'tonto':
 				if (isBanned) return reply(mess.only.benned)    
 				
 				
-				if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				
 				if (!isNsfw) return reply(' *FALSE* ')
 				res = await fetchFxc7(`http://lolhuman.herokuapp.com/api/random2/lewd?apikey=${LolApi}`, {method: 'get'})
 				buffer = await getBuffer(res.result)
@@ -2644,7 +2644,7 @@ case 'tonto':
 				if (isBanned) return reply(mess.only.benned)    
 				
 				
-				if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				
 				if (!isNsfw) return reply(' *FALSE* ')
 				res = await fetchFxc7(`http://lolhuman.herokuapp.com/api/random2/yuri?apikey=${LolApi}`, {method: 'get'})
 				buffer = await getBuffer(res.result)
@@ -2660,7 +2660,7 @@ case 'tonto':
 				if (isBanned) return reply(mess.only.benned)    
 				
 				
-				if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				
 				if (!isNsfw) return reply(' *FALSE* ')
 				res = await fetchFxc7(`http://lolhuman.herokuapp.com/api/random/nsfw/ecchi?apikey=${LolApi}`, {method: 'get'})
 				buffer = await getBuffer(res.result)
@@ -2676,7 +2676,7 @@ case 'tonto':
 				    if (isBanned) return reply(mess.only.benned)    
 				    
 				    
-				    if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				    
 						if (!isNsfw) return reply(' *FALSE* ')
 						res = await fetchFxc7(`http://lolhuman.herokuapp.com/api/random/nsfw/hentaiparadise?apikey=${LolApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
@@ -2692,7 +2692,7 @@ case 'tonto':
 				    if (isBanned) return reply(mess.only.benned)    
 				    
 				    
-				    if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				    
 						if (!isNsfw) return reply(' *FALSE* ')
 						res = await fetchFxc7(`http://lolhuman.herokuapp.com/api/random/nsfw/biganimetiddies?apikey=${LolApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
@@ -2708,7 +2708,7 @@ case 'tonto':
 				    if (isBanned) return reply(mess.only.benned)    
 				    
 				    
-				    if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				    
 						if (!isNsfw) return reply(' *FALSE* ')
 						res = await fetchFxc7(`http://lolhuman.herokuapp.com/api/random2/classic?apikey=${LolApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result.result)
@@ -2724,7 +2724,7 @@ case 'tonto':
 				    if (isBanned) return reply(mess.only.benned)    
 				    
 				    
-				    if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				    
 						if (!isNsfw) return reply(' *FALSE* ')
 						res = await fetchFxc7(`http://lolhuman.herokuapp.com/api/random2/cum_jpg?apikey=${LolApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
@@ -2740,7 +2740,7 @@ case 'tonto':
 				    if (isBanned) return reply(mess.only.benned)    
 				    
 				    
-				    if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				    
 						if (!isNsfw) return reply(' *FALSE* ')
 						res = await fetchFxc7(`http://lolhuman.herokuapp.com/api/random2/pussy?apikey=${LolApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
@@ -3390,7 +3390,7 @@ case 'tonto':
 				case 'tiktok111111':
 				if (isBanned) return reply(mess.only.benned)    
 				
-				if (isLimit(sender)) return reply(limits.limitend(pushname2))
+				
 					if (args.length < 1) return reply('Urlnya mana gan?')
 					if (!isUrl(args[0]) && !args[0].includes('vt')) return reply(mess.error.Iv)
 					try {
@@ -3440,11 +3440,9 @@ case 'tonto':
 					 
 					break  
 //creator
-				case 'nulis':
+				case 'nulis111111':
 				frhan.updatePresence(from, Presence.composing)
 				if (isBanned) return reply(mess.only.benned)    
-				
-				
 				if (args.length < 1) return reply(`${name} Harus Nulis Apa Kak??`)
 				reply(mess.wait)
 				teks = `${body.slice(7)}`
@@ -3513,7 +3511,7 @@ case 'tonto':
 						reply('Terjadi kesalahan, silahkan pilih theme lain')
 					}
 					break
-			case 'ttp':
+			case 'ttp111111':
 				if (isBanned) return reply(mess.only.benned)    
 				
 				
@@ -3537,7 +3535,7 @@ case 'tonto':
 					}
 					 
 					break 
-				case 'semoji':
+				case 'semoji111111':
 				if (isBanned) return reply(mess.only.benned)    
 				
 				
@@ -4308,7 +4306,7 @@ case 'tonto':
 					}
 					mentions(teks, groupAdmins, true)
 					break
-				case 'skimagen':
+				case '!!!skimagen':
 			    if (isBanned) return reply(mess.only.benned)    
  					if (!isGroup) return reply(mess.only.group)
 					if (!isQuotedSticker) return reply(' reply stickernya gan')
@@ -4323,7 +4321,7 @@ case 'tonto':
 						fs.unlinkSync(ran)
 			 		})
 			 		break 
-				case 'antivirtex':
+				case 'antivirtex111111':
                     if (isBanned) return reply(mess.only.benned)
                     
                     
