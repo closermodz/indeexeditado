@@ -1875,7 +1875,7 @@ case 'tonto':
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`❌ *¡𝑬𝒓𝒓𝒐𝒓 𝒂𝒍 𝒄𝒓𝒆𝒂𝒓 𝒆𝒍 𝑺𝒕𝒊𝒄𝒌𝒆𝒓!* ❌`)
+								reply(`❌ Gagal, pada saat mengkonversi ${tipe} ke stiker`)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -1913,7 +1913,7 @@ case 'tonto':
 							})
 						})
 					} else {
-						//reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
+						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
 					}
 					break 
 					case 'trigger111111':
