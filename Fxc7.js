@@ -86,6 +86,8 @@ const blocked = JSON.parse(fs.readFileSync('./database/json/blocked.json'))
 const setting = JSON.parse(fs.readFileSync('./database/json/setting.json'))
 const bad = JSON.parse(fs.readFileSync('./database/json/bad.json'))
 const premium = JSON.parse(fs.readFileSync('./database/json/premium.json'))
+const topgays = JSON.parse(fs.readFileSync('./tops/topgays.json'))
+
 
 memberLimit = setting.memberlimit
 OwnerNumber = setting.OwnerNumber
@@ -140,7 +142,7 @@ return '```' + string + '```'
 }
 
 function addMetadata(packname, author) {
-				if (!packname) packname = 'termux-bot-wa'; if (!author) author = ' Fxc7';
+				if (!packname) packname = 'termux-bot-wa'; if (!author) author = ' KEVIN';
 				author = author.replace(/[^a-zA-Z0-9]/g, '');
 				let name = `${author}_${packname}`
 
@@ -368,6 +370,7 @@ async function starts() {
 			const isAntiVirtex = isGroup ? _antivirtex.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isUser = user.includes(sender)
+			const isPrem1 = topgays.includes(sender)
 			const isBanned = ban.includes(sender)
 			const isPrem = premium.includes(sender) || isOwner 
 			const FarhanGans = ["0@s.whatsapp.net"]
@@ -1502,7 +1505,39 @@ frhan.sendMessage(from, `💚😳 *¿𝑪𝒖𝒂𝒏𝒕𝒐 𝒕𝒊𝒆𝒎�
 break
 
 
+        case 'add-gay':
+  if (isBanned) return reply(mess.only.benned)
+  if (!isGroup) return reply(mess.only.group)
+  if (!isOwner) return reply(mess.only.lidertops)
+          addp = body.slice(10)
+          topgays.push(`${addp}@s.whatsapp.net`)
+          fs.writeFileSync('./tops/topgays.json', JSON.stringify(topgays))
+          reply(`😳 *¡𝑨𝒄𝒂𝒃𝒂𝒔 𝒅𝒆 𝑨𝒏̃𝒂𝒅𝒊𝒓 𝒂 𝒖𝒏 𝑵𝒖𝒆𝒗𝒐 𝑴𝒂𝒍𝒅𝒊𝒕𝒐 𝑴𝒂𝒓𝒊𝒄𝒐́𝒏 𝒂𝒍 𝑻𝑶𝑷!* 😳`)
+          break
+        case 'del-gay':
+  if (isBanned) return reply(mess.only.benned)
+  if (!isGroup) return reply(mess.only.group)
+  if (!isOwner) return reply(mess.only.lidertops)
+          oh = body.slice(11)
+          delp = topgays.indexOf(oh)
+          topgays.splice(delp, 1)
+          fs.writeFileSync('./tops/topgays.json', JSON.stringify(topgays))
+          reply(`🥺 *¡𝑨𝒄𝒂𝒃𝒂𝒔 𝒅𝒆 𝑬𝒍𝒊𝒎𝒊𝒏𝒂𝒓 𝒂 𝒖𝒏 𝑵𝒖𝒆𝒗𝒐 𝑴𝒂𝒍𝒅𝒊𝒕𝒐 𝑴𝒂𝒓𝒊𝒄𝒐́𝒏 𝒂𝒍 𝑻𝑶𝑷!* 🥺`)
+          break
 
+    case 'top-gays':
+  if (isBanned) return reply(mess.only.benned)
+  if (!isGroup) return reply(mess.only.group)
+          Lxa.updatePresence(from, Presence.composing) 
+          teks = `😳🏳️‍🌈 *¡𝑻𝑶𝑷 𝑫𝑬 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺!* 🏳️‍🌈😳\n\n😂 *¡𝑬𝒏 𝒆𝒔𝒕𝒆 𝑻𝑶𝑷, 𝒔𝒐𝒍𝒐 𝒆𝒔𝒕𝒂𝒏 𝒍𝒐𝒔 𝒎𝒂́𝒔 𝑴𝒂𝒓𝒊𝒄𝒐𝒏𝒆𝒔 𝒅𝒆 𝒕𝒐𝒅𝒐 𝒆𝒍 𝑮𝒓𝒖𝒑𝒐, 𝒖𝒏𝒐𝒔 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺 𝑫𝑬 𝑽𝑬𝑹𝑫𝑨𝑫!* 😂\n\n••••••••••••••••••••••••••••••••••••••••••••••\n`
+          no = 0
+          for (let prem1 of topgays) {
+            no += 1
+            teks += `*〔𝑻𝑶𝑷 ${no.toString()} 🏆〕*\n🧑🏻🏳️‍🌈: @${prem1.split('@')[0]}\n••••••••••••••••••••••••••••••••••••••••••••••\n`
+          }
+          teks += `\n😳🏳️‍🌈 *¡𝑯𝑨𝒀 〔${topgays.length}〕 𝑴𝑨𝑳𝑫𝑰𝑻𝑶𝑺 𝑴𝑨𝑹𝑰𝑪𝑶𝑵𝑬𝑺!* 🏳️‍🌈😳`
+          Lxa.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": topgays}})
+          break 
 
 
 
