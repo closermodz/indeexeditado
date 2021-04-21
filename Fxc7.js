@@ -1851,7 +1851,7 @@ case 'tonto':
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', '😳 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 𝒑𝒐𝒓 𝒆𝒍 𝑩𝒐𝒕 𝒅𝒆 𝑲𝒆𝒗𝒊𝒏 😳')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('Sticker', 'Creado con el BOT de KEVIN')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									await costum(fs.readFileSync(ran), sticker, FarhanGans, `😳 𝑪𝑹𝑬𝑨𝑪𝑰𝑶𝑵 𝑫𝑬 𝑺𝑻𝑰𝑪𝑲𝑬𝑹𝑺 😳`)
 									fs.unlinkSync(media)	
@@ -1879,7 +1879,7 @@ case 'tonto':
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', '😳 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 𝒑𝒐𝒓 𝒆𝒍 𝑩𝒐𝒕 𝒅𝒆 𝑲𝒆𝒗𝒊𝒏 😳')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('StickerGif', 'Creado con el BOT de KEVIN')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									await costum(fs.readFileSync(ran), sticker, FarhanGans, `😳 𝑪𝑹𝑬𝑨𝑪𝑰𝑶𝑵 𝑫𝑬 𝑺𝑻𝑰𝑪𝑲𝑬𝑹𝑺 😳`)
 									fs.unlinkSync(media)
