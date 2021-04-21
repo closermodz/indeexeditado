@@ -1634,7 +1634,6 @@ case 'tonto':
 		case 'daftar111111':
 		case 'verify111111':
 					frhan.updatePresence(from, Presence.composing)
-					if (isUser) return reply('kamu sudah Menjadi Temen IRIENEBOT:D')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
@@ -1852,9 +1851,9 @@ case 'tonto':
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('⛃⃢⃟⃝⃞❤️⃬🇰⃬🇪⃬🇻⃬🇮⃬🇳⃬❤️⃢⃟⃝⃞⛃𝆮', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
-									await costum(fs.readFileSync(ran), sticker, FarhanGans, ` ~ Nihh Udah Jadi Stikernya`)
+									await costum(fs.readFileSync(ran), sticker, FarhanGans, `😳 𝑪𝑹𝑬𝑨𝑪𝑰𝑶𝑵 𝑫𝑬 𝑺𝑻𝑰𝑪𝑲𝑬𝑹𝑺 😳`)
 									fs.unlinkSync(media)	
 									fs.unlinkSync(ran)	
 								})
@@ -1882,7 +1881,7 @@ case 'tonto':
 								console.log('Finish')
 								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
-									await costum(fs.readFileSync(ran), sticker, FarhanGans, `~ Nih Dah Jadi Gif Stikernya`)
+									await costum(fs.readFileSync(ran), sticker, FarhanGans, `😳 𝑪𝑹𝑬𝑨𝑪𝑰𝑶𝑵 𝑫𝑬 𝑺𝑻𝑰𝑪𝑲𝑬𝑹𝑺 😳`)
 									fs.unlinkSync(media)
 									fs.unlinkSync(ran)
 								})
