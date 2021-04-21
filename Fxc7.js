@@ -1865,7 +1865,7 @@ case 'tonto':
 						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await frhan.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
-						reply(mess.wait)
+						//reply(mess.wait)
 						await ffmpeg(`./${media}`)
 							.inputFormat(media.split('.')[1])
 							.on('start', function (cmd) {
@@ -1879,7 +1879,7 @@ case 'tonto':
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('StickerGif', 'BotDeKevin')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('Sticker', 'BotDeKevin')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									await costum(fs.readFileSync(ran), sticker, FarhanGans, `😳 𝑪𝑹𝑬𝑨𝑪𝑰𝑶𝑵 𝑫𝑬 𝑺𝑻𝑰𝑪𝑲𝑬𝑹𝑺 😳`)
 									fs.unlinkSync(media)
@@ -1894,7 +1894,7 @@ case 'tonto':
 						const media = await frhan.downloadAndSaveMediaMessage(encmedia)
 						ranw = getRandom('.webp')
 						ranp = getRandom('.png')
-						reply(mess.wait)
+						//reply(mess.wait)
 						keyrmbg = 'Your-ApiKey'
 						await removeBackgroundFromImageFile({path: media, apiKey: keyrmbg, size: 'auto', type: 'auto', ranp}).then(res => {
 							fs.unlinkSync(media)
@@ -1905,7 +1905,7 @@ case 'tonto':
 							exec(`ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${ranw}`, (err) => {
 								fs.unlinkSync(ranp)
 								if (err) return reply(mess.error.stick)
-								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', authorname)} ${ranw} -o ${ranw}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('KEVIN', authorname)} ${ranw} -o ${ranw}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									frhan.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: mek})
 									fs.unlinkSync(ranw)
