@@ -87,6 +87,8 @@ const setting = JSON.parse(fs.readFileSync('./database/json/setting.json'))
 const bad = JSON.parse(fs.readFileSync('./database/json/bad.json'))
 const premium = JSON.parse(fs.readFileSync('./database/json/premium.json'))
 const topgays = JSON.parse(fs.readFileSync('./tops/topgays.json'))
+const _leveling = JSON.parse(fs.readFileSync('./database/json/leveling.json'))
+const _level = JSON.parse(fs.readFileSync('./database/json/level.json'))
 
 
 memberLimit = setting.memberlimit
@@ -238,6 +240,75 @@ const expiredCheck = () => {
 	}, 1000)
 }
 
+/********** FUNCTION ***************/
+const getLevelingXp = (sender) => {
+            let position = false
+            Object.keys(_level).forEach((i) => {
+                if (_level[i].id === sender) {
+                    position = i
+                }
+            })
+            if (position !== false) {
+                return _level[position].xp
+            }
+        }
+
+        const getLevelingLevel = (sender) => {
+            let position = false
+            Object.keys(_level).forEach((i) => {
+                if (_level[i].id === sender) {
+                    position = i
+                }
+            })
+            if (position !== false) {
+                return _level[position].level
+            }
+        }
+
+        const getLevelingId = (sender) => {
+            let position = false
+            Object.keys(_level).forEach((i) => {
+                if (_level[i].id === sender) {
+                    position = i
+                }
+            })
+            if (position !== false) {
+                return _level[position].id
+            }
+        }
+
+        const addLevelingXp = (sender, amount) => {
+            let position = false
+            Object.keys(_level).forEach((i) => {
+                if (_level[i].id === sender) {
+                    position = i
+                }
+            })
+            if (position !== false) {
+                _level[position].xp += amount
+                fs.writeFileSync('./ANBOT-D/level.json', JSON.stringify(_level))
+            }
+        }
+
+        const addLevelingLevel = (sender, amount) => {
+            let position = false
+            Object.keys(_level).forEach((i) => {
+                if (_level[i].id === sender) {
+                    position = i
+                }
+            })
+            if (position !== false) {
+                _level[position].level += amount
+                fs.writeFileSync('./ANBOT-D/level.json', JSON.stringify(_level))
+            }
+        }
+
+        const addLevelingId = (sender) => {
+            const obj = {id: sender, xp: 1, level: 1}
+            _level.push(obj)
+            fs.writeFileSync('./ANBOT-D/level.json', JSON.stringify(_level))
+        }
+
 async function starts() {
 	const frhan = new WAConnection()
 	frhan.logger.level = 'warn'
@@ -373,6 +444,7 @@ async function starts() {
 			const isPrem1 = topgays.includes(sender)
 			const isBanned = ban.includes(sender)
 			const isPrem = premium.includes(sender) || isOwner 
+			const isLevelingOn = isGroup ? _leveling.includes(from) : false
 			const FarhanGans = ["0@s.whatsapp.net"]
 			const FarhanGans2 = " 𝑪𝒓𝒆𝒂𝒅𝒐 𝒑𝒐𝒓 ⛃⃢⃟⃝⃞❤️⃬🇰⃬🇪⃬🇻⃬🇮⃬🇳⃬❤️⃢⃟⃝⃞⛃𝆮"
 			const isUrl = (url) => {
@@ -529,6 +601,26 @@ const obj = { id: sender, limit: 0 }
 			if (isAntiVirtex) {
 			AntiVirtexx = 'ON'
 			}
+
+
+            if (isGroup && isLevelingOn) {
+            const currentLevel = getLevelingLevel(sender)
+            const checkId = getLevelingId(sender)
+            try {
+                if (currentLevel === undefined && checkId === undefined) addLevelingId(sender)
+                const amountXp = Math.floor(Math.random() * 10) + 500
+                const requiredXp = 5000 * (Math.pow(2, currentLevel) - 1)
+                const getLevel = getLevelingLevel(sender)
+                addLevelingXp(sender, amountXp)
+                if (requiredXp <= getLevelingXp(sender)) {
+                    addLevelingLevel(sender, 1)
+                    await reply(ind.levelup(pushname, sender, getLevelingXp,  getLevel, getLevelingLevel))
+                }
+            } catch (err) {
+                console.error(err)
+            }
+        }
+
 const sleep = async (ms) => {
 return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -1558,6 +1650,73 @@ break
 					frhan.sendMessage(from, buffer, sticker, {quoted: mek})
 					break
 
+                case 'level':
+		case 'lvl':
+                if (!isLevelingOn) return reply(ind.lvlnoon())
+                if (!isGroup) return reply(mess.only.group)
+                const userLevel = getLevelingLevel(sender)
+                const userXp = getLevelingXp(sender)
+                if (userLevel === undefined && userXp === undefined) return reply(ind.lvlnul())
+                const requiredXp = 5000 * (Math.pow(2, userLevel) - 1)
+                resul = `┏━━❉ *LEVEL* ❉━━\n┣⊱ *Nama* : ${pushname}\n┣⊱ Nomor : wa.me/${sender.split("@")[0]}\n┣⊱ User XP :  ${userXp}/${requiredXp}\n┣⊱ User Level : ${userLevel}\n┗━━━━━━━━━━━━`
+               frhan.sendMessage(from, resul, text, frhananbot, vr,{ quoted: mek})
+                .catch(async (err) => {
+                        console.error(err)
+                        await reply(`Error!\n${err}`)
+                    })
+					break
+				case 'leaderboard':
+				case 'lb':
+				if (!isGroup) return reply(mess.only.group)
+				_level.sort((a, b) => (a.xp < b.xp) ? 1 : -1)
+				uang.sort((a, b) => (a.uang < b.uang) ? 1 : -1)
+                let leaderboardlvl = '-----[ *LEADERBOARD LEVEL* ]----\n\n'
+                let leaderboarduang = '-----[ *LEADERBOARD UANG* ]----\n\n'
+                let nom = 0
+                try {
+                    for (let i = 0; i < 10; i++) {
+                        nom++
+                        leaderboardlvl += `*[${nom}]* wa.me/${_level[i].id.replace('@s.whatsapp.net', '')}\n┗⊱ *XP*: ${_level[i].xp} *Level*: ${_level[i].level}\n`
+                        leaderboarduang += `*[${nom}]* wa.me/${uang[i].id.replace('@s.whatsapp.net', '')}\n┣⊱ *Uang*: _Rp${uang[i].uang}_\n┗⊱ *Limit*: ${frhanlimit - _limit[i].limit}\n`
+                    }
+                    await reply(leaderboardlvl)
+                    await reply(leaderboarduang)
+                } catch (err) {
+                    console.error(err)
+                    await reply(`minimal 10 user untuk bisa mengakses anBOT-D`)
+                }
+					break
+
+                case 'leveling':
+                if (!isGroup) return reply(mess.only.group)
+                if (!isGroupAdmins) return reply(mess.only.admin)
+                if (args.length < 1) return reply('Boo :𝘃')
+                if (args[0] === 'enable') {
+                    if (isLevelingOn) return reply('*fitur level sudah aktif sebelum nya*')
+                    _leveling.push(from)
+                    fs.writeFileSync('./ANBOT-D/leveling.json', JSON.stringify(_leveling))
+                     reply(ind.lvlon())
+                } else if (args[0] === 'disable') {
+                    _leveling.splice(from, 1)
+                    fs.writeFileSync('./ANBOT-D/leveling.json', JSON.stringify(_leveling))
+                     reply(ind.lvloff())
+                } else {
+              reply(`untuk Mengaktifkan ketik ${prefix + command} enable dan untuk Menonaktif ketik ${prefix + command} disable`)
+                }
+					break
+
+                  case 'mining':
+                if (!isGroup) return reply(mess.only.group)
+					const one = Math.ceil(Math.random() * 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+					addLevelingXp(sender, one)
+					await reply(`Kamu bagian dari prabayar, aku akan berikan sebanyak *${one}Xp* untuk anda`)
+                 					     }else{
+					const mining = Math.ceil(Math.random() * 100000)
+					addLevelingXp(sender, mining)
+					await reply(`*Selamat* ${pushname} kamu mendapatkan *${mining}Xp*`)
+					}
+					break
+
 
 
 
@@ -1716,10 +1875,10 @@ break
 		 			break
 			case 'help':
 			if (isBanned) return reply(mess.only.benned)
-				
+				const reqXp  = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
 				uptime = process.uptime()
 				user.push(sender)
-				costum(help(prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal(), groupName, premi, Simihh, Welcomee, ModeAnime, Nsfww, BadWordd, AntiLinkk, AntiVirtexx), text, FarhanGans, FarhanGans2)
+				costum(help(prefix, getLevelingLevel, getLevelingXp, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal(), groupName, premi, Simihh, Welcomee, ModeAnime, Nsfww, BadWordd, AntiLinkk, AntiVirtexx), text, FarhanGans, FarhanGans2)
 			break 
 
 // fitur simple
