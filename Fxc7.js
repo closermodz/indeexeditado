@@ -1540,9 +1540,23 @@ break
           break 
 
 
-
-
-
+	break
+	case 'ttp':
+          if (isBanned) return reply(mess.only.benned)
+          if (!isGroup) return reply(mess.only.group)
+				if (!isGroup) return reply(ind.groupo())
+	  ini_frhan = await getBuffer(`http://lolhuman.herokuapp.com/api/ttp3?apikey=${apiKey}&text=${body.slice(5)}`)
+	  frhan.sendMessage(from, ini_frhan, sticker, {quoted: mek})
+	  break
+			  case 'attp':
+          if (isBanned) return reply(mess.only.benned)
+          if (!isGroup) return reply(mess.only.group)
+				if (!isGroup) return reply(ind.groupo())
+                    if (args.length == 0) return reply(`Example: ${prefix + command} ANBOT-D`)
+            teks = args.join(" ")
+					buffer = await getBuffer(`https://api.xteam.xyz/attp?file&text=${teks}`)
+					frhan.sendMessage(from, buffer, sticker, {quoted: mek})
+					break
 
 
 
@@ -4237,18 +4251,18 @@ break
 					}
 					break
 				case 'añadir':
-				if (isBanned) return reply(mess.only.benned)    
+				    if (isBanned) return reply(mess.only.benned)    
  					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) // return reply('Ingresa el número')
-					if (args[0].startsWith('08')) // return reply('Usa el código de país')
+					if (args.length < 1) return reply('Ingresa el número')
+					if (args[0].startsWith('08')) return reply('Usa el código de país')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
-						frhan.groupAdd(from, [num])
+						Lxa.groupAdd(from, [num])
 					} catch (e) {
 						console.log('Error :', e)
-						reply('*ERROR!*')
+						reply('No se pudo agregar al miembro probablemente este bloqueado por el bot')
 					}
 					break
 			    case 'expulsar':
