@@ -286,7 +286,7 @@ const getLevelingXp = (sender) => {
             })
             if (position !== false) {
                 _level[position].xp += amount
-                fs.writeFileSync('./ANBOT-D/level.json', JSON.stringify(_level))
+                fs.writeFileSync('./database/json/level.json', JSON.stringify(_level))
             }
         }
 
@@ -299,14 +299,14 @@ const getLevelingXp = (sender) => {
             })
             if (position !== false) {
                 _level[position].level += amount
-                fs.writeFileSync('./ANBOT-D/level.json', JSON.stringify(_level))
+                fs.writeFileSync('./database/json/level.json', JSON.stringify(_level))
             }
         }
 
         const addLevelingId = (sender) => {
             const obj = {id: sender, xp: 1, level: 1}
             _level.push(obj)
-            fs.writeFileSync('./ANBOT-D/level.json', JSON.stringify(_level))
+            fs.writeFileSync('./database/json/level.json', JSON.stringify(_level))
         }
 
 async function starts() {
@@ -1691,19 +1691,21 @@ break
                 if (!isGroup) return reply(mess.only.group)
                 if (!isGroupAdmins) return reply(mess.only.admin)
                 if (args.length < 1) return reply('Boo :𝘃')
-                if (args[0] === 'enable') {
+                if (args[0] === 'on') {
                     if (isLevelingOn) return reply('*fitur level sudah aktif sebelum nya*')
                     _leveling.push(from)
-                    fs.writeFileSync('./ANBOT-D/leveling.json', JSON.stringify(_leveling))
-                     reply(ind.lvlon())
-                } else if (args[0] === 'disable') {
+                    fs.writeFileSync('./database/json/leveling.json', JSON.stringify(_leveling))
+                     reply(`\`\`\`✓Sukses mengaktifkan fitur leveling di group\`\`\` *${groupMetadata.subject}*`)
+                } else if (args[0] === 'off') {
                     _leveling.splice(from, 1)
-                    fs.writeFileSync('./ANBOT-D/leveling.json', JSON.stringify(_leveling))
-                     reply(ind.lvloff())
+                    fs.writeFileSync('./database/json/leveling.json', JSON.stringify(_leveling))
+                     reply(`\`\`\`✓Sukses menonaktifkan fitur leveling di group\`\`\` *${groupMetadata.subject}*`)
                 } else {
-              reply(`untuk Mengaktifkan ketik ${prefix + command} enable dan untuk Menonaktif ketik ${prefix + command} disable`)
-                }
+						reply('On untuk mengaktifkan, Off untuk menonaktifkan')
+					}
 					break
+
+
 
                   case 'mining':
                 if (!isGroup) return reply(mess.only.group)
