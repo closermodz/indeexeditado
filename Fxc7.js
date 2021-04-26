@@ -415,15 +415,15 @@ if (isGroup) {
 		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		setTimeout( () => {
 		//reply('byee👋')
-		}, 1100)
+		}, 500)
 		setTimeout( () => {
 		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
+					}, 500)
 		setTimeout( () => {
 		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐒𝐏𝐀𝐌!* ⚠️`)
 		}, 0)
 	}
-		if (FXC7.includes("://www.instagram.com/")){
+		if (FXC7.includes("://www.pornhub.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
 		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
@@ -431,7 +431,7 @@ if (isGroup) {
 		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		setTimeout( () => {
 		//reply('byee👋')
-		}, 1100)
+		}, 500)
 		setTimeout( () => {
 		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
 					}, 1000)
@@ -2439,23 +2439,19 @@ break
 			break
 			case 'tts':
 				if (isBanned) return reply(mess.only.benned)    
-				
-				
-				
-				if (args.length < 1) return frhan.sendMessage(from, 'Kode bahasanya mana gan?\n Kalo Gatau Kode Bahasanya Apa Aja Ketik Saja *${prefix}bahasa*', text, {quoted: mek})
+				//if (args.length < 1) return frhan.sendMessage(from, 'Kode bahasanya mana gan?\n Kalo Gatau Kode Bahasanya Apa Aja Ketik Saja *${prefix}bahasa*', text, {quoted: mek})
 				const gtts = require('./lib/gtts')(args[0])
 				if (args.length < 2) return frhan.sendMessage(from, 'Textnya mana gan?', text, {quoted: mek})
 				dtt = body.slice(8)
 				ranm = getRandom('.mp3')
 				rano = getRandom('.ogg')
 				dtt.length > 600
-				? reply('Textnya kebanyakan gan')
+				? //reply('Textnya kebanyakan gan')
 				: gtts.save(ranm, dtt, function() {
 				exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 				fs.unlinkSync(ranm)
 				buff = fs.readFileSync(rano)
 				if (err) return reply('Gagal gan:(')
-				reply(mess.wait)
 				frhan.sendMessage(from, buff, audio, {quoted: mek, ptt:true})
 				fs.unlinkSync(rano)
 				})
