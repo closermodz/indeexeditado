@@ -1566,7 +1566,6 @@ break
 	  break
 			  case 'attp':
           if (isBanned) return reply(mess.only.benned)
-				if (!isGroup) return reply(ind.groupo())
                     //if (args.length == 0) return reply(`Example: ${prefix + command} ANBOT-D`)
             teks = args.join(" ")
 					buffer = await getBuffer(`https://api.xteam.xyz/attp?file&text=${teks}`)
@@ -5482,10 +5481,8 @@ case 'nping111111':
 		case 'wattpad111111':
 			try {
 			if (isBanned) return reply(mess.wait.benned)
-			
-			
-			if (args.length < 1)return reply('Nama Channelnya??')
-			reply(mess.wait)
+			//if (args.length < 1)return reply('Nama Channelnya??')
+			//reply(mess.wait)
 			wttpd = `${body.slice(9)}`
 			anu = await fetchFxc7(`http://nzcha-apii.herokuapp.com/wattpad-search?q=${wttpd}`, {method: 'get'})
 			wattp = '===========================\n'
