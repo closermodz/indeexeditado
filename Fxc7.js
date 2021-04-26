@@ -2436,7 +2436,7 @@ break
 				frhan.groupUpdateDescription(from, `${body.slice(9)}`)
 				frhan.sendMessage(from, `\`\`\`✓Sukses Mengganti Deskripsi Group\`\`\` *${groupMetadata.subject}* Menjadi: *${body.slice(9)}*`, text, {quoted: mek})
 			break
-			case 'tts':
+			/*case 'tts':
 				if (isBanned) return reply(mess.only.benned)    
 				//if (args.length < 1) return frhan.sendMessage(from, 'Kode bahasanya mana gan?\n Kalo Gatau Kode Bahasanya Apa Aja Ketik Saja *${prefix}bahasa*', text, {quoted: mek})
 				const gtts = require('./lib/gtts')(args[0])
@@ -2457,7 +2457,7 @@ break
 				})
 				})
 				 
-			break 
+			break */
 				case 'translate111111':
 				if (isBanned) return reply(mess.only.benned)
 				
