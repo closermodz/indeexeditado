@@ -110,8 +110,8 @@ const { wait, simih, getBuffer, h2k, banner, generateMessageID, getGroupAdmins, 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN:Farhan\n'
-            + 'ORG:Owner KEVIN;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=34632246602:+62 831-1800-241\n'
+            + 'ORG:Owner FXC7;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=628311800241:+62 831-1800-241\n'
             + 'END:VCARD'
 
 function kyun(seconds){
@@ -122,7 +122,7 @@ function kyun(seconds){
   var minutes = Math.floor(seconds % (60*60) / 60);
   var seconds = Math.floor(seconds % 60);
 
-  return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`
+  return `${pad(hours)} Hrs ${pad(minutes)} Min ${pad(seconds)} Seg`
 }
 function tanggal(){
 myMonths = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
@@ -315,8 +315,8 @@ async function starts() {
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product, quotedMsg } = MessageType
 
 			const date = new Date().toLocaleDateString()
-			const time = moment.tz('Europe/Madrid').format('HH:mm:ss')
-			const jam = moment.tz('Europe/Madrid').format('HH:mm')
+			const time = moment.tz('Asia/Jakarta').format('HH:mm:ss')
+			const jam = moment.tz('Asia/Jakarta').format('HH:mm')
 
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : '' 
@@ -537,9 +537,9 @@ const obj = { id: sender, limit: 0 }
 			if (isBadWord) {
 			BadWordd = 'ON'
 			}
-			var AntiLinkk = 'no'
+			var AntiLinkk = 'OFF'
 			if (isAntiLink) {
-			AntiLinkk = 'si'
+			AntiLinkk = 'ON'
 			}
 			var AntiVirtexx = 'OFF'
 			if (isAntiVirtex) {
@@ -1566,9 +1566,8 @@ break
 	  break
 			  case 'attp':
           if (isBanned) return reply(mess.only.benned)
-          if (!isGroup) return reply(mess.only.group)
 				if (!isGroup) return reply(ind.groupo())
-                    if (args.length == 0) return reply(`Example: ${prefix + command} ANBOT-D`)
+                    //if (args.length == 0) return reply(`Example: ${prefix + command} ANBOT-D`)
             teks = args.join(" ")
 					buffer = await getBuffer(`https://api.xteam.xyz/attp?file&text=${teks}`)
 					frhan.sendMessage(from, buffer, sticker, {quoted: mek})
@@ -2441,7 +2440,7 @@ break
 				if (isBanned) return reply(mess.only.benned)    
 				//if (args.length < 1) return frhan.sendMessage(from, 'Kode bahasanya mana gan?\n Kalo Gatau Kode Bahasanya Apa Aja Ketik Saja *${prefix}bahasa*', text, {quoted: mek})
 				const gtts = require('./lib/gtts')(args[0])
-				if (args.length < 2) return frhan.sendMessage(from, 'Textnya mana gan?', text, {quoted: mek})
+				//if (args.length < 2) return frhan.sendMessage(from, 'Textnya mana gan?', text, {quoted: mek})
 				dtt = body.slice(8)
 				ranm = getRandom('.mp3')
 				rano = getRandom('.ogg')
@@ -2452,6 +2451,7 @@ break
 				fs.unlinkSync(ranm)
 				buff = fs.readFileSync(rano)
 				if (err) return reply('Gagal gan:(')
+				//reply(mess.wait)
 				frhan.sendMessage(from, buff, audio, {quoted: mek, ptt:true})
 				fs.unlinkSync(rano)
 				})
