@@ -2394,7 +2394,7 @@ case 'ruleta':
 					reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒆𝒏 𝒄𝒐𝒍𝒐𝒓 𝑺𝒆𝒑𝒊𝒂!* 😊')
 					}
 					 
-					break
+					break 
 				/*case 'wasted111111':
 				 	if (isBanned) return reply (mess.only.benned)
 					var imgbb = require('imgbb-uploader')
@@ -2795,7 +2795,7 @@ case 'ruleta':
 				frhan.groupUpdateDescription(from, `${body.slice(9)}`)
 				frhan.sendMessage(from, `📝😊 *¡𝑺𝒆 𝒂𝒄𝒂𝒃𝒂 𝒅𝒆 𝑴𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒓 𝒍𝒂 𝑫𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐́𝒏 𝒅𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😊📝`, text, {quoted: mek})
 			break
-			case 'tts':
+			/*case 'tts':
 				if (isBanned) return reply(mess.only.benned)    
 				//if (args.length < 1) return frhan.sendMessage(from, 'Kode bahasanya mana gan?\n Kalo Gatau Kode Bahasanya Apa Aja Ketik Saja *${prefix}bahasa*', text, {quoted: mek})
 				const gtts = require('./lib/gtts')(args[0])
@@ -2816,7 +2816,7 @@ case 'ruleta':
 				})
 				})
 				 
-			break 
+			break */
 				case 'translate111111':
 				if (isBanned) return reply(mess.only.benned)
 				
