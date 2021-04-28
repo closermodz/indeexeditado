@@ -776,7 +776,22 @@ if (isGroup) {
 		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
 		}, 0)
 	}
-
+						if (FXC7.includes("closermodding1")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
 
 
 
@@ -2395,32 +2410,6 @@ case 'ruleta':
 					}
 					 
 					break
-				case 'skmover':
-				case 'sk-mover':
-					if (isBanned) return reply (mess.only.benned)
-					var imgbb = require('imgbb-uploader')
-					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
-					reply(mess.creacion)
-					owgi = await  frhan.downloadAndSaveMediaMessage(ger)
-					anu = await imgbb("3b8594f4cb11895f4084291bc655e510", owgi)
-					teks = `${anu.display_url}`
-					ranp = getRandom('.gif')
-					rano = getRandom('.webp')
-					exec(`wget -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-					fs.unlinkSync(ranp)
-					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('Sticker', 'BotDeKevin')} ${rano} -o ${rano}`, async (error) => {
-					if (error) return reply(mess.error.stick)
-					frhan.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
-					fs.unlinkSync(rano)
-					})
-					})
-					} else {
-					reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒆𝒏 𝒄𝒐𝒍𝒐𝒓 𝑺𝒆𝒑𝒊𝒂!* 😊')
-					}
-					 
-					break 
 				/*case 'wasted111111':
 				 	if (isBanned) return reply (mess.only.benned)
 					var imgbb = require('imgbb-uploader')
@@ -2821,7 +2810,7 @@ case 'ruleta':
 				frhan.groupUpdateDescription(from, `${body.slice(9)}`)
 				frhan.sendMessage(from, `📝😊 *¡𝑺𝒆 𝒂𝒄𝒂𝒃𝒂 𝒅𝒆 𝑴𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒓 𝒍𝒂 𝑫𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐́𝒏 𝒅𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😊📝`, text, {quoted: mek})
 			break
-			/*case 'tts':
+			case 'tts':
 				if (isBanned) return reply(mess.only.benned)    
 				//if (args.length < 1) return frhan.sendMessage(from, 'Kode bahasanya mana gan?\n Kalo Gatau Kode Bahasanya Apa Aja Ketik Saja *${prefix}bahasa*', text, {quoted: mek})
 				const gtts = require('./lib/gtts')(args[0])
@@ -2842,7 +2831,7 @@ case 'ruleta':
 				})
 				})
 				 
-			break */
+			break 
 				case 'translate111111':
 				if (isBanned) return reply(mess.only.benned)
 				
