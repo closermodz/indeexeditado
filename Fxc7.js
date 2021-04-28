@@ -2394,6 +2394,33 @@ case 'ruleta':
 					reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒆𝒏 𝒄𝒐𝒍𝒐𝒓 𝑺𝒆𝒑𝒊𝒂!* 😊')
 					}
 					 
+					break
+				case 'skmover':
+				case 'sk-mover':
+					if (isBanned) return reply (mess.only.benned)
+					var imgbb = require('imgbb-uploader')
+					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					reply(mess.creacion)
+					owgi = await  frhan.downloadAndSaveMediaMessage(ger)
+					anu = await imgbb("3b8594f4cb11895f4084291bc655e510", owgi)
+					teks = `${anu.display_url}`
+					ranp = getRandom('.gif')
+					rano = getRandom('.webp')
+					anu1 = ``
+					exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
+					fs.unlinkSync(ranp)
+					if (err) return reply(mess.error.stick)
+					exec(`webpmux -set exif ${addMetadata('Sticker', 'BotDeKevin')} ${rano} -o ${rano}`, async (error) => {
+					if (error) return reply(mess.error.stick)
+					frhan.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
+					fs.unlinkSync(rano)
+					})
+					})
+					} else {
+					reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒆𝒏 𝒄𝒐𝒍𝒐𝒓 𝑺𝒆𝒑𝒊𝒂!* 😊')
+					}
+					 
 					break 
 				/*case 'wasted111111':
 				 	if (isBanned) return reply (mess.only.benned)
