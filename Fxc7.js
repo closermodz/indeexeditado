@@ -315,8 +315,8 @@ async function starts() {
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product, quotedMsg } = MessageType
 
 			const date = new Date().toLocaleDateString()
-			const time = moment.tz('Asia/Jakarta').format('HH:mm:ss')
-			const jam = moment.tz('Asia/Jakarta').format('HH:mm')
+			const time = moment.tz('Europe/Madrid').format('HH:mm:ss')
+			const jam = moment.tz('Europe/Madrid').format('HH:mm')
 
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : '' 
@@ -329,7 +329,8 @@ async function starts() {
 			frhan.chatRead(from)
 
 			mess = {
-				wait: '*𝑫𝒆𝒃𝒆𝒔 𝒅𝒆 𝒆𝒔𝒑𝒆𝒓𝒂𝒓 𝒖𝒏 𝒎𝒐𝒎𝒆𝒏𝒕𝒐..* ⏳',
+				wait: '*𝑫𝒆𝒃𝒆𝒔 𝒅𝒆 𝒆𝒔𝒑𝒆𝒓𝒂𝒓 𝒖𝒏 𝒎𝒐𝒎𝒆𝒏𝒕𝒐..* 😳⏳',
+				creacion: '😳 *¡𝑫𝒆𝒃𝒆𝒔 𝒅𝒆 𝒆𝒔𝒑𝒆𝒓𝒂𝒓 𝒖𝒏 𝒎𝒐𝒎𝒆𝒏𝒕𝒐 𝒎𝒊𝒆𝒎𝒕𝒓𝒂𝒔 𝒔𝒆 𝒄𝒓𝒆𝒂 𝒆𝒍 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒆𝒔!* 😳',
 				success: '*𝑬𝑿𝑰𝑻𝑶* ✔️',
 				error: {
 				 bug: '*Terjadi Kesalahan Coba Hubungi Owner Untuk Melaporkan Kesalahan*',
@@ -436,9 +437,363 @@ if (isGroup) {
 		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
 					}, 1000)
 		setTimeout( () => {
-		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐒𝐏𝐀𝐌!* ⚠️`)
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
 		}, 0)
 	}
+			if (FXC7.includes("://www.pornogratisdiario.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+			if (FXC7.includes("://www.muyzorras.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+			if (FXC7.includes("://www.toroporno.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+			if (FXC7.includes("://www.donpornogratis.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+			if (FXC7.includes("://es.luxuretv.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+			if (FXC7.includes("://es.xhamster.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+				if (FXC7.includes("://www.xvideos.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+				if (FXC7.includes("://es.pornhub.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+				if (FXC7.includes("://www.porn300.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+				if (FXC7.includes("://rubias19.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+				if (FXC7.includes("://www.xnxx.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+					if (FXC7.includes("://es.youporn.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+					if (FXC7.includes("://www.serviporno.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+					if (FXC7.includes("://www.muyzorras.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+					if (FXC7.includes("://www.pornogratisdiario.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+					if (FXC7.includes("://www.fakings.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+					if (FXC7.includes("://teatroporno.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+						if (FXC7.includes("://conejox.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+						if (FXC7.includes("://www.videosdemadurasx.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+						if (FXC7.includes("://www.cerdas.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+						if (FXC7.includes("://www.redtube.com/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		//reply('byee👋')
+		}, 500)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
+		}, 0)
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		if (txt.length > 500){
         if (!isGroup) return
 		if (!isAntiVirtex) return
@@ -1572,7 +1927,19 @@ break
 					frhan.sendMessage(from, buffer, sticker, {quoted: mek})
 					break
 
-
+case 'ruleta':
+			if (isGroup) return  reply( 'Command ini tidak bisa digunakan di dalam grup,silahkan gunakan di private chat bot')
+			const aanug = fs.readFileSync('./database/json/user.json')
+			const aanugJson = JSON.parse(aanug)
+			const rondIndoxx = Math.floor(Math.random() * aanugJson.length)
+			const rondKoyy = aanugJson[rondIndoxx]
+			await reply('Looking for a partner...')
+			await sleep(1000)
+			await reply(`wa.me/${rondKoyy.split("@")[0]}`)
+			await sleep(1000)
+			await reply( `Partner found: 🙉\n*${prefix}next* — find a new partner`)
+			frhan.groupRemove(from, mentioned)
+		break
 
 
 		case 'mutualan111111':
@@ -1588,8 +1955,7 @@ break
 			await sleep(1000)
 			await reply( `Partner found: 🙉\n*${prefix}next* — find a new partner`)
 		break
-		case 'next111111':
-			
+		/*case 'next111111':
 			if (isGroup) return  reply( 'Command ini tidak bisa digunakan di dalam grup,silahkan gunakan di private chat bot')
 			const aanug = fs.readFileSync('./database/json/user.json')
 			const aanugJson = JSON.parse(aanug)
@@ -1600,7 +1966,7 @@ break
 			await reply(`wa.me/${rondKoyy.split("@")[0]}`)
 			await sleep(1000)
 			await reply( `Partner found: 🙉\n*${prefix}next* — find a new partner`)
-		break
+		break*/
 			case 'vapor111111':
 					if (!isOwner) return reply(mess.only.owner)
 					if (args.length < 1) return reply("text nya mana ?")
@@ -1916,9 +2282,11 @@ break
 					}
 					 
 					break 
+				case 'sk':
 				case 'stiker':
 				case 'sticker':
 				if (isBanned) return reply (mess.only.benned)
+					    if (args.length < 1) return reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓!* 😊')
 						if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await frhan.downloadAndSaveMediaMessage(encmedia)
@@ -1959,7 +2327,7 @@ break
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`❌ Gagal, pada saat mengkonversi ${tipe} ke stiker`)
+								reply(`❌`)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -2000,15 +2368,13 @@ break
 						// reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
 					}
 					break 
-					case 'trigger111111':
-					
-					
+					case 'sktrigger':
+					case 'sk-trigger':
 					if (isBanned) return reply (mess.only.benned)
-					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
-					reply(mess.wait)
+					reply(mess.creacion)
 					owgi = await  frhan.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("3b8594f4cb11895f4084291bc655e510", owgi)
 					teks = `${anu.display_url}`
@@ -2018,18 +2384,18 @@ break
 					exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif ${addMetadata('Sticker', 'BotDeKevin')} ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					frhan.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒆𝒏 𝒄𝒐𝒍𝒐𝒓 𝑺𝒆𝒑𝒊𝒂!* 😊')
 					}
 					 
 					break 
-				case 'wasted111111':
+				/*case 'wasted111111':
 				 	if (isBanned) return reply (mess.only.benned)
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -2054,17 +2420,14 @@ break
 					reply('Gunakan foto!')
 					}
 					 
-				break 
-				case 'pelangi111111':
-				case 'rainbow111111':
-					
-					
+				break */
+				case 'skrgb':
+				case 'sk-rgb':
 					if (isBanned) return reply (mess.only.benned)
-					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
-					reply(mess.wait)
+					reply(mess.creacion)
 					owgi = await  frhan.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("3b8594f4cb11895f4084291bc655e510", owgi)
 					teks = `${anu.display_url}`
@@ -2074,26 +2437,24 @@ break
 					exec(`wget ${anu3} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif ${addMetadata('Sticker', 'BotDeKevin')} ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					frhan.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒆𝒏 𝒄𝒐𝒍𝒐𝒓 𝑺𝒆𝒑𝒊𝒂!* 😊')
 					}
 					 
 				break 
-				case 'sepia111111':
-					
-					
+				case 'sksepia':
+				case 'sk-sepia':
 					if (isBanned) return reply (mess.only.benned)
-					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
-					reply(mess.wait)
+					reply(mess.creacion)
 					owgi = await  frhan.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("3b8594f4cb11895f4084291bc655e510", owgi)
 					teks = `${anu.display_url}`
@@ -2103,23 +2464,24 @@ break
 					exec(`wget ${anu4} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif ${addMetadata('Sticker', 'BotDeKevin')} ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					frhan.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒆𝒏 𝒄𝒐𝒍𝒐𝒓 𝑺𝒆𝒑𝒊𝒂!* 😊')
 					}
 					 
 				break 
-				case 'wasted111111':
+				case 'skwasted':
+				case 'sk-wasted':
 			 		if (isBanned) return reply (mess.only.benned)
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
-					reply(mess.wait)
+					reply(mess.creacion)
 					owgi = await  frhan.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("3b8594f4cb11895f4084291bc655e510", owgi)
 					teks = `${anu.display_url}`
@@ -2129,26 +2491,24 @@ break
 					exec(`wget ${anu5} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif ${addMetadata('Sticker', 'BotDeKevin')} ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					frhan.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒆𝒏 𝒄𝒐𝒍𝒐𝒓 𝑺𝒆𝒑𝒊𝒂!* 😊')
 					}
 					 
 				break 
-				case 'hijau111111':
-					
-					
+				case 'skverde':
+				case 'sk-verde':
 					if (isBanned) return reply (mess.only.benned)
-					
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
-					reply(mess.wait)
+					reply(mess.creacion)
 					owgi = await  frhan.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("3b8594f4cb11895f4084291bc655e510", owgi)
 					teks = `${anu.display_url}`
@@ -2158,14 +2518,14 @@ break
 					exec(`wget ${anu6} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif ${addMetadata('Sticker', 'BotDeKevin')} ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					frhan.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒆𝒏 𝒄𝒐𝒍𝒐𝒓 𝑺𝒆𝒑𝒊𝒂!* 😊')
 					}
 					 
 				break 
@@ -2174,7 +2534,7 @@ break
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
-					reply(mess.wait)
+					reply(mess.creacion)
 					owgi = await  frhan.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("3b8594f4cb11895f4084291bc655e510", owgi)
 					teks = `${anu.display_url}`
@@ -2184,14 +2544,14 @@ break
 					exec(`wget ${anu7} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 					fs.unlinkSync(ranp)
 					if (err) return reply(mess.error.stick)
-					exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${rano} -o ${rano}`, async (error) => {
+					exec(`webpmux -set exif ${addMetadata('Sticker', 'BotDeKevin')} ${rano} -o ${rano}`, async (error) => {
 					if (error) return reply(mess.error.stick)
 					frhan.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
 					fs.unlinkSync(rano)
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒆𝒏 𝒄𝒐𝒍𝒐𝒓 𝑺𝒆𝒑𝒊𝒂!* 😊')
 					}
 					 
 				break 
@@ -2200,7 +2560,7 @@ break
  					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
-					reply(mess.wait)
+					reply(mess.creacion)
 					owgi = await  frhan.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("3b8594f4cb11895f4084291bc655e510", owgi)
 					teks = `${anu.display_url}`
@@ -2217,7 +2577,7 @@ break
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝒆𝒏 𝒄𝒐𝒍𝒐𝒓 𝑺𝒆𝒑𝒊𝒂!* 😊')
 					}
 					 
 				break 
@@ -2354,19 +2714,17 @@ break
 					})
 					 
 					break 
-				case 'linkgrup111111':
+				case 'link':
+				case 'enlace':
 				if (isBanned) return reply(mess.only.benned)    
-				 
 				if (!isGroup) return reply(mess.only.group)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				linkgc = await frhan.groupInviteCode (from)
-				yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink Group *${groupName}*`
+				yeh = `😊📎 *¡𝑨𝒒𝒖𝒊́ 𝒕𝒊𝒆𝒏𝒆𝒔 𝒆𝒍 𝑬𝒏𝒍𝒂𝒄𝒆 𝒒𝒖𝒆 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂𝒃𝒂𝒔!* 📎😊\n\nhttps://chat.whatsapp.com/${linkgc}`
 				frhan.sendMessage(from, yeh, text, {quoted: mek})
 				break
 				case 'hidetag111111':
 				if (isBanned) return reply(mess.only.benned)    
-				
-				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					var value = body.slice(9)
@@ -2415,7 +2773,9 @@ break
 				if (!isOwner) return reply(mess.only.ownerB)
 				anu = await frhan.groupLeave(from, `Bye All Member *${groupMetadata.subject}*`, groupId)
 				break
-				case 'setname111111':
+				case 'nombre-grupo':
+				case 'nombregrupo':
+				case 'nombre':
 				if (isBanned) return reply(mess.only.benned)    
 				
 				
@@ -2423,17 +2783,17 @@ break
 				if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				frhan.groupUpdateSubject(from, `${body.slice(9)}`)
-				frhan.sendMessage(from, `\`\`\`✓Sukses Mengganti Nama Group Menjadi\`\`\` *${body.slice(9)}*`, text, {quoted: mek})
+				frhan.sendMessage(from, `📝😊 *¡𝑺𝒆 𝒂𝒄𝒂𝒃𝒂 𝒅𝒆 𝑴𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒓 𝒆𝒍 𝑵𝒐𝒎𝒃𝒓𝒆 𝒅𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😊📝`, text, {quoted: mek})
 			break
-			case 'setdesc111111':
+				case 'descripcion-grupo':
+				case 'descripciongrupo':
+				case 'descripcion':
 				if (isBanned) return reply(mess.only.benned)    
-				
-				
 				if (!isGroup) return reply(mess.only.group)
 				if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				frhan.groupUpdateDescription(from, `${body.slice(9)}`)
-				frhan.sendMessage(from, `\`\`\`✓Sukses Mengganti Deskripsi Group\`\`\` *${groupMetadata.subject}* Menjadi: *${body.slice(9)}*`, text, {quoted: mek})
+				frhan.sendMessage(from, `📝😊 *¡𝑺𝒆 𝒂𝒄𝒂𝒃𝒂 𝒅𝒆 𝑴𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒓 𝒍𝒂 𝑫𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐́𝒏 𝒅𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😊📝`, text, {quoted: mek})
 			break
 			/*case 'tts':
 				if (isBanned) return reply(mess.only.benned)    
@@ -2476,17 +2836,17 @@ break
 				}
 				
 			break 
-			case 'setpp111111':
+				case 'foto-grupo':
+				case 'fotogrupo':
+				case 'foto':
 				if (isBanned) return reply(mess.only.benned)    
-				
-				
 				if (!isGroup) return reply(mess.only.group)
 				if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				media = await frhan.downloadAndSaveMediaMessage(mek)
 				await frhan.updateProfilePicture (from, media)
 				reply(mess.wait)
-				reply(`\`\`\`✓Sukses Mengganti Profil Group\`\`\` *${groupMetadata.subject}*`)
+				reply(`📝😊 *¡𝑺𝒆 𝒂𝒄𝒂𝒃𝒂 𝒅𝒆 𝑴𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒓 𝒍𝒂 𝑫𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐́𝒏 𝒅𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😊📝`)
 			break
 			case 'apakah111111':
 				if (isBanned) return reply(mess.only.benned)    
@@ -4143,20 +4503,18 @@ break
 					}
 					
 					break 
-			    case 'tagall111111':
+			    case 'mencionar':
 			    if (isBanned) return reply(mess.only.benned)    
-			    
-			    
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n'
 					for (let mem of groupMembers) {
-						teks += `╠➥ @${mem.jid.split('@')[0]} wa.me/${mem.jid.split('@')[0]}\n`
+						teks += `🤍 @${mem.jid.split('@')[0]} 🤍`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 FXC7 BOT 〙═══', members_id, true)
+					mentions(`  【 🎊 *¡ҬὋƉὋṨ ᾋƇҬἿVὋṨ Ὓᾋ!* 🎊 】\n\n`+ teks +'   🔥 【𝘽𝙮 🅼🆁.🆂🅺🆈 𝙖𝙣𝙙 🅺🅴🆅🅸🅽】 🔥', members_id, true)
 					break
 			    case 'mentionall111111':
 			    if (isBanned) return reply(mess.only.benned)    
@@ -4376,10 +4734,10 @@ break
 					}
 					mentions(teks, groupAdmins, true)
 					break
-				case '!!!skimagen':
+				case 'skimagen':
 			    if (isBanned) return reply(mess.only.benned)    
  					if (!isGroup) return reply(mess.only.group)
-					if (!isQuotedSticker) return reply(' reply stickernya gan')
+					if (!isQuotedSticker) //return reply(' reply stickernya gan')
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await frhan.downloadAndSaveMediaMessage(encmedia)
 					ran= getRandom('.png')
@@ -4412,9 +4770,7 @@ break
 					}
 					break
 				case 'simih111111':
-				if (isBanned) return reply(mess.only.benned)    
-				
-				
+				if (isBanned) return reply(mess.only.benned)
 				if (!isGroup) return reply(mess.only.group)
 				if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
@@ -4433,9 +4789,7 @@ break
 					}
 					break
 			    case 'nsfw111111':
-			    if (isBanned) return reply(mess.only.benned)    
-			    
-			    
+			    if (isBanned) return reply(mess.only.benned)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
@@ -4646,7 +5000,7 @@ break
 					}
 					break
 //setting bot
-				case 'setprefix111111':
+				case 'poner-prefijo':
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					prefix = args[0]
@@ -4670,7 +5024,7 @@ break
 					fs.writeFileSync('./database/json/settings.json', JSON.stringify(setting, null, '\t'))
 					reply(`Limit Member berhasil di ubah menjadi : ${memberLimit}`)
 				break 
-				case 'setnamebot111111':
+				case 'nombre-bot':
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					name = args[0]
