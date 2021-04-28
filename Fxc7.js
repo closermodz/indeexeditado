@@ -776,22 +776,7 @@ if (isGroup) {
 		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
 		}, 0)
 	}
-						if (FXC7.includes("closermodding1")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return //reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		//reply('byee👋')
-		}, 500)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`⚠️ *¡𝐒𝐄 𝐇𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 𝐄𝐍𝐋𝐀𝐂𝐄𝐒 𝐏𝐎𝐑𝐍𝐎!* ⚠️`)
-		}, 0)
-	}
+
 
 
 
