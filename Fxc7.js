@@ -2286,7 +2286,6 @@ case 'ruleta':
 				case 'stiker':
 				case 'sticker':
 				if (isBanned) return reply (mess.only.benned)
-					    if (args.length < 1) return reply('*¡𝑫𝒆𝒃𝒆𝒔 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒐 𝑬𝒏𝒗𝒊𝒂𝒓 𝒖𝒏𝒂 𝑭𝒐𝒕𝒐 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒉𝒂𝒄𝒆𝒓 𝒖𝒏 𝑺𝒕𝒊𝒄𝒌𝒆𝒓!* 😊')
 						if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await frhan.downloadAndSaveMediaMessage(encmedia)
