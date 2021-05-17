@@ -1912,13 +1912,31 @@ break
 
 
 	break
-	case 'ttp':
-          if (isBanned) return reply(mess.only.benned)
-          if (!isGroup) return reply(mess.only.group)
-				if (!isGroup) return reply(ind.groupo())
-	  ini_frhan = await getBuffer(`http://lolhuman.herokuapp.com/api/ttp3?apikey=${apiKey}&text=${body.slice(5)}`)
-	  frhan.sendMessage(from, ini_frhan, sticker, {quoted: mek})
-	  break
+				case 'pokemon':
+				    if (isBanned) return reply(mess.only.benned)
+                    if (!isGroup) return reply(mess.only.group)
+                    frhan.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://api.fdci.se/rep.php?gambar=pokemon`, {method: 'get'})
+                    if (!isUser) return reply(mess.only.daftarB)
+					reply(mess.wait)
+					n = JSON.parse(JSON.stringify(data));
+					nimek =  n[Math.floor(Math.random() * n.length)];
+					pok = await getBuffer(nimek)
+					frhan.sendMessage(from, pok, image, { quoted: mek })
+					break
+                case 'images':
+				    if (isBanned) return reply(mess.only.benned)
+                    if (!isGroup) return reply(mess.only.group)
+                    tels = body.slice(11)
+					frhan.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://api.fdci.se/rep.php?gambar=${tels}`, {method: 'get'})
+                    if (!isUser) return reply(mess.only.daftarB)
+					reply(mess.wait)
+					n = JSON.parse(JSON.stringify(data));
+					nimek =  n[Math.floor(Math.random() * n.length)];
+					pok = await getBuffer(nimek)
+					frhan.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*\n\*Hasil Pencarian* : *${tels}*`})
+					break
 			  case 'attp':
           if (isBanned) return reply(mess.only.benned)
                     //if (args.length == 0) return reply(`Example: ${prefix + command} ANBOT-D`)
@@ -2201,7 +2219,7 @@ case 'ruleta':
 					teks += `Total : ${blocked.length}`
 					frhan.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": blocked}})
 					break 
-				case 'banlist':
+				case 'lista-baneados':
 				if (isBanned) return reply (mess.only.benned)
 				ben = '```List Banned``` :\n'
 					for (let banned of ban) {
@@ -2772,21 +2790,18 @@ case 'ruleta':
 				if (!isOwner) return reply(mess.only.ownerB)
 				anu = await frhan.groupLeave(from, `Bye All Member *${groupMetadata.subject}*`, groupId)
 				break
-				case 'nombre-grupo':
-				case 'nombregrupo':
+				case 'gp-nombre':
 				case 'nombre':
 				if (isBanned) return reply(mess.only.benned)    
-				
-				
+
 				if (!isGroup) return reply(mess.only.group)
 				if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				frhan.groupUpdateSubject(from, `${body.slice(9)}`)
 				frhan.sendMessage(from, `📝😊 *¡𝑺𝒆 𝒂𝒄𝒂𝒃𝒂 𝒅𝒆 𝑴𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒓 𝒆𝒍 𝑵𝒐𝒎𝒃𝒓𝒆 𝒅𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😊📝`, text, {quoted: mek})
 			break
-				case 'descripcion-grupo':
-				case 'descripciongrupo':
-				case 'descripcion':
+				case 'bio':
+				case 'descrip':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isGroup) return reply(mess.only.group)
 				if (!isGroupAdmins) return reply(mess.only.admin)
@@ -2794,8 +2809,9 @@ case 'ruleta':
 				frhan.groupUpdateDescription(from, `${body.slice(9)}`)
 				frhan.sendMessage(from, `📝😊 *¡𝑺𝒆 𝒂𝒄𝒂𝒃𝒂 𝒅𝒆 𝑴𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒓 𝒍𝒂 𝑫𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐́𝒏 𝒅𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😊📝`, text, {quoted: mek})
 			break
-			/*case 'tts':
-				if (isBanned) return reply(mess.only.benned)    
+			case 'tts':
+				if (isBanned) return reply(mess.only.benned)
+				if (!isGroup) return reply(mess.only.group)   
 				//if (args.length < 1) return frhan.sendMessage(from, 'Kode bahasanya mana gan?\n Kalo Gatau Kode Bahasanya Apa Aja Ketik Saja *${prefix}bahasa*', text, {quoted: mek})
 				const gtts = require('./lib/gtts')(args[0])
 				//if (args.length < 2) return frhan.sendMessage(from, 'Textnya mana gan?', text, {quoted: mek})
@@ -2813,13 +2829,10 @@ case 'ruleta':
 				frhan.sendMessage(from, buff, audio, {quoted: mek, ptt:true})
 				fs.unlinkSync(rano)
 				})
-				})
-				 
-			break */
+				}) 
+			break
 				case 'translate111111':
 				if (isBanned) return reply(mess.only.benned)
-				
-				
 				if (args.length < 1) return frhan.sendMessage(from, 'Kode Bahasanya???', text, {quoted: mek})
 				if (args.length < 2) return frhan.sendMessage(from, 'Text Yg Mau Di translate??', text, {quoted: mek})
 				ts = body.slice(11)
@@ -2844,22 +2857,17 @@ case 'ruleta':
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				media = await frhan.downloadAndSaveMediaMessage(mek)
 				await frhan.updateProfilePicture (from, media)
-				reply(mess.wait)
-				reply(`📝😊 *¡𝑺𝒆 𝒂𝒄𝒂𝒃𝒂 𝒅𝒆 𝑴𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒓 𝒍𝒂 𝑫𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐́𝒏 𝒅𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😊📝`)
+				reply(`📸😊 *¡𝑨𝒄𝒂𝒃𝒂𝒔 𝒅𝒆 𝑴𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒓 𝒍𝒂 𝑭𝒐𝒕𝒐 𝒅𝒆𝒍 𝑮𝒓𝒖𝒑𝒐!* 😊📸`)
 			break
 			case 'apakah111111':
-				if (isBanned) return reply(mess.only.benned)    
-				
-				
+				if (isBanned) return reply(mess.only.benned)
 				apakah = body.slice(1)
 				const apakahh = ["Ya","Tidak","Ga tau","ga mungkin","bisa jadi","mungkin"]
 				const kah = apakahh[Math.floor(Math.random() * apakahh.length)]
 				frhan.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
 			break 
 			case 'rate111111':
-				if (isBanned) return reply(mess.only.benned)    
-				
-				
+				if (isBanned) return reply(mess.only.benned)
 				rate = body.slice(1)
 				ratee = ["100%","95%","90%","85%","80%","75%","70%","65%","60%","55%","50%","45%","40%","35%","30%","25%","20%","15%","10%","5%"]
 				const te = ratee[Math.floor(Math.random() * ratee.length)]
@@ -3669,9 +3677,6 @@ case 'ruleta':
 				break
 				case 'pornhub111111':
 					if (isBanned) return reply(mess.only.benned)    
-					
-					
-					
 					try {
 					reply(mess.wait)
 					if (args.length < 1) return reply('teksnya mana gan?')
@@ -4502,7 +4507,7 @@ case 'ruleta':
 					}
 					
 					break 
-			    case 'mencionar':
+			    case 'mencionar11':
 			    if (isBanned) return reply(mess.only.benned)    
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
